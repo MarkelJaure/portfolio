@@ -2,7 +2,7 @@
 "use client";
 
 
-import { Container, Typography, Button, Box, Paper, AppBar, Toolbar, Link, useMediaQuery, IconButton } from '@mui/material';
+import { Container, Typography, Button, Box, Paper, AppBar, Toolbar, Link, IconButton } from '@mui/material';
 import { Home, Person, Work, Code, Mail } from '@mui/icons-material'; // Iconos para el Navbar
 import { useIsMobile } from '@/hooks/useIsMobile';
 
