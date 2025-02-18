@@ -2,7 +2,7 @@
 
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../styles/theme';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/next';
 
 
 
