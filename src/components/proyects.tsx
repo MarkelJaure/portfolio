@@ -92,7 +92,6 @@ const ProyectsSection = () => {
 
                   <Stack 
                     direction="row" 
-                    spacing={1} 
                     flexWrap="wrap" 
                     sx={{ mb: 2, gap: 1 }}
                   >

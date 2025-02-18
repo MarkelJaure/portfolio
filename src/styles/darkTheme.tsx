@@ -8,10 +8,11 @@ const darkTheme = createTheme({
     },
     secondary: {
       main: "#3ddc97", // Verde menta
+      light:"#434343"
     },
     background: {
       default: "#0d1117", // Azul oscuro (GitHub Dark)
-      paper: "#161b22", // Gris grafito
+      paper: "#161b22", // Gris grafito,
     },
     text: {
       primary: "#eaeaea", // Gris claro

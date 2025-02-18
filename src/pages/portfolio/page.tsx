@@ -48,7 +48,8 @@ function Navbar() {
     <AppBar
       position="sticky"
       sx={{
-        bgcolor: `rgba(25, 118, 210, ${opacity})`, // Color dinámico con transparencia
+        bgcolor: `primary.main`,
+        opacity: opacity,
         transition: "background-color 0.3s ease",
       }}
     >

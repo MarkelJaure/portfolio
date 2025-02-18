@@ -9,7 +9,7 @@ const ToolTag = ({ name, icon }: Props) => {
   return (
         <Box
                 sx={{
-                  bgcolor: "background.default",
+                  bgcolor: "secondary.light",
                   px: 1.5,
                   py: 0.5,
                   borderRadius: 2,

@@ -7,7 +7,8 @@ const lightTheme = createTheme({
       main: "#1565c0", // Azul vibrante
     },
     secondary: {
-      main: "#ff6b81", // Rosa coral
+      main: "#ff6b81", // Rosa coral,
+      light:"#f5f5f5"
     },
     background: {
       default: "#f5f5f5", // Gris muy claro

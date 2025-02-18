@@ -47,6 +47,7 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
         color: 'white',
         py: 8,
         backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        borderRadius: "10px"
       }}
     >
       <Container maxWidth="md">
