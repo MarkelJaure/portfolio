@@ -2,6 +2,7 @@
 
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../styles/theme';
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -9,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const metadata = {
   title: "Markel Jaureguibehere - Portfolio",
-  description: "Desarrollador Fullstack especializado en Node.js, React y bases de datos.",
+  description: "Desarrollador Fullstack y Licenciado en Informática.",
 };
   return (
     <html lang="es">
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
+          <Analytics />
           {children}
         </ThemeProvider>
       </body>
