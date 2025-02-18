@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from '../styles/theme';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <>
       <Head>

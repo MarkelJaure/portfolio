@@ -1,6 +1,6 @@
-import { Typography, Button, Box, Avatar, Container } from '@mui/material';
+import { Typography, Button, Box, Avatar, Container, IconButton } from '@mui/material';
 import { useIsMobile } from '@/hooks/useIsMobile';
-import { GitHub, LinkedIn, Description } from '@mui/icons-material';
+import { GitHub, LinkedIn, Description, LightMode, DarkMode } from '@mui/icons-material';
 import Image from 'next/image';
 
 type ButtonProps = {
@@ -31,7 +31,12 @@ const buttons : ButtonProps[] = [
   }
 ];
 
-const HeroSection = () => {
+type HeroSectionProps = {
+  toggleDarkMode: () => void;
+  darkMode: boolean;
+};
+
+const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
   const isMobile = useIsMobile();
 
   return (
@@ -83,6 +88,9 @@ const HeroSection = () => {
                   {button.label}
                 </Button>
               ))}
+               <IconButton onClick={toggleDarkMode} color="inherit">
+                {darkMode ? <LightMode /> : <DarkMode />}
+              </IconButton>
             </Box>
           </Box>
         </Box>

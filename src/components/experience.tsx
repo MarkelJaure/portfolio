@@ -4,9 +4,9 @@ import { WorkflowIcon as Work } from 'lucide-react';
 
 const experiences = [
   { 
-    title: "Mapa Interactivo cultural",
+    title: "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
     period: "2023 - ACTUALIDAD",
-    role: "Desarrollador Semi-Senior",
+    role: "Desarrollador Semi-Senior - Profesional Independiente",
     description: [
       "Desarrollo y mantenimiento de una **PWA** desde cero hasta su despliegue en producción.",
       "Trabajo en equipo de forma **remota**, asegurando la implementación de nuevas funcionalidades y la optimización del sistema.",
@@ -15,8 +15,8 @@ const experiences = [
   },
   { 
     title: "ANPPV - Área Natural Protegida Península Valdés",
-    period: "2022 - 2023",
-    role: "Desarrollador Full Stack",
+    period: "Marzo 2022 - Diciembre 2022",
+    role: "Desarrollador Full Stack - Profesional Independiente",
     description: [
       "Desarrollo de sistemas de **gestión e información** para la administración del área protegida.",
       "Implementación de funcionalidades clave para mejorar el manejo de **datos ambientales y operativos**.",

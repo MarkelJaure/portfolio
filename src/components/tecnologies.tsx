@@ -28,8 +28,8 @@ export default function Technologies() {
   }
 ];
   return (
-    <Box id="technologies" my={4}>
-      <Typography variant="h4" fontWeight="bold" textAlign="center" fontFamily={"Consolas, monospace"}>
+    <Box id="technologies" my={8}>
+      <Typography variant="h4" fontWeight="bold" textAlign="center" fontFamily={"Consolas, monospace"} mb={4}>
         Tecnologías
       </Typography>
       {technologies.map((tech, index) => (

@@ -9,7 +9,7 @@ const ToolTag = ({ name, icon }: Props) => {
   return (
         <Box
                 sx={{
-                  bgcolor: "#F3F4F6",
+                  bgcolor: "background.default",
                   px: 1.5,
                   py: 0.5,
                   borderRadius: 2,
@@ -18,14 +18,14 @@ const ToolTag = ({ name, icon }: Props) => {
                   alignItems: "center",
                   color: "black",
                   transition: "background-color 0.3s",
-                  
+                 
                   '&:hover': {
                     backgroundColor: icon.props.color + '30' // Light variation of the icon color
                   }
                 }}
               >
                 {icon}
-                <Typography variant="body2" ml={0.5}>
+                <Typography variant="body2" ml={0.5} sx={{  pointerEvents: "none" }} color="text.primary">
                   {name}
                 </Typography>
               </Box>

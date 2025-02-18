@@ -32,7 +32,7 @@ const ProyectsSection = () => {
       title: "Análisis de Tópicos Dinámicos en Noticias de Chubut",
       description: (
         <>
-          Proyecto de Tesina en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Inteligencia Artificial (IA)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>.
+          Proyecto de Tesina en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Machine Learning (ML)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>.
         </>
       ),
       image: "/tesina.png",
@@ -54,13 +54,13 @@ const ProyectsSection = () => {
   ];
 
   return (        
-    <Box id="projects" sx={{ py: 8 }}>
+    <Box id="projects" my={4}  >
       <Typography 
         variant="h4" 
         fontWeight="bold" 
         textAlign="center" 
         fontFamily={"Consolas, monospace"}
-        mb={6}
+        mb={4}
       >
         Proyectos
       </Typography>
@@ -103,7 +103,7 @@ const ProyectsSection = () => {
 
                   <Typography 
                     variant="body2" 
-                    color="text.secondary"
+                    color="text.primary"
                   >
                     {project.description}
                   </Typography>

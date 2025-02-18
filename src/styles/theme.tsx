@@ -1,20 +1,32 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
-const theme = createTheme({
+const lightTheme = createTheme({
   palette: {
+    mode: "light",
     primary: {
-      main: '#1976d2', // Azul MUI por defecto
+      main: "#1565c0", // Azul vibrante
     },
     secondary: {
-      main: '#ff4081', // Rosa vibrante
+      main: "#ff6b81", // Rosa coral
     },
     background: {
-      default: '#f4f4f4',
+      default: "#f5f5f5", // Gris muy claro
+      paper: "#ffffff", // Blanco puro
+    },
+    text: {
+      primary: "#333333", // Gris oscuro
+      secondary: "#555555", // Gris intermedio
+    },
+    error: {
+      main: "#ff5252", // Rojo anaranjado
+    },
+    success: {
+      main: "#43a047", // Verde esmeralda
     },
   },
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: "Inter, Roboto, Arial, sans-serif",
   },
 });
 
-export default theme;
+export default lightTheme;

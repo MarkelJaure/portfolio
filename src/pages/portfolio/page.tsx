@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Container, Button, Box, AppBar, Toolbar, IconButton } from "@mui/material";
+import { Container, Button, Box, AppBar, Toolbar, IconButton, ThemeProvider, CssBaseline } from "@mui/material";
 import { Home, Work, Code, Mail, LaptopChromebook } from "@mui/icons-material";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import HeroSection from "@/components/hero";
@@ -9,6 +9,9 @@ import ExperienceSection from "@/components/experience";
 import ProyectsSection from "@/components/proyects";
 import ContactSection from "@/components/contact";
 import TechnologiesSection from "@/components/tecnologies";
+import MoreAboutMe from "@/components/moreAboutMe";
+import darkTheme from "@/styles/darkTheme";
+import theme from "@/styles/theme";
 
 // Datos parametrizados
 const sections = [
@@ -74,17 +77,33 @@ function Navbar() {
 }
 
 export default function PortfolioWireframe() {
+    const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("darkMode") === "true";
+    setDarkMode(savedTheme);
+  }, []);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => {
+      const newTheme = !prev;
+      localStorage.setItem("darkMode", JSON.stringify(newTheme));
+      return newTheme;
+    });
+  };
   return (
-    <>
+    <ThemeProvider theme={darkMode ? darkTheme : theme}>
+      <CssBaseline />
       <Navbar />
       <Container maxWidth="md" sx={{ py: 4 }}>
-        <HeroSection />
+        <HeroSection darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <AboutMeSection />
         <ExperienceSection />
         <ProyectsSection />
         <TechnologiesSection />
+        <MoreAboutMe />
         <ContactSection />
       </Container>
-    </>
+    </ThemeProvider>
   );
 }
