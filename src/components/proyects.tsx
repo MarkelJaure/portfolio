@@ -19,15 +19,31 @@ import ToolTag from './ToolTag/ToolTag';
 const ProyectsSection = () => {
 
     const projects = [
-  {
-    title: "AdventJS - Retos de programación",
-    description: "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20desde%202025-02-13%2013-53-15-8LEiwyJIFsYyFG1yhAZHGNyNOCpWR0.png",
-    tools: useTechnologies(["Next.js", "React", "TypeScript"]),
-    previewUrl: "https://example.com/preview",
-    sourceUrl: "https://github.com/example/project"
+
+    {
+    title: "MIC - Mapa Interactivo Cultural",
+    description: "Aplicacion PWA para que la cultura, el deporte y el turismo esté en tus manos en un sólo lugar, promoviendo los consumos culturales de tu ciudad.",
+    image: "/mic.png",
+    tools: useTechnologies(["Next.js", "Nest.js", "PostgreSQL"]),
+    previewUrl: "https://mapainteractivocultural.ar/",
+  },
+      {
+    title: "Análisis de Tópicos Dinámicos en Noticias de Chubut",
+    description: "Proyecto de Tesina de Grado en Licenciatura en Informática. Sistema que permite Identificar los topicos presentes en las noticias de Chubut y su evolucion temporal en diferentes lapsos de tiempo",
+    image: "/tesina.png",
+    tools: useTechnologies(["Python", "Plotly","Inteligencia Artificial (IA)"]),
+    previewUrl: "https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s",
+  },  {
+    title: "CubeGraph - Practicas de Rubik",
+    description: "Plataforma web gratuita para cubos de rubik, con funcion de practica y competencia local",
+    image: "/cubegraph.png",
+    tools: useTechnologies(["React","JavaScript","Firebase"]),
+    previewUrl: "https://cubegraph.firebaseapp.com/practice",
+    sourceUrl: "https://github.com/MarkelJaure/CubeGraph"
   },
 ];
+
+
   return (        
     <Box id="projects" sx={{ py: 8 }}>
       <Typography 
@@ -93,14 +109,16 @@ const ProyectsSection = () => {
                   >
                     Preview
                   </Button>
-                  <Button 
-                    variant="outlined"
-                    startIcon={<GitHubIcon />}
-                    href={project.sourceUrl}
-                    target="_blank"
-                  >
-                    Source
-                  </Button>
+                  {project.sourceUrl && (
+                    <Button 
+                      variant="outlined"
+                      startIcon={<GitHubIcon />}
+                      href={project.sourceUrl}
+                      target="_blank"
+                    >
+                      Source
+                    </Button>
+                  )}
                 </CardActions>
               </Box>
               <CardMedia
