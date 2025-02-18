@@ -14,35 +14,44 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import useTechnologies from '@/hooks/useTecnologies';
 import ToolTag from './ToolTag/ToolTag';
 
-
-
 const ProyectsSection = () => {
 
-    const projects = [
-
+  const projects = [
     {
-    title: "MIC - Mapa Interactivo Cultural",
-    description: "Aplicacion PWA para que la cultura, el deporte y el turismo esté en tus manos en un sólo lugar, promoviendo los consumos culturales de tu ciudad.",
-    image: "/mic.png",
-    tools: useTechnologies(["Next.js", "Nest.js", "PostgreSQL"]),
-    previewUrl: "https://mapainteractivocultural.ar/",
-  },
-      {
-    title: "Análisis de Tópicos Dinámicos en Noticias de Chubut",
-    description: "Proyecto de Tesina de Grado en Licenciatura en Informática. Sistema que permite Identificar los topicos presentes en las noticias de Chubut y su evolucion temporal en diferentes lapsos de tiempo",
-    image: "/tesina.png",
-    tools: useTechnologies(["Python", "Plotly","Inteligencia Artificial (IA)"]),
-    previewUrl: "https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s",
-  },  {
-    title: "CubeGraph - Practicas de Rubik",
-    description: "Plataforma web gratuita para cubos de rubik, con funcion de practica y competencia local",
-    image: "/cubegraph.png",
-    tools: useTechnologies(["React","JavaScript","Firebase"]),
-    previewUrl: "https://cubegraph.firebaseapp.com/practice",
-    sourceUrl: "https://github.com/MarkelJaure/CubeGraph"
-  },
-];
-
+      title: "MIC - Mapa Interactivo Cultural",
+      description: (
+        <>
+          Aplicación <strong>PWA</strong> diseñada para centralizar la <strong>cultura</strong>, el <strong>deporte</strong> y el <strong>turismo</strong> en un solo lugar. Facilita el acceso a eventos y actividades <strong>culturales</strong> de tu ciudad, promoviendo la participación y el consumo <strong>cultural</strong> local.
+        </>
+      ),
+      image: "/mic.png",
+      tools: useTechnologies(["Next.js", "Nest.js", "PostgreSQL"]),
+      previewUrl: "https://mapainteractivocultural.ar/",
+    },
+    {
+      title: "Análisis de Tópicos Dinámicos en Noticias de Chubut",
+      description: (
+        <>
+          Proyecto de Tesina en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Inteligencia Artificial (IA)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>.
+        </>
+      ),
+      image: "/tesina.png",
+      tools: useTechnologies(["Python", "Plotly", "Inteligencia Artificial (IA)"]),
+      previewUrl: "https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s",
+    },
+    {
+      title: "CubeGraph - Practicas de Rubik",
+      description: (
+        <>
+          <strong>Side project</strong> desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones en local y analizar su progreso con <strong>estadísticas detalladas</strong>.
+        </>
+      ),
+      image: "/cubegraph.png",
+      tools: useTechnologies(["React", "JavaScript", "Firebase"]),
+      previewUrl: "https://cubegraph.firebaseapp.com/practice",
+      sourceUrl: "https://github.com/MarkelJaure/CubeGraph",
+    },
+  ];
 
   return (        
     <Box id="projects" sx={{ py: 8 }}>
@@ -133,6 +142,6 @@ const ProyectsSection = () => {
       </Grid>
     </Box>
   );
-}
+};
 
 export default ProyectsSection;
