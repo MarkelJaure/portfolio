@@ -38,7 +38,7 @@ const ExperienceSection = () => {
 
   return (
     <Box id="experience" my={4}>
-      <Typography variant="h4" fontWeight="bold" textAlign="center" mb={4}>
+      <Typography variant="h4" fontWeight="bold" textAlign="center" mb={4} fontFamily={"Consolas, monospace"}>
         Experiencia
       </Typography>
       <Timeline position="right">

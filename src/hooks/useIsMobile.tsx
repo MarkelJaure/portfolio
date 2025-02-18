@@ -6,7 +6,17 @@ export function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 600); // Ejemplo: 600px como breakpoint para móviles
+    // Esto se ejecutará solo en el cliente, ya que `useEffect` no se ejecuta en el servidor
+    setIsMobile(window.innerWidth < 600);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return isMobile;

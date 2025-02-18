@@ -66,7 +66,7 @@ const HeroSection = () => {
             <Typography variant={isMobile ? "h4" : "h3"} fontWeight="bold" mb={1}>
               Markel Jaureguibehere
             </Typography>
-            <Typography variant="h6" mb={3}>
+            <Typography variant="h6" mb={3} fontFamily={"Consolas, monospace"}>
               Fullstack Developer | Licenciado en Informática
             </Typography>
             <Box display="flex" gap={2} flexWrap="wrap" justifyContent={isMobile ? 'center' : 'flex-start'}>

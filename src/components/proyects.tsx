@@ -59,6 +59,7 @@ const ProyectsSection = () => {
         variant="h4" 
         fontWeight="bold" 
         textAlign="center" 
+        fontFamily={"Consolas, monospace"}
         mb={6}
       >
         Proyectos
