@@ -7,7 +7,10 @@ import {
   CardContent, 
   CardActions, 
   Button,  
-  Stack 
+  Stack,
+  useMediaQuery,
+  useTheme,
+  Divider
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -15,46 +18,14 @@ import useTechnologies from '@/hooks/useTecnologies';
 import ToolTag from './ToolTag/ToolTag';
 
 const ProyectsSection = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const projects = [
-    {
-      title: "MIC - Mapa Interactivo Cultural",
-      description: (
-        <>
-          Aplicación <strong>PWA</strong> diseñada para centralizar la <strong>cultura</strong>, el <strong>deporte</strong> y el <strong>turismo</strong> en un solo lugar. Facilita el acceso a eventos y actividades <strong>culturales</strong> de tu ciudad, promoviendo la participación y el consumo <strong>cultural</strong> local.
-        </>
-      ),
-      image: "/mic.png",
-      tools: useTechnologies(["Next.js", "Nest.js", "PostgreSQL"]),
-      previewUrl: "https://mapainteractivocultural.ar/",
-    },
-    {
-      title: "Análisis de Tópicos Dinámicos en Noticias de Chubut",
-      description: (
-        <>
-          Proyecto de Tesina en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Machine Learning (ML)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>.
-        </>
-      ),
-      image: "/tesina.png",
-      tools: useTechnologies(["Python", "Plotly", "Inteligencia Artificial (IA)"]),
-      previewUrl: "https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s",
-    },
-    {
-      title: "CubeGraph - Practicas de Rubik",
-      description: (
-        <>
-          <strong>Side project</strong> desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones en local y analizar su progreso con <strong>estadísticas detalladas</strong>.
-        </>
-      ),
-      image: "/cubegraph.png",
-      tools: useTechnologies(["React", "JavaScript", "Firebase"]),
-      previewUrl: "https://cubegraph.firebaseapp.com/practice",
-      sourceUrl: "https://github.com/MarkelJaure/CubeGraph",
-    },
-  ];
+const projects = [ { title: "MIC - Mapa Interactivo Cultural", description: ( <> Aplicación <strong>PWA</strong> diseñada para centralizar la <strong>cultura</strong>, el <strong>deporte</strong> y el <strong>turismo</strong> en un solo lugar. Facilita el acceso a eventos y actividades <strong>culturales</strong> de tu ciudad, promoviendo la participación y el consumo <strong>cultural</strong> local. </> ), image: "/mic.png", tools: useTechnologies(["Next.js", "Nest.js", "PostgreSQL"]), previewUrl: "https://mapainteractivocultural.ar/", }, { title: "Análisis de Tópicos Dinámicos en Noticias de Chubut", description: ( <> Proyecto de Tesina en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Machine Learning (ML)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>. </> ), image: "/tesina.png", tools: useTechnologies(["Python", "Plotly", "Inteligencia Artificial (IA)"]), previewUrl: "https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s", }, { title: "CubeGraph - Practicas de Rubik", description: ( <> <strong>Side project</strong> desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones en local y analizar su progreso con <strong>estadísticas detalladas</strong>. </> ), image: "/cubegraph.png", tools: useTechnologies(["React", "JavaScript", "Firebase"]), previewUrl: "https://cubegraph.firebaseapp.com/practice", sourceUrl: "https://github.com/MarkelJaure/CubeGraph", }, ];
+
 
   return (        
-    <Box id="projects" my={4}  >
+    <Box id="projects" my={4}>
       <Typography 
         variant="h4" 
         fontWeight="bold" 
@@ -65,78 +36,106 @@ const ProyectsSection = () => {
         Proyectos
       </Typography>
 
-      <Grid container spacing={4}>
+      <Grid container spacing={isMobile ? 0: 4}>
         {projects.map((project, index) => (
           <Grid item xs={12} key={index}>
-            <Card 
-              elevation={3}
-              sx={{
-                display: 'flex',
-                height: '100%',
-                transition: 'transform 0.2s ease-in-out',
-                '&:hover': {
-                  transform: 'translateY(-4px)'
-                }
-              }}
-            >
-              <Box sx={{ display: 'flex', flexDirection: 'column', flex: '1 0 65%' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                  <Typography 
-                    gutterBottom 
-                    variant="h6" 
-                    component="h3" 
-                    fontWeight="bold"
-                  >
-                    {project.title}
-                  </Typography>
-
-                  <Stack 
-                    direction="row" 
-                    flexWrap="wrap" 
-                    sx={{ mb: 2, gap: 1 }}
-                  >
-                    {project.tools.map((tool, i) => (
-                      <ToolTag key={i} name={tool.name} icon={tool.icon} />
-                    ))}
-                  </Stack>
-
-                  <Typography 
-                    variant="body2" 
-                    color="text.primary"
-                  >
-                    {project.description}
-                  </Typography>
-                </CardContent>
-
-                <CardActions sx={{ p: 2, pt: 0 }}>
-                  <Button 
-                    variant="contained" 
-                    startIcon={<LaunchIcon />}
-                    href={project.previewUrl}
-                    target="_blank"
-                    sx={{ mr: 1 }}
-                  >
-                    Preview
-                  </Button>
-                  {project.sourceUrl && (
-                    <Button 
-                      variant="outlined"
-                      startIcon={<GitHubIcon />}
-                      href={project.sourceUrl}
-                      target="_blank"
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={7}>
+                <Card 
+                  elevation={3}
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: '100%',
+                    transition: 'transform 0.2s ease-in-out',
+                    '&:hover': {
+                      transform: 'translateY(-4px)'
+                    }
+                  }}
+                >
+                  <CardContent sx={{ flex: '1 0 auto' }}>
+                    <Typography 
+                      gutterBottom 
+                      variant="h6" 
+                      component="h3" 
+                      fontWeight="bold"
                     >
-                      Source
+                      {project.title}
+                    </Typography>
+
+                    <Stack 
+                      direction="row" 
+                      flexWrap="wrap" 
+                      sx={{ mb: 2, gap: 1 }}
+                    >
+                      {project.tools.map((tool, i) => (
+                        <ToolTag key={i} name={tool.name} icon={tool.icon} />
+                      ))}
+                    </Stack>
+
+                    <Typography 
+                      variant="body2" 
+                      color="text.primary"
+                    >
+                      {project.description}
+                    </Typography>
+                  </CardContent>
+
+                  <CardActions sx={{ p: 2, pt: 0 }}>
+                    <Button 
+                      variant="contained" 
+                      startIcon={<LaunchIcon />}
+                      href={project.previewUrl}
+                      target="_blank"
+                      sx={{ mr: 1 }}
+                    >
+                      Preview
                     </Button>
-                  )}
-                </CardActions>
+                    {project.sourceUrl && (
+                      <Button 
+                        variant="outlined"
+                        startIcon={<GitHubIcon />}
+                        href={project.sourceUrl}
+                        target="_blank"
+                      >
+                        Source
+                      </Button>
+                    )}
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Card 
+                  elevation={3}
+                  sx={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{ 
+                      height: isMobile ? '200px' : '100%', 
+                      objectFit: 'cover',
+                      transition: 'transform 0.3s ease-in-out',
+                      '&:hover': {
+                        transform: 'scale(1.05)',
+                      },
+                    }}
+                    image={project.image}
+                    alt={project.title}
+                  />
+                </Card>
+              </Grid>
+            </Grid>
+{isMobile && index < projects.length - 1 && (
+              <Box sx={{ display: 'flex', justifyContent: 'center', my: 3 }}>
+                <Divider sx={{ width: '50%' }} />
               </Box>
-              <CardMedia
-                component="img"
-                sx={{ width: '35%', objectFit: 'cover' }}
-                image={project.image}
-                alt={project.title}
-              />
-            </Card>
+            )}
           </Grid>
         ))}
       </Grid>

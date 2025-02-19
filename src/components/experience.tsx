@@ -1,6 +1,7 @@
-import { Typography, Box } from '@mui/material';
+import React, { useState } from 'react';
+import { Typography, Box, IconButton, Collapse, useMediaQuery, useTheme } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from '@mui/lab';
-import { WorkflowIcon as Work } from 'lucide-react';
+import { WorkflowIcon as Work, ChevronDown, ChevronUp } from 'lucide-react';
 
 const experiences = [
   { 
@@ -8,9 +9,15 @@ const experiences = [
     period: "2023 - ACTUALIDAD",
     role: "Desarrollador Semi-Senior - Profesional Independiente",
     description: [
-      "Desarrollo y mantenimiento de una **PWA** desde cero hasta su despliegue en producción.",
-      "Trabajo en equipo de forma **remota**, asegurando la implementación de nuevas funcionalidades y la optimización del sistema.",
-      "Trabajo **Full Stack**, siguiendo metodologías ágiles (**Scrum**)."
+      <Typography key={0} component="li" variant="body2">
+        Desarrollo y mantenimiento de una <strong>PWA</strong> desde cero hasta su despliegue en producción.
+      </Typography>,
+      <Typography key={1} component="li" variant="body2">
+        Trabajo en equipo de forma <strong>remota</strong>, asegurando la implementación de nuevas funcionalidades y la optimización del sistema.
+      </Typography>,
+      <Typography key={2} component="li" variant="body2">
+        Trabajo <strong>Full Stack</strong>, siguiendo metodologías ágiles (<strong>Scrum</strong>).
+      </Typography>
     ]
   },
   { 
@@ -18,22 +25,29 @@ const experiences = [
     period: "Marzo 2022 - Diciembre 2022",
     role: "Desarrollador Full Stack - Profesional Independiente",
     description: [
-      "Desarrollo de sistemas de **gestión e información** para la administración del área protegida.",
-      "Implementación de funcionalidades clave para mejorar el manejo de **datos ambientales y operativos**.",
-      "Trabajo en equipo de forma **híbrida**."
+      <Typography key={0} component="li" variant="body2">
+        Desarrollo de sistemas de <strong>gestión e información</strong> para la administración del área protegida.
+      </Typography>,
+      <Typography key={1} component="li" variant="body2">
+        Implementación de funcionalidades clave para mejorar el manejo de <strong>datos ambientales y operativos</strong>.
+      </Typography>,
+      <Typography key={2} component="li" variant="body2">
+        Trabajo en equipo de forma <strong>híbrida</strong>.
+      </Typography>
     ]
   }
 ];
 
 const ExperienceSection = () => {
-  const renderDescription = (text: string) => {
-    const parts = text.split(/(\*\*.*?\*\*)/);
-    return parts.map((part, index) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={index}>{part.slice(2, -2)}</strong>;
-      }
-      return part;
-    });
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({});
+
+  const toggleExpand = (index: number) => {
+    setExpandedItems(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
   };
 
   return (
@@ -76,13 +90,24 @@ const ExperienceSection = () => {
                 <Typography variant="body2" color="text.secondary" mb={1}>
                   {exp.period}
                 </Typography>
-                <Box component="ul" sx={{ pl: 2, mt: 1 }}>
-                  {exp.description.map((item, i) => (
-                    <Typography component="li" variant="body2" key={i}>
-                      {renderDescription(item)}
-                    </Typography>
-                  ))}
-                </Box>
+{isMobile ? (
+  <>
+    <Box display="flex" justifyContent="center">
+      <IconButton onClick={() => toggleExpand(index)} size="small">
+        {expandedItems[index] ? <ChevronUp /> : <ChevronDown />}
+      </IconButton>
+    </Box>
+    <Collapse in={expandedItems[index]}>
+      <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+        {exp.description}
+      </Box>
+    </Collapse>
+  </>
+) : (
+  <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+    {exp.description}
+  </Box>
+)}
               </Box>
             </TimelineContent>
           </TimelineItem>

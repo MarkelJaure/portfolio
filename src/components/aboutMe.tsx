@@ -2,7 +2,7 @@ import { Typography, Box } from '@mui/material';
 import Flag from 'react-world-flags';
 
 const aboutMe = {
-  title: "Sobre Mí",
+  title: "Sobre mí",
   description: [
     <Typography key="1" variant="body1" textAlign="center" mt={2}>
       Soy un <strong>Desarrollador de Software</strong> con más de 4 años de experiencia, originario de <strong>Puerto Madryn, Argentina</strong>.
