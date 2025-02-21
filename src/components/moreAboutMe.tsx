@@ -8,11 +8,7 @@ const moreAboutMe = {
 			<strong>Handball</strong> y <strong>Beach Handball</strong> como jugador.
 			<br />
 			Por ello, cuento con{' '}
-			<Typography
-				component='span'
-				fontFamily={'Consolas, monospace'}
-				sx={{ color: 'highlight.primary' }}
-			>
+			<Typography component='span' sx={{ color: 'highlight.primary' }}>
 				más de 5 años de experiencia como coordinador y entrenador
 			</Typography>{' '}
 			de todas las categorías del club <strong>J. L. Grilli</strong> en el área

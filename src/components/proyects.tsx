@@ -16,6 +16,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import useTechnologies from '@/hooks/useTecnologies';
 import ToolTag from './ToolTag/ToolTag';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 const ProyectsSection = () => {
 	const theme = useTheme();
@@ -57,7 +59,8 @@ const ProyectsSection = () => {
 				'Plotly',
 				'Inteligencia Artificial (IA)',
 			]),
-			previewUrl: 'https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s',
+			presentationUrl: 'https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s',
+			paperUrl: 'tesina.pdf',
 		},
 		{
 			title: 'Vaidika - Yoga en Madryn',
@@ -147,15 +150,37 @@ const ProyectsSection = () => {
 									</CardContent>
 
 									<CardActions sx={{ p: 2, pt: 0 }}>
-										<Button
-											variant='contained'
-											startIcon={<LaunchIcon />}
-											href={project.previewUrl}
-											target='_blank'
-											sx={{ mr: 1 }}
-										>
-											Preview
-										</Button>
+										{project.previewUrl && (
+											<Button
+												variant='contained'
+												startIcon={<LaunchIcon />}
+												href={project.previewUrl}
+												target='_blank'
+											>
+												Preview
+											</Button>
+										)}
+										{project.presentationUrl && (
+											<Button
+												variant='contained'
+												startIcon={<YouTubeIcon />}
+												href={project.presentationUrl}
+												target='_blank'
+												color='error'
+											>
+												Presentation
+											</Button>
+										)}
+										{project.paperUrl && (
+											<Button
+												variant='outlined'
+												startIcon={<PictureAsPdfIcon />}
+												href={project.paperUrl}
+												target='_blank'
+											>
+												Paper
+											</Button>
+										)}
 										{project.sourceUrl && (
 											<Button
 												variant='outlined'

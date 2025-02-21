@@ -6,11 +6,7 @@ const aboutMe = {
 	description: [
 		<Typography key='1' variant='body1' textAlign='center' mt={2}>
 			Soy un{' '}
-			<Typography
-				component='span'
-				fontFamily={'Consolas, monospace'}
-				sx={{ color: 'highlight.primary' }}
-			>
+			<Typography component='span' sx={{ color: 'highlight.primary' }}>
 				Desarrollador de Software con más de 4 años de experiencia
 			</Typography>
 			, originario de <strong>Puerto Madryn, Argentina</strong>.
@@ -20,10 +16,12 @@ const aboutMe = {
 			Mi pasión por el desarrollo web y las aplicaciones móviles me ha llevado a
 			especializarme tanto en el <strong>Frontend</strong>, creando interfaces
 			funcionales y atractivas, como en el <strong>Backend</strong>, buscando
-			siempre soluciones eficientes y escalables. Me gradué como{' '}
-			<strong>Licenciado en Informática</strong> en la{' '}
-			<strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y
-			tengo amplia experiencia trabajando principalmente con Node.js, React y
+			siempre soluciones eficientes y escalables.{' '}
+			<Typography component='span' sx={{ color: 'highlight.primary' }}>
+				Me gradué como Licenciado en Informática
+			</Typography>{' '}
+			en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong>{' '}
+			y tengo amplia experiencia trabajando principalmente con Node.js, React y
 			PostgreSQL.
 		</Typography>,
 		<Typography key='3' variant='body1' textAlign='center' mt={2}>
