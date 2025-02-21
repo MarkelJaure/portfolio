@@ -22,8 +22,6 @@ import { Key, useEffect, useState } from 'react';
 
 const ImageSlider = ({ images }: any) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
-	const theme = useTheme();
-	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
 	useEffect(() => {
 		const interval = setInterval(() => {
