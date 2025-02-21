@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Markel Jaureguibehere - Portfolio
 
-## Getting Started
+## 📌 Descripción
 
-First, run the development server:
+Este repositorio contiene el código fuente de mi **portfolio profesional**, una aplicación web donde presento mis proyectos, experiencia y habilidades como Fullstack Developer. La aplicación está desarrollada con **Next.js**, **Material UI** y **Framer Motion**, asegurando una experiencia fluida y moderna.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Tecnologías y Herramientas
+
+### **Frontend**
+- **Next.js**: Framework de React optimizado para SSR y SSG.
+- **React**: Biblioteca para la construcción de interfaces dinámicas.
+- **TypeScript**: Tipado estático para mejorar la robustez del código.
+- **Material UI**: Componentes estilizados y personalizables.
+- **Framer Motion**: Animaciones fluidas y optimizadas.
+
+---
+
+## 📂 Estructura del Proyecto
+```
+📂 portfolio
+ ├── 📁 components  # Componentes
+ ├── 📁 pages       # Páginas de la aplicación
+ ├── 📁 styles      # Estilos globales
+ ├── 📁 public      # Recursos estáticos
+ ├── 📁 utils       # Funciones auxiliares
+ ├── next.config.js # Configuración de Next.js
+ ├── package.json   # Dependencias del proyecto
+ └── README.md      # Documentación del proyecto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Instalación y Ejecución
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para ejecutar el proyecto localmente:
+```sh
+# Clonar el repositorio
+git clone https://github.com/markeljaure/portfolio.git
+cd portfolio
 
-## Learn More
+# Instalar dependencias
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Iniciar el servidor de desarrollo
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El proyecto estará disponible en: **http://localhost:3000**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌎 Despliegue
+El portfolio está desplegado con **Vercel** y puede visualizarse en:
+👉 [Mi Portfolio](https://portfolio-markel-jaureguibeheres-projects.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📩 Contacto
+
+Si tienes alguna sugerencia o pregunta, puedes contactarme en **markeljaure2000@gmail.com** o en [LinkedIn](#).
+
