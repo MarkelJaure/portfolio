@@ -14,10 +14,10 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import useTechnologies from '@/hooks/useTecnologies';
-import ToolTag from './ToolTag/ToolTag';
+import ToolTag from '../ToolTag/ToolTag';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import ImageSlider from './ImageSlider/ImageSlider';
+import ImageSlider from '../ImageSlider/ImageSlider';
 
 const ProyectsSection = () => {
 	const theme = useTheme();

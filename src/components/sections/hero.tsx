@@ -17,35 +17,45 @@ import {
 } from '@mui/icons-material';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import TypewriterText from './TypewiterText/TypewriterText';
+import TypewriterText from '../TypewiterText/TypewriterText';
+
+type InfoType = {
+	title: string;
+	description: string;
+	buttons: {
+		label: string;
+		icon: React.ReactElement;
+		href: string;
+		color: 'primary' | 'secondary';
+	}[];
+};
+
+const info: InfoType = {
+	title: 'Markel Jaureguibehere',
+	description: 'Fullstack Developer | Licenciado en Informática',
+	buttons: [
+		{
+			label: 'Ver CV',
+			icon: <Description />,
+			href: '/cv.pdf',
+			color: 'secondary',
+		},
+		{
+			label: 'GitHub',
+			icon: <GitHub />,
+			href: 'https://github.com/MarkelJaure',
+			color: 'primary',
+		},
+		{
+			label: 'LinkedIn',
+			icon: <LinkedIn />,
+			href: 'https://www.linkedin.com/in/markel-jaureguibehere/',
+			color: 'primary',
+		},
+	],
+};
 
 type HeroSectionProps = { toggleDarkMode: () => void; darkMode: boolean };
-type ButtonProps = {
-	label: string;
-	icon: React.ReactElement;
-	href: string;
-	color: 'primary' | 'secondary';
-};
-const buttons: ButtonProps[] = [
-	{
-		label: 'Ver CV',
-		icon: <Description />,
-		href: '/cv.pdf',
-		color: 'secondary',
-	},
-	{
-		label: 'GitHub',
-		icon: <GitHub />,
-		href: 'https://github.com/MarkelJaure',
-		color: 'primary',
-	},
-	{
-		label: 'LinkedIn',
-		icon: <LinkedIn />,
-		href: 'https://www.linkedin.com/in/markel-jaureguibehere/',
-		color: 'primary',
-	},
-];
 
 const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 	const theme = useTheme();
@@ -92,6 +102,8 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 						textAlign={isMobile ? 'center' : 'left'}
 						flexGrow={1}
 						width={isMobile ? '100%' : 'auto'}
+						display='flex'
+						flexDirection='column'
 					>
 						<motion.div
 							initial={{ opacity: 0 }}
@@ -103,11 +115,11 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 								fontWeight='bold'
 								mb={1}
 							>
-								Markel Jaureguibehere
+								{info.title}
 							</Typography>
 						</motion.div>
 
-						<TypewriterText text='Fullstack Developer | Licenciado en Informática' />
+						<TypewriterText text={info.description} />
 
 						<Box
 							display='flex'
@@ -117,7 +129,7 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 							mt={3}
 						>
 							<AnimatePresence>
-								{buttons.map((button, index) => (
+								{info.buttons.map((button, index) => (
 									<motion.div
 										key={index}
 										initial={{ opacity: 0 }}

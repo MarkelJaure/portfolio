@@ -8,6 +8,7 @@ import {
 	IconButton,
 	useTheme,
 	useMediaQuery,
+	alpha,
 } from '@mui/material';
 import { Home, Work, Code, Mail, LaptopChromebook } from '@mui/icons-material';
 
@@ -56,9 +57,9 @@ const Navbar = () => {
 		<AppBar
 			position='sticky'
 			sx={{
-				bgcolor: `primary.main`,
-				opacity: opacity,
-				transition: 'background-color 0.3s ease',
+				backgroundColor: alpha(theme.palette.primary.main, opacity), // Usa opacidad en el color del theme
+				transition: 'all 0.3s ease',
+				backdropFilter: 'blur(4px)',
 			}}
 		>
 			<Toolbar sx={{ justifyContent: 'center' }}>

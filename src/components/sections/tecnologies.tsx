@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Box, Typography, Paper, Grid, Stack, useTheme } from '@mui/material';
 import { FaDatabase, FaTools, FaCode, FaGlobe } from 'react-icons/fa';
-import ToolTag from './ToolTag/ToolTag';
+import ToolTag from '../ToolTag/ToolTag';
 import useTechnologies from '@/hooks/useTecnologies';
 import { motion, useAnimation, useInView } from 'framer-motion';
 

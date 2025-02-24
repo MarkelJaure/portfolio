@@ -1,17 +1,17 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { Container, ThemeProvider, CssBaseline } from '@mui/material';
-import HeroSection from '@/components/hero';
-import AboutMeSection from '@/components/aboutMe';
-import ExperienceSection from '@/components/experience';
-import ProyectsSection from '@/components/proyects';
-import ContactSection from '@/components/contact';
-import TechnologiesSection from '@/components/tecnologies';
-import MoreAboutMe from '@/components/moreAboutMe';
+import HeroSection from '@/components/sections/hero';
+import AboutMeSection from '@/components/sections/aboutMe';
+import ExperienceSection from '@/components/sections/experience';
+import ProyectsSection from '@/components/sections/proyects';
+import ContactSection from '@/components/sections/contact';
+import TechnologiesSection from '@/components/sections/tecnologies';
+import MoreAboutMe from '@/components/sections/moreAboutMe';
 import darkTheme from '@/styles/darkTheme';
 import theme from '@/styles/theme';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+import Navbar from '@/components/Navbar/navbar';
+import Footer from '@/components/sections/footer';
 
 export default function PortfolioWireframe() {
 	const [darkMode, setDarkMode] = useState(false);

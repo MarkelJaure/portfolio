@@ -1,4 +1,4 @@
-import { Typography, Box } from '@mui/material';
+import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 const TypewriterText = ({ text }: { text: string }) => {
@@ -17,35 +17,17 @@ const TypewriterText = ({ text }: { text: string }) => {
 	}, [currentIndex, text]);
 
 	return (
-		<Box sx={{ position: 'relative', width: '100%', height: '3em' }}>
-			<Typography
-				variant='h6'
-				fontFamily={'Consolas, monospace'}
-				sx={{
-					position: 'absolute',
-					top: 0,
-					left: 0,
-					visibility: 'hidden',
-					whiteSpace: 'pre-wrap',
-					width: '100%',
-				}}
-			>
-				{text}
-			</Typography>
-			<Typography
-				variant='h6'
-				fontFamily={'Consolas, monospace'}
-				sx={{
-					position: 'absolute',
-					top: 0,
-					left: 0,
-					whiteSpace: 'pre-wrap',
-					width: '100%',
-				}}
-			>
-				{displayText}
-			</Typography>
-		</Box>
+		<Typography
+			variant='h6'
+			fontFamily={'Consolas, monospace'}
+			sx={{
+				whiteSpace: 'pre-wrap',
+				width: '100%',
+				minHeight: '3em',
+			}}
+		>
+			{displayText}
+		</Typography>
 	);
 };
 
