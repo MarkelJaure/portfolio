@@ -3,7 +3,6 @@
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../styles/theme';
 import { Analytics } from '@vercel/analytics/next';
-import Background from '@/components/Background';
 
 export default function RootLayout({
 	children,
