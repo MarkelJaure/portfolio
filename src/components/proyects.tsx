@@ -3,7 +3,6 @@ import {
 	Box,
 	Grid,
 	Card,
-	CardMedia,
 	CardContent,
 	CardActions,
 	Button,
@@ -18,54 +17,7 @@ import useTechnologies from '@/hooks/useTecnologies';
 import ToolTag from './ToolTag/ToolTag';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import { Key, useEffect, useState } from 'react';
-
-const ImageSlider = ({ images }: any) => {
-	const [currentIndex, setCurrentIndex] = useState(0);
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentIndex((prevIndex: number) => (prevIndex + 1) % images.length);
-		}, 5000);
-		return () => clearInterval(interval);
-	}, [images.length]);
-
-	return (
-		<Box
-			sx={{
-				position: 'relative',
-				width: '100%',
-				height: '100%',
-				overflow: 'hidden',
-				transition: 'transform 0.3s ease-in-out',
-				'&:hover': {
-					transform: 'scale(1.05)', // Aplica a todas las imágenes
-				},
-			}}
-		>
-			{images.map(
-				(image: string | undefined, index: Key | null | undefined) => (
-					<CardMedia
-						key={index}
-						component='img'
-						src={image}
-						sx={{
-							position: 'absolute',
-							top: 0,
-							left: 0,
-							width: '100%',
-							height: '100%',
-							objectFit: 'cover',
-							transition: 'opacity 1s ease-in-out',
-							opacity: index === currentIndex ? 1 : 0,
-						}}
-						alt='Project Image'
-					/>
-				)
-			)}
-		</Box>
-	);
-};
+import ImageSlider from './ImageSlider/ImageSlider';
 
 const ProyectsSection = () => {
 	const theme = useTheme();
@@ -73,6 +25,7 @@ const ProyectsSection = () => {
 
 	const projects = [
 		{
+			id: 'mic',
 			title: 'MIC - Mapa Interactivo Cultural',
 			description: (
 				<>
@@ -87,8 +40,10 @@ const ProyectsSection = () => {
 			images: ['/mic.png'],
 			tools: useTechnologies(['Next.js', 'Nest.js', 'PostgreSQL']),
 			previewUrl: 'https://mapainteractivocultural.ar/',
+			type: 'Trabajo',
 		},
 		{
+			id: 'tesina',
 			title: 'Dynamic Topic Modeling en noticias de Chubut',
 			description: (
 				<>
@@ -109,8 +64,10 @@ const ProyectsSection = () => {
 			]),
 			presentationUrl: 'https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s',
 			paperUrl: 'tesina.pdf',
+			type: 'Personal',
 		},
 		{
+			id: 'anp',
 			title: 'Sistema de encuestas dinámicas para la Península Valdés',
 			description: (
 				<>
@@ -123,22 +80,27 @@ const ProyectsSection = () => {
 			),
 			images: ['/anp.jpg', 'indicadores.jpeg'],
 			tools: useTechnologies(['React', 'Node.js', 'MongoDB']),
+			type: 'Trabajo',
 		},
 		{
+			id: 'vaidika',
 			title: 'Vaidika - Yoga en Madryn',
 			description: (
 				<>
 					Vaidika es una página de <strong>E-Learning</strong> para la práctica
-					de yoga en Madryn. Cuenta con un Backoffice para la carga de cursos,
-					módulos y clases, y una User App con login para el consumo de cursos.
-					Desplegada en producción a través de <strong>Ferozo</strong>.
+					de yoga en Madryn. Cuenta con un <strong>Backoffice</strong> para la
+					carga de cursos, módulos y clases, y una <strong>User App</strong> con
+					login para el consumo de cursos. Desplegada en producción a través de{' '}
+					<strong>Ferozo</strong>.
 				</>
 			),
 			images: ['/Vaidika.png'],
 			tools: useTechnologies(['PHP', 'MySQL']),
 			previewUrl: 'https://www.vaidikayogamadryn.com/',
+			type: 'Trabajo',
 		},
 		{
+			id: 'cubegraph',
 			title: 'CubeGraph - Prácticas de Rubik',
 			description: (
 				<>
@@ -154,6 +116,7 @@ const ProyectsSection = () => {
 			tools: useTechnologies(['React', 'JavaScript', 'Firebase']),
 			previewUrl: 'https://cubegraph.firebaseapp.com/practice',
 			sourceUrl: 'https://github.com/MarkelJaure/CubeGraph',
+			type: 'Personal',
 		},
 	];
 
@@ -171,7 +134,7 @@ const ProyectsSection = () => {
 
 			<Grid container spacing={isMobile ? 0 : 4}>
 				{projects.map((project, index) => (
-					<Grid item xs={12} key={index}>
+					<Grid item xs={12} key={index} id={project.id}>
 						<Grid container spacing={2}>
 							<Grid item xs={12} md={7}>
 								<Card
@@ -261,7 +224,7 @@ const ProyectsSection = () => {
 									elevation={3}
 									sx={{ height: isMobile ? '200px' : '100%' }}
 								>
-									<ImageSlider images={project.images} />
+									<ImageSlider images={project.images} type={project.type} />
 								</Card>
 							</Grid>
 						</Grid>

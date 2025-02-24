@@ -6,7 +6,6 @@ const moreAboutMe = {
 		<Typography key='1' variant='body1' align='center' mt={2}>
 			Durante gran parte de mi vida he estado involucrado en el{' '}
 			<strong>Handball</strong> y <strong>Beach Handball</strong> como jugador.
-			<br />
 			Por ello, cuento con{' '}
 			<Typography component='span' sx={{ color: 'highlight.primary' }}>
 				más de 5 años de experiencia como coordinador y entrenador

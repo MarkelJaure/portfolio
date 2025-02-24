@@ -6,6 +6,7 @@ import {
 	Collapse,
 	useMediaQuery,
 	useTheme,
+	Link,
 } from '@mui/material';
 import {
 	Timeline,
@@ -22,12 +23,15 @@ const experiences = [
 	{
 		title:
 			'Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn',
-		period: '2023 - ACTUALIDAD',
+		period: 'Junio 2023 - ACTUALIDAD',
 		role: 'Desarrollador Semi-Senior - Profesional Independiente',
 		description: [
 			<Typography key={0} component='li' variant='body2'>
-				Desarrollo y mantenimiento de una <strong>PWA</strong> desde cero hasta
-				su despliegue en producción.
+				Desarrollo y mantenimiento de{' '}
+				<Link href='#mic' onClick={(e) => scrollToProject(e, 'mic')}>
+					MIC - Mapa Interactivo Cultural
+				</Link>{' '}
+				desde cero hasta su despliegue en producción.
 			</Typography>,
 			<Typography key={1} component='li' variant='body2'>
 				Trabajo en equipo de forma <strong>remota</strong>, asegurando la
@@ -45,7 +49,11 @@ const experiences = [
 		role: 'Desarrollador Full Stack - Profesional Independiente',
 		description: [
 			<Typography key={0} component='li' variant='body2'>
-				Desarrollo de sistemas de <strong>gestión e información</strong> para la
+				Desarrollo del{' '}
+				<Link href='#anp' onClick={(e) => scrollToProject(e, 'anp')}>
+					Sistema de encuestas dinámicas para la Península Valdés
+				</Link>{' '}
+				y subsistemas de <strong>gestión e información</strong> para la
 				administración del área protegida.
 			</Typography>,
 			<Typography key={1} component='li' variant='body2'>
@@ -58,6 +66,14 @@ const experiences = [
 		],
 	},
 ];
+
+const scrollToProject = (e: React.MouseEvent, projectId: string) => {
+	e.preventDefault();
+	const element = document.getElementById(projectId);
+	if (element) {
+		element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	}
+};
 
 const ExperienceSection = () => {
 	const theme = useTheme();
@@ -82,7 +98,7 @@ const ExperienceSection = () => {
 				mb={4}
 				fontFamily={'Consolas, monospace'}
 			>
-				Experiencia
+				Experiencia laboral
 			</Typography>
 			<Timeline position='right'>
 				{experiences.map((exp, index) => (

@@ -38,6 +38,7 @@ const lightTheme = createTheme({
 			secondary: '#1565c0', // Naranja de resaltado
 		},
 	},
+
 	typography: {
 		fontFamily: 'Inter, Roboto, Arial, sans-serif',
 	},
