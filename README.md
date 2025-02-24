@@ -59,5 +59,5 @@ El portfolio está desplegado con **Vercel** y puede visualizarse en:
 
 ## 📩 Contacto
 
-Si tienes alguna sugerencia o pregunta, puedes contactarme en **markeljaure2000@gmail.com** o en [LinkedIn](#).
+Si tienes alguna sugerencia o pregunta, puedes contactarme en **markeljaure2000@gmail.com** o en [LinkedIn](https://www.linkedin.com/in/markel-jaureguibehere/).
 
