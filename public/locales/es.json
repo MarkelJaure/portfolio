@@ -1,0 +1,87 @@
+{
+	"hero": {
+		"title": "Inicio",
+		"name": "Markel Jaureguibehere",
+		"description": "Fullstack Developer | Licenciado en Informática",
+		"buttons": {
+			"viewCv": "Ver CV",
+			"github": "GitHub",
+			"linkedin": "LinkedIn"
+		}
+	},
+	"aboutMe": {
+		"title": "Sobre mí",
+		"description1": "<highlight>Desarrollador de Software con más de 4 años de experiencia</highlight>, originario de <strong>Puerto Madryn, Argentina</strong> <flag/>. Apasionado por las nuevas tecnologías y el desarrollo tanto web como móvil.",
+		"description2": "<highlight>Graduado como <strong>Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <strong>disponible para trabajar</strong>, motivado de seguir aprendiendo y crecer profesionalmente."
+	},
+	"experience": {
+		"title": "Experiencia",
+		"items": {
+			"camad": {
+				"title": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
+				"period": "Junio 2023 - ACTUALIDAD",
+				"role": "Desarrollador Semi-Senior - Profesional Independiente",
+				"description": {
+					"1": "Desarrollo y mantenimiento de <link>MIC - Mapa Interactivo Cultural</link> desde cero hasta su despliegue en producción.",
+					"2": "Trabajo en equipo de forma <strong>remota</strong>, asegurando la implementación de nuevas funcionalidades y la optimización del sistema.",
+					"3": "Trabajo <strong>Full Stack</strong>, siguiendo metodologías ágiles (<strong>Scrum</strong>)."
+				}
+			},
+			"anppv": {
+				"title": "ANPPV - Área Natural Protegida Península Valdés",
+				"period": "Marzo 2022 - Diciembre 2022",
+				"role": "Desarrollador Full Stack - Profesional Independiente",
+				"description": {
+					"1": "Desarrollo del <link>Sistema de encuestas dinámicas para la Península Valdés</link> y subsistemas de <strong>gestión e información</strong> para la administración del área protegida.",
+					"2": "Implementación de funcionalidades clave para mejorar el manejo de <strong>datos ambientales y operativos</strong>.",
+					"3": "Trabajo en equipo de forma <strong>híbrida</strong>."
+				}
+			}
+		}
+	},
+	"projects": {
+		"title": "Proyectos",
+		"items": {
+			"mic": {
+				"title": "MIC - Mapa Interactivo Cultural",
+				"description": "Aplicación <strong>PWA</strong> diseñada para centralizar la <strong>cultura</strong>, el <strong>deporte</strong> y el <strong>turismo</strong> en un solo lugar. Facilita el acceso a eventos y actividades <strong>culturales</strong> de tu ciudad, promoviendo la participación y el consumo <strong>cultural</strong> local. Disponible en la web y en <strong>Google Play</strong>."
+			},
+			"tesina": {
+				"title": "Dynamic Topic Modeling en noticias de Chubut",
+				"description": "Proyecto de tesina de grado en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Machine Learning (ML)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>."
+			},
+			"anp": {
+				"title": "Sistema de encuestas dinámicas para la Península Valdés",
+				"description": "Plataforma web diseñada para recopilar la experiencia de los visitantes en Península Valdés. El <strong>sistema de encuestas dinámico</strong> se adapta en tiempo real a las respuestas de los usuarios. Cuenta con internacionalización y visualización de indicadores estadísticos."
+			},
+			"vaidika": {
+				"title": "Vaidika - Yoga en Madryn",
+				"description": "Vaidika es una página de <strong>E-Learning</strong> para la práctica de yoga en Madryn. Cuenta con un <strong>Backoffice</strong> para la carga de cursos, módulos y clases, y una <strong>User App</strong> con login para el consumo de cursos. Desplegada en producción a través de <strong>Ferozo</strong>."
+			},
+			"cubegraph": {
+				"title": "CubeGraph - Prácticas de Rubik",
+				"description": "<strong>Side project</strong> personal desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
+			}
+		}
+	},
+	"technologies": {
+		"title": "Tecnologías",
+		"items": {
+			"frontend": "Frontend",
+			"backend": "Backend",
+			"database": "Bases de Datos",
+			"tools": "Herramientas"
+		}
+	},
+	"moreAboutMe": {
+		"title": "Más sobre mí",
+		"description": "Durante gran parte de mi vida he estado involucrado en el <strong>Handball</strong> y <strong>Beach Handball</strong> como jugador. Por ello, cuento con <highlight>más de 5 años de experiencia</highlight> como coordinador y entrenador de todas las categorías del club <strong>J. L. Grilli</strong> en el área de <strong>Beach Handball</strong> durante las temporadas de verano."
+	},
+	"contact": {
+		"title": "Contacto",
+		"greeting": "¡Hablemos! Escríbeme a"
+	},
+	"footer": {
+		"source": "Código fuente"
+	}
+}

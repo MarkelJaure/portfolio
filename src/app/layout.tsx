@@ -3,6 +3,7 @@
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../styles/theme';
 import { Analytics } from '@vercel/analytics/next';
+import '../../i18'; // Importa la configuración de i18next
 
 export default function RootLayout({
 	children,
@@ -13,6 +14,7 @@ export default function RootLayout({
 		title: 'Markel Jaureguibehere - Portfolio',
 		description: 'Desarrollador Fullstack y Licenciado en Informática.',
 	};
+
 	return (
 		<html lang='es'>
 			<head>
@@ -24,7 +26,6 @@ export default function RootLayout({
 				<ThemeProvider theme={theme}>
 					<CssBaseline />
 					<Analytics />
-					{/* <Background /> Aquí estás añadiendo el fondo animado */}
 					<div style={{ position: 'relative', zIndex: 10 }}>{children}</div>
 				</ThemeProvider>
 			</body>

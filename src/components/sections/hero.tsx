@@ -18,6 +18,9 @@ import {
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import TypewriterText from '../TypewiterText/TypewriterText';
+import { Trans, useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
+import { changeLanguage } from 'i18next';
 
 type InfoType = {
 	title: string;
@@ -30,37 +33,41 @@ type InfoType = {
 	}[];
 };
 
-const info: InfoType = {
-	title: 'Markel Jaureguibehere',
-	description: 'Fullstack Developer | Licenciado en Informática',
-	buttons: [
-		{
-			label: 'Ver CV',
-			icon: <Description />,
-			href: '/cv.pdf',
-			color: 'secondary',
-		},
-		{
-			label: 'GitHub',
-			icon: <GitHub />,
-			href: 'https://github.com/MarkelJaure',
-			color: 'primary',
-		},
-		{
-			label: 'LinkedIn',
-			icon: <LinkedIn />,
-			href: 'https://www.linkedin.com/in/markel-jaureguibehere/',
-			color: 'primary',
-		},
-	],
+type HeroSectionProps = {
+	toggleDarkMode: () => void;
+	darkMode: boolean;
+	changeLanguage: (locale: string) => void;
 };
-
-type HeroSectionProps = { toggleDarkMode: () => void; darkMode: boolean };
 
 const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const { t } = useTranslation();
 
+	const info: InfoType = {
+		title: t('hero.name'),
+		description: t('hero.description'),
+		buttons: [
+			{
+				label: t('hero.buttons.viewCv'),
+				icon: <Description />,
+				href: '/cv.pdf',
+				color: 'secondary',
+			},
+			{
+				label: 'GitHub',
+				icon: <GitHub />,
+				href: 'https://github.com/MarkelJaure',
+				color: 'primary',
+			},
+			{
+				label: 'LinkedIn',
+				icon: <LinkedIn />,
+				href: 'https://www.linkedin.com/in/markel-jaureguibehere/',
+				color: 'primary',
+			},
+		],
+	};
 	return (
 		<Box
 			id='hero'
@@ -157,6 +164,7 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 										{darkMode ? <LightMode /> : <DarkMode />}
 									</IconButton>
 								</motion.div>
+								<LanguageSwitcher changeLanguage={changeLanguage} />
 							</AnimatePresence>
 						</Box>
 					</Box>

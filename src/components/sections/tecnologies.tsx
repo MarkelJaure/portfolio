@@ -4,6 +4,7 @@ import { FaDatabase, FaTools, FaCode, FaGlobe } from 'react-icons/fa';
 import ToolTag from '../ToolTag/ToolTag';
 import useTechnologies from '@/hooks/useTecnologies';
 import { motion, useAnimation, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 // Componente animado para el icono
 const AnimatedIcon = motion(Box);
@@ -94,15 +95,16 @@ const TechnologyCard = ({ tech, index }: TechnologyProps) => {
 
 export default function Technologies() {
 	const theme = useTheme();
+	const { t } = useTranslation();
 
 	const technologies = [
 		{
-			category: 'Frontend',
+			category: t('technologies.items.frontend'),
 			icon: <FaGlobe size={32} color={theme.palette.primary.main} />,
 			tools: useTechnologies(['React', 'Next.js', 'TypeScript', 'JavaScript']),
 		},
 		{
-			category: 'Backend',
+			category: t('technologies.items.backend'),
 			icon: <FaCode size={32} color={theme.palette.secondary.main} />,
 			tools: useTechnologies([
 				'Node.js',
@@ -113,12 +115,12 @@ export default function Technologies() {
 			]),
 		},
 		{
-			category: 'Bases de Datos',
+			category: t('technologies.items.database'),
 			icon: <FaDatabase size={32} color={theme.palette.warning.main} />,
 			tools: useTechnologies(['MongoDB', 'PostgreSQL', 'MySQL']),
 		},
 		{
-			category: 'Herramientas',
+			category: t('technologies.items.tools'),
 			icon: <FaTools size={32} color={theme.palette.info.main} />,
 			tools: useTechnologies(['Git', 'Docker', 'Nginx']),
 		},
@@ -133,7 +135,7 @@ export default function Technologies() {
 				fontFamily='Consolas, monospace'
 				mb={6}
 			>
-				Tecnologías
+				{t('technologies.title')}
 			</Typography>
 			<Grid container spacing={3}>
 				{technologies.map((tech, index) => (

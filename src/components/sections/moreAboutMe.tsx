@@ -1,23 +1,29 @@
 import { Box, Typography, Grid } from '@mui/material';
-
-const moreAboutMe = {
-	title: 'Más sobre mí',
-	description: [
-		<Typography key='1' variant='body1' align='center' mt={2}>
-			Durante gran parte de mi vida he estado involucrado en el{' '}
-			<strong>Handball</strong> y <strong>Beach Handball</strong> como jugador.
-			Por ello, cuento con{' '}
-			<Typography component='span' sx={{ color: 'highlight.primary' }}>
-				más de 5 años de experiencia como coordinador y entrenador
-			</Typography>{' '}
-			de todas las categorías del club <strong>J. L. Grilli</strong> en el área
-			de <strong>Beach Handball</strong> durante las temporadas de verano.
-		</Typography>,
-	],
-	videos: ['/beach2.mp4', '/beach.mp4', '/beach3.mp4'],
-};
+import { Trans, useTranslation } from 'react-i18next';
 
 const MoreAboutMe = () => {
+	const { t } = useTranslation();
+
+	const moreAboutMe = {
+		title: t('moreAboutMe.title'),
+		description: [
+			<Typography key='1' variant='body1' align='center' mt={2}>
+				<Trans
+					i18nKey='moreAboutMe.description'
+					components={{
+						highlight: (
+							<Typography
+								component='span'
+								sx={{ color: 'highlight.primary' }}
+							/>
+						),
+						strong: <strong />,
+					}}
+				/>
+			</Typography>,
+		],
+		videos: ['/beach2.mp4', '/beach.mp4', '/beach3.mp4'],
+	};
 	return (
 		<Box id='more-about' my={4} textAlign='center'>
 			<Typography

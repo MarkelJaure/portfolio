@@ -18,43 +18,40 @@ import ToolTag from '../ToolTag/ToolTag';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import ImageSlider from '../ImageSlider/ImageSlider';
+import { Trans, useTranslation } from 'react-i18next';
 
 const ProyectsSection = () => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const { t } = useTranslation();
 
 	const projects = [
 		{
 			id: 'mic',
-			title: 'MIC - Mapa Interactivo Cultural',
+			title: t('projects.items.mic.title'),
 			description: (
-				<>
-					Aplicación <strong>PWA</strong> diseñada para centralizar la{' '}
-					<strong>cultura</strong>, el <strong>deporte</strong> y el{' '}
-					<strong>turismo</strong> en un solo lugar. Facilita el acceso a
-					eventos y actividades <strong>culturales</strong> de tu ciudad,
-					promoviendo la participación y el consumo <strong>cultural</strong>{' '}
-					local. Disponible en la web y en <strong>Google Play</strong>.
-				</>
+				<Trans
+					i18nKey='projects.items.mic.description'
+					components={{
+						strong: <strong />,
+					}}
+				/>
 			),
 			images: ['/mic.png'],
 			tools: useTechnologies(['Next.js', 'Nest.js', 'PostgreSQL']),
 			previewUrl: 'https://mapainteractivocultural.ar/',
-			type: 'Trabajo',
+			type: 'Laboral',
 		},
 		{
 			id: 'tesina',
-			title: 'Dynamic Topic Modeling en noticias de Chubut',
+			title: t('projects.items.tesina.title'),
 			description: (
-				<>
-					Proyecto de tesina de grado en{' '}
-					<strong>Licenciatura en Informática</strong>. Sistema de análisis de
-					noticias que identifica los temas predominantes en los medios de{' '}
-					<strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza{' '}
-					<strong>Machine Learning (ML)</strong> y técnicas avanzadas de{' '}
-					<em>procesamiento de lenguaje natural</em> para el{' '}
-					<strong>modelado de tópicos</strong>.
-				</>
+				<Trans
+					i18nKey='projects.items.tesina.description'
+					components={{
+						strong: <strong />,
+					}}
+				/>
 			),
 			images: ['/tesina.png'],
 			tools: useTechnologies([
@@ -68,49 +65,45 @@ const ProyectsSection = () => {
 		},
 		{
 			id: 'anp',
-			title: 'Sistema de encuestas dinámicas para la Península Valdés',
+			title: t('projects.items.anp.title'),
 			description: (
-				<>
-					Plataforma web diseñada para recopilar la experiencia de los
-					visitantes en Península Valdés. El{' '}
-					<strong>sistema de encuestas dinámico</strong> se adapta en tiempo
-					real a las respuestas de los usuarios. Cuenta con internacionalización
-					y visualización de indicadores estadísticos.
-				</>
+				<Trans
+					i18nKey='projects.items.anp.description'
+					components={{
+						strong: <strong />,
+					}}
+				/>
 			),
 			images: ['/anp.jpg', 'indicadores.jpeg'],
 			tools: useTechnologies(['React', 'Node.js', 'MongoDB']),
-			type: 'Trabajo',
+			type: 'Laboral',
 		},
 		{
 			id: 'vaidika',
-			title: 'Vaidika - Yoga en Madryn',
+			title: t('projects.items.vaidika.title'),
 			description: (
-				<>
-					Vaidika es una página de <strong>E-Learning</strong> para la práctica
-					de yoga en Madryn. Cuenta con un <strong>Backoffice</strong> para la
-					carga de cursos, módulos y clases, y una <strong>User App</strong> con
-					login para el consumo de cursos. Desplegada en producción a través de{' '}
-					<strong>Ferozo</strong>.
-				</>
+				<Trans
+					i18nKey='projects.items.vaidika.description'
+					components={{
+						strong: <strong />,
+					}}
+				/>
 			),
 			images: ['/Vaidika.png'],
 			tools: useTechnologies(['PHP', 'MySQL']),
 			previewUrl: 'https://www.vaidikayogamadryn.com/',
-			type: 'Trabajo',
+			type: 'Laboral',
 		},
 		{
 			id: 'cubegraph',
-			title: 'CubeGraph - Prácticas de Rubik',
+			title: t('projects.items.cubegraph.title'),
 			description: (
-				<>
-					<strong>Side project</strong> personal desarrollado como una
-					oportunidad para aprender y mejorar el uso de tecnologías web.
-					CubeGraph es una plataforma interactiva para entusiastas del cubo de{' '}
-					<em>Rubik</em>, donde se puede entrenar con cronómetros de resolución,
-					competiciones 1vs1 en local y analizar el progreso con{' '}
-					<strong>estadísticas detalladas</strong>.
-				</>
+				<Trans
+					i18nKey='projects.items.cubegraph.description'
+					components={{
+						strong: <strong />,
+					}}
+				/>
 			),
 			images: ['/cubegraph.png'],
 			tools: useTechnologies(['React', 'JavaScript', 'Firebase']),

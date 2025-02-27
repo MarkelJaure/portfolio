@@ -18,54 +18,7 @@ import {
 	TimelineOppositeContent,
 } from '@mui/lab';
 import { WorkflowIcon as Work, ChevronDown, ChevronUp } from 'lucide-react';
-
-const experiences = [
-	{
-		title:
-			'Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn',
-		period: 'Junio 2023 - ACTUALIDAD',
-		role: 'Desarrollador Semi-Senior - Profesional Independiente',
-		description: [
-			<Typography key={0} component='li' variant='body2'>
-				Desarrollo y mantenimiento de{' '}
-				<Link href='#mic' onClick={(e) => scrollToProject(e, 'mic')}>
-					MIC - Mapa Interactivo Cultural
-				</Link>{' '}
-				desde cero hasta su despliegue en producción.
-			</Typography>,
-			<Typography key={1} component='li' variant='body2'>
-				Trabajo en equipo de forma <strong>remota</strong>, asegurando la
-				implementación de nuevas funcionalidades y la optimización del sistema.
-			</Typography>,
-			<Typography key={2} component='li' variant='body2'>
-				Trabajo <strong>Full Stack</strong>, siguiendo metodologías ágiles (
-				<strong>Scrum</strong>).
-			</Typography>,
-		],
-	},
-	{
-		title: 'ANPPV - Área Natural Protegida Península Valdés',
-		period: 'Marzo 2022 - Diciembre 2022',
-		role: 'Desarrollador Full Stack - Profesional Independiente',
-		description: [
-			<Typography key={0} component='li' variant='body2'>
-				Desarrollo del{' '}
-				<Link href='#anp' onClick={(e) => scrollToProject(e, 'anp')}>
-					Sistema de encuestas dinámicas para la Península Valdés
-				</Link>{' '}
-				y subsistemas de <strong>gestión e información</strong> para la
-				administración del área protegida.
-			</Typography>,
-			<Typography key={1} component='li' variant='body2'>
-				Implementación de funcionalidades clave para mejorar el manejo de{' '}
-				<strong>datos ambientales y operativos</strong>.
-			</Typography>,
-			<Typography key={2} component='li' variant='body2'>
-				Trabajo en equipo de forma <strong>híbrida</strong>.
-			</Typography>,
-		],
-	},
-];
+import { Trans, useTranslation } from 'react-i18next';
 
 const scrollToProject = (e: React.MouseEvent, projectId: string) => {
 	e.preventDefault();
@@ -81,6 +34,7 @@ const ExperienceSection = () => {
 	const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>(
 		{}
 	);
+	const { t } = useTranslation();
 
 	const toggleExpand = (index: number) => {
 		setExpandedItems((prev) => ({
@@ -88,6 +42,81 @@ const ExperienceSection = () => {
 			[index]: !prev[index],
 		}));
 	};
+
+	const experiences = [
+		{
+			title: t('experience.items.camad.title'),
+			period: t('experience.items.camad.period'),
+			role: t('experience.items.camad.role'),
+			description: [
+				<Typography key='1' component='li' variant='body2' mt={2}>
+					<Trans
+						i18nKey='experience.items.camad.description.1'
+						components={{
+							link: (
+								<Link href='#mic' onClick={(e) => scrollToProject(e, 'mic')}>
+									{/* El contenido dentro de <link> se pasa automáticamente aquí */}
+								</Link>
+							),
+							strong: <strong />,
+						}}
+					/>
+				</Typography>,
+				<Typography key='2' component='li' variant='body2'>
+					<Trans
+						i18nKey='experience.items.camad.description.2'
+						components={{
+							strong: <strong />,
+						}}
+					/>
+				</Typography>,
+				<Typography key='3' component='li' variant='body2'>
+					<Trans
+						i18nKey='experience.items.camad.description.3'
+						components={{
+							strong: <strong />,
+						}}
+					/>
+				</Typography>,
+			],
+		},
+		{
+			title: t('experience.items.anppv.title'),
+			period: t('experience.items.anppv.period'),
+			role: t('experience.items.anppv.role'),
+			description: [
+				<Typography key='1' component='li' variant='body2' mt={2}>
+					<Trans
+						i18nKey='experience.items.anppv.description.1'
+						components={{
+							link: (
+								<Link href='#anp' onClick={(e) => scrollToProject(e, 'anp')}>
+									{/* El contenido dentro de <link> se pasa automáticamente aquí */}
+								</Link>
+							),
+							strong: <strong />,
+						}}
+					/>
+				</Typography>,
+				<Typography key='2' component='li' variant='body2'>
+					<Trans
+						i18nKey='experience.items.anppv.description.2'
+						components={{
+							strong: <strong />,
+						}}
+					/>
+				</Typography>,
+				<Typography key='3' component='li' variant='body2'>
+					<Trans
+						i18nKey='experience.items.anppv.description.3'
+						components={{
+							strong: <strong />,
+						}}
+					/>
+				</Typography>,
+			],
+		},
+	];
 
 	return (
 		<Box id='experience' my={4}>
@@ -98,7 +127,7 @@ const ExperienceSection = () => {
 				mb={4}
 				fontFamily={'Consolas, monospace'}
 			>
-				Experiencia laboral
+				{t('experience.title')}
 			</Typography>
 			<Timeline position='right'>
 				{experiences.map((exp, index) => (

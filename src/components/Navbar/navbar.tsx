@@ -11,19 +11,25 @@ import {
 	alpha,
 } from '@mui/material';
 import { Home, Work, Code, Mail, LaptopChromebook } from '@mui/icons-material';
-
-const sections = [
-	{ id: 'hero', title: 'Inicio', icon: <Home /> },
-	{ id: 'experience', title: 'Experiencia', icon: <Work /> },
-	{ id: 'projects', title: 'Proyectos', icon: <Code /> },
-	{ id: 'technologies', title: 'Tecnologías', icon: <LaptopChromebook /> },
-	{ id: 'contact', title: 'Contacto', icon: <Mail /> },
-];
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const [opacity, setOpacity] = useState(1); // Estado para la opacidad
+	const { t } = useTranslation();
+
+	const sections = [
+		{ id: 'hero', title: t('hero.title'), icon: <Home /> },
+		{ id: 'experience', title: t('experience.title'), icon: <Work /> },
+		{ id: 'projects', title: t('projects.title'), icon: <Code /> },
+		{
+			id: 'technologies',
+			title: t('technologies.title'),
+			icon: <LaptopChromebook />,
+		},
+		{ id: 'contact', title: t('contact.title'), icon: <Mail /> },
+	];
 
 	useEffect(() => {
 		const handleScroll = () => {

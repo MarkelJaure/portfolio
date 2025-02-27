@@ -5,6 +5,12 @@ const TypewriterText = ({ text }: { text: string }) => {
 	const [displayText, setDisplayText] = useState('');
 	const [currentIndex, setCurrentIndex] = useState(0);
 
+	// Reiniciar el efecto cuando el texto cambie
+	useEffect(() => {
+		setDisplayText(''); // Reiniciar el texto mostrado
+		setCurrentIndex(0); // Reiniciar el índice
+	}, [text]);
+
 	useEffect(() => {
 		if (currentIndex < text.length) {
 			const timeout = setTimeout(() => {

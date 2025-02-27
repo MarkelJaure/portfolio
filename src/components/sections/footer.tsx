@@ -1,11 +1,13 @@
 import { Typography, Box, Link, Container } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { useTranslation } from 'react-i18next';
 
 const data = {
 	name: 'Markel Jaureguibehere',
-	repoUrl: 'https://github.com/MarkelJaure/portfolio', // Reemplaza con la URL real de tu repositorio
+	repoUrl: 'https://github.com/MarkelJaure/portfolio',
 };
 const Footer = () => {
+	const { t } = useTranslation();
 	return (
 		<Box component='footer' py={3} bgcolor='background.paper'>
 			<Container maxWidth='sm'>
@@ -27,7 +29,7 @@ const Footer = () => {
 				>
 					<GitHubIcon />
 					<Typography variant='body2' color='text.secondary'>
-						Ver código fuente
+						{t('footer.source')}
 					</Typography>
 				</Link>
 			</Container>

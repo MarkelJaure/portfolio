@@ -28,7 +28,7 @@ const ImageSlider = ({ images, type }: any) => {
 						position: 'relative',
 						width: '100%',
 						height: '100%',
-						overflow: 'hidden',
+						overflow: 'auto',
 						transition: 'transform 0.3s ease-in-out',
 						'&:hover': {
 							transform: 'scale(1.05)', // Aplica a todas las imágenes

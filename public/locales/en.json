@@ -1,0 +1,87 @@
+{
+	"hero": {
+		"title": "Home",
+		"name": "Markel Jaureguibehere",
+		"description": "Fullstack Developer | Bachelor in Computer Science",
+		"buttons": {
+			"viewCv": "View CV",
+			"github": "GitHub",
+			"linkedin": "LinkedIn"
+		}
+	},
+	"aboutMe": {
+		"title": "About Me",
+		"description1": "<highlight>Software Developer with over 4 years of experience</highlight>, originally from <strong>Puerto Madryn, Argentina</strong> <flag/>. Passionate about new technologies and both web and mobile development.",
+		"description2": "<highlight>Graduated as a <strong>Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently <strong>available for work</strong>, motivated to keep learning and grow professionally."
+	},
+	"experience": {
+		"title": "Experience",
+		"items": {
+			"camad": {
+				"title": "Chamber of Industry, Commerce, Production and Tourism of Puerto Madryn",
+				"period": "June 2023 - PRESENT",
+				"role": "Semi-Senior Developer - Independent Professional",
+				"description": {
+					"1": "Development and maintenance of <link>MIC - Interactive Cultural Map</link> from scratch to its deployment in production.",
+					"2": "Teamwork <strong>remotely</strong>, ensuring the implementation of new features and system optimization.",
+					"3": "<strong>Full Stack</strong> work, following agile methodologies (<strong>Scrum</strong>)."
+				}
+			},
+			"anppv": {
+				"title": "ANPPV - Peninsula Valdés Protected Natural Area",
+				"period": "March 2022 - December 2022",
+				"role": "Full Stack Developer - Independent Professional",
+				"description": {
+					"1": "Development of the <link>Dynamic Survey System for Península Valdés</link> and <strong>management and information</strong> subsystems for the administration of the protected area.",
+					"2": "Implementation of key features to improve the management of <strong>environmental and operational data</strong>.",
+					"3": "Teamwork in a <strong>hybrid</strong> environment."
+				}
+			}
+		}
+	},
+	"projects": {
+		"title": "Projects",
+		"items": {
+			"mic": {
+				"title": "MIC - Interactive Cultural Map",
+				"description": "<strong>PWA</strong> application designed to centralize <strong>culture</strong>, <strong>sports</strong>, and <strong>tourism</strong> in one place. It facilitates access to <strong>cultural</strong> events and activities in your city, promoting local <strong>cultural</strong> participation and consumption. Available on the web and on <strong>Google Play</strong>."
+			},
+			"tesina": {
+				"title": "Dynamic Topic Modeling in Chubut News",
+				"description": "Undergraduate thesis project in <strong>Bachelor in Computer Science</strong>. News analysis system that identifies predominant topics in <strong>Chubut</strong> media and their evolution over time. It uses <strong>Machine Learning (ML)</strong> and advanced <em>Natural Language Processing</em> techniques for <strong>topic modeling</strong>."
+			},
+			"anp": {
+				"title": "Dynamic Survey System for Peninsula Valdés",
+				"description": "Web platform designed to collect visitor experiences in Peninsula Valdés. The <strong>dynamic survey system</strong> adapts in real-time to users' responses. It includes internationalization and statistical indicator visualization."
+			},
+			"vaidika": {
+				"title": "Vaidika - Yoga in Madryn",
+				"description": "Vaidika is an <strong>E-Learning</strong> website for yoga practice in Madryn. It features a <strong>Backoffice</strong> for uploading courses, modules, and classes, and a <strong>User App</strong> with login to access courses. Deployed in production via <strong>Ferozo</strong>."
+			},
+			"cubegraph": {
+				"title": "CubeGraph - Rubik's Practices",
+				"description": "Personal <strong>side project</strong> developed as an opportunity to learn and improve the use of web technologies. CubeGraph is an interactive platform for <em>Rubik's Cube</em> enthusiasts, where they can train with resolution timers, 1vs1 local competitions, and analyze their progress with <strong>detailed statistics</strong>."
+			}
+		}
+	},
+	"technologies": {
+		"title": "Technologies",
+		"items": {
+			"frontend": "Frontend",
+			"backend": "Backend",
+			"database": "Databases",
+			"tools": "Tools"
+		}
+	},
+	"moreAboutMe": {
+		"title": "More About Me",
+		"description": "For a large part of my life, I have been involved in <strong>Handball</strong> and <strong>Beach Handball</strong> as a player. Therefore, I have <highlight>over 5 years of experience</highlight> as a coordinator and coach of all categories at the club <strong>J. L. Grilli</strong> in the field of <strong>Beach Handball</strong> during the summer seasons."
+	},
+	"contact": {
+		"title": "Contact",
+		"greeting": "Let's talk! Write to me at"
+	},
+	"footer": {
+		"source": "Source code"
+	}
+}

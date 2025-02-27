@@ -1,11 +1,14 @@
 import { Typography, Box, Link } from '@mui/material';
-
-const contact = {
-	title: 'Contacto',
-	email: 'markeljaure2000@gmail.com',
-};
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
+	const { t } = useTranslation();
+
+	const contact = {
+		title: t('contact.title'),
+		email: 'markeljaure2000@gmail.com',
+	};
+
 	return (
 		<Box id='contact' my={4} textAlign='center'>
 			<Typography
@@ -16,7 +19,7 @@ const ContactSection = () => {
 				{contact.title}
 			</Typography>
 			<Typography variant='body1' mt={2} fontFamily={'Consolas, monospace'}>
-				¡Hablemos! Escríbeme a{' '}
+				{t('contact.greeting')}{' '}
 				<Link
 					href={`mailto:${contact.email}`}
 					color='primary'

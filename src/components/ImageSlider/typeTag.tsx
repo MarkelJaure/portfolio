@@ -4,10 +4,14 @@ import WorkIcon from '@mui/icons-material/Work';
 
 const type_enum: { [key: string]: { icon: React.ReactElement } } = {
 	Personal: { icon: <PersonIcon sx={{ color: 'text.primary' }} /> },
-	Trabajo: { icon: <WorkIcon sx={{ color: 'text.primary' }} /> },
+	Laboral: { icon: <WorkIcon sx={{ color: 'text.primary' }} /> },
 };
 
 const TypeTag = ({ type }: { type: string }) => {
+	const typeData = type_enum[type];
+
+	if (!typeData) return null; // Si no existe, no renderiza nada
+
 	return (
 		<Box
 			sx={{
