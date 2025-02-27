@@ -3,7 +3,7 @@
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../styles/theme';
 import { Analytics } from '@vercel/analytics/next';
-import '../../i18'; // Importa la configuración de i18next
+import { I18nProvider } from './I18nProvider';
 
 export default function RootLayout({
 	children,
@@ -23,11 +23,13 @@ export default function RootLayout({
 				<link rel='icon' href='/favicon.ico' />
 			</head>
 			<body>
-				<ThemeProvider theme={theme}>
-					<CssBaseline />
-					<Analytics />
-					<div style={{ position: 'relative', zIndex: 10 }}>{children}</div>
-				</ThemeProvider>
+				<I18nProvider>
+					<ThemeProvider theme={theme}>
+						<CssBaseline />
+						<Analytics />
+						<div style={{ position: 'relative', zIndex: 10 }}>{children}</div>
+					</ThemeProvider>
+				</I18nProvider>
 			</body>
 		</html>
 	);

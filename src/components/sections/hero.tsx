@@ -18,7 +18,7 @@ import {
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import TypewriterText from '../TypewiterText/TypewriterText';
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
 import { changeLanguage } from 'i18next';
 

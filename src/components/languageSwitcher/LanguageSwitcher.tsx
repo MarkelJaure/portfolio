@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, MenuItem, IconButton, Button } from '@mui/material';
+import { Menu, MenuItem, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Flag from 'react-world-flags';
 import { useTranslation } from 'react-i18next';
