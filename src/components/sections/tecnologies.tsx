@@ -64,7 +64,7 @@ const TechnologyCard = ({ tech, index }: TechnologyProps) => {
 						}}
 						sx={{
 							p: 1,
-							borderRadius: '50%',
+							borderRadius: 2,
 							backgroundColor: theme.palette.background.default,
 							display: 'flex',
 							alignItems: 'center',

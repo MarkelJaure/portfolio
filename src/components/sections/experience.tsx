@@ -145,9 +145,10 @@ const ExperienceSection = () => {
 									p: 2,
 									mb: 2,
 									borderLeft: '2px solid',
-									borderColor: 'primary.main',
+									borderColor: 'highlight.secondary',
 									backgroundColor: 'background.paper',
 									boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+									borderRadius: 2,
 									transition: 'all 0.3s ease',
 									'&:hover': {
 										transform: 'translateY(-5px)',

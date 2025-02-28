@@ -60,20 +60,24 @@
 				"description": "Plataforma web diseñada para recopilar la experiencia de los visitantes en Península Valdés. El <strong>sistema de encuestas dinámico</strong> se adapta en tiempo real a las respuestas de los usuarios. Cuenta con internacionalización y visualización de indicadores estadísticos."
 			},
 			"vaidika": {
-				"title": "Vaidika - Yoga en Madryn",
+				"title": "Vaidika",
+				"titleExtended": "Vaidika - Yoga en Madryn",
 				"description": "Vaidika es una página de <strong>E-Learning</strong> para la práctica de yoga en Madryn. Cuenta con un <strong>Backoffice</strong> para la carga de cursos, módulos y clases, y una <strong>User App</strong> con login para el consumo de cursos. Desplegada en producción a través de <strong>Ferozo</strong>."
 			},
 			"cubegraph": {
-				"title": "CubeGraph - Prácticas de Rubik",
+				"title": "CubeGraph",
+				"titleExtended": "CubeGraph - Prácticas de Rubik",
 				"description": "<strong>Side project</strong> personal desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
 			},
 			"mapyzer": {
 				"title": "Mapyzer",
-				"description": "Aplicación Web que permite visualizar datos geolocalizados con validez temporal. Permite la visualización en mapa/tabla, la creación de 'Proyectos' para la administración de datos y la importación/exportación de archivos de datos."
+				"titleExtended": "Mapyzer - Visualizador espacio-temporal",
+				"description": "Aplicación Web que permite <strong>visualizar datos geolocalizados con validez temporal</strong>. Permite la visualización en mapa/tabla, la creación de 'Proyectos' para la administración de datos y la importación/exportación de archivos de datos."
 			},
 			"fishing-app": {
 				"title": "Fishing App",
-				"description": "Aplicación de pesca desarrollada como proyecto para la materia 'Taller de nuevas tecnologías'. Permite la creación de perfiles de pescadores, carga y visualización de reportes de pesca, y Geofencing para el seguimiento de zonas de pesca."
+				"titleExtended": "Fishing App - Aplicacion de pesca",
+				"description": "<strong>Aplicación nativa para Android</strong> desarrollada como proyecto para la materia 'Taller de nuevas tecnologías'. Permite la creación de perfiles de pescadores, carga y visualización de reportes de pesca, y Geofencing para el seguimiento de zonas de pesca."
 			}
 		}
 	},

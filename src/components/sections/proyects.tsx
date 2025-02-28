@@ -14,6 +14,7 @@ import ProjectCard from '../ProyectCard/ProyectCard';
 type ProjectCardProps = {
 	id: string;
 	title: string;
+	titleExtended?: string;
 	description: any;
 	images: string[];
 	tools: { name: string; icon: React.ReactElement }[];
@@ -85,6 +86,7 @@ const ProyectsSection = () => {
 		{
 			id: 'vaidika',
 			title: t('projects.items.vaidika.title'),
+			titleExtended: t('projects.items.vaidika.titleExtended'),
 			description: (
 				<Trans
 					i18nKey='projects.items.vaidika.description'
@@ -102,6 +104,7 @@ const ProyectsSection = () => {
 		{
 			id: 'cubegraph',
 			title: t('projects.items.cubegraph.title'),
+			titleExtended: t('projects.items.cubegraph.titleExtended'),
 			description: (
 				<Trans
 					i18nKey='projects.items.cubegraph.description'
@@ -120,6 +123,7 @@ const ProyectsSection = () => {
 		{
 			id: 'mapyzer',
 			title: t('projects.items.mapyzer.title'),
+			titleExtended: t('projects.items.mapyzer.titleExtended'),
 			description: (
 				<Trans
 					i18nKey='projects.items.mapyzer.description'
@@ -137,6 +141,7 @@ const ProyectsSection = () => {
 		{
 			id: 'fishing-app',
 			title: t('projects.items.fishing-app.title'),
+			titleExtended: t('projects.items.fishing-app.titleExtended'),
 			description: (
 				<Trans
 					i18nKey='projects.items.fishing-app.description'

@@ -11,7 +11,7 @@ const SecondaryProjectsSection = ({ projects }: { projects: any[] }) => {
 					overflowX: 'auto',
 					pb: 1,
 					'&::-webkit-scrollbar': { height: 6 },
-					'&::-webkit-scrollbar-thumb': { background: '#888', borderRadius: 3 },
+					'&::-webkit-scrollbar-thumb': { background: '#888', borderRadius: 2 },
 				}}
 			>
 				{projects.map((project) => (
