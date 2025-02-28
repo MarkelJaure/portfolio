@@ -25,7 +25,7 @@ const LanguageSwitcher = ({
 	};
 
 	return (
-		<div style={{ display: 'flex', alignItems: 'center' }}>
+		<div>
 			<motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
 				<Button onClick={handleClick} style={{ padding: 0 }}>
 					<Flag

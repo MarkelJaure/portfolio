@@ -183,6 +183,8 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								textAlign: 'center',
 								marginBottom: 1,
 								fontSize: '1.1rem',
+								lineHeight: '1.5', // Ajusta el interlineado para que sea legible
+								height: '3em', // 2 líneas (1.5em por línea)
 							}}
 						>
 							{project.titleExtended || project.title}

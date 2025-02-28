@@ -133,7 +133,7 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 							gap={2}
 							flexWrap='wrap'
 							justifyContent={isMobile ? 'center' : 'flex-start'}
-							mt={3}
+							mt={1}
 						>
 							<AnimatePresence>
 								{info.buttons.map((button, index) => (
@@ -164,7 +164,14 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 										{darkMode ? <LightMode /> : <DarkMode />}
 									</IconButton>
 								</motion.div>
-								<LanguageSwitcher changeLanguage={changeLanguage} />
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									transition={{ duration: 0.5, delay: 2 }}
+									style={{ display: 'flex', alignItems: 'center' }}
+								>
+									<LanguageSwitcher changeLanguage={changeLanguage} />
+								</motion.div>
 							</AnimatePresence>
 						</Box>
 					</Box>
