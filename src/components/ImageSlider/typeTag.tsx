@@ -3,8 +3,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import WorkIcon from '@mui/icons-material/Work';
 
 const type_enum: { [key: string]: { icon: React.ReactElement } } = {
-	Personal: { icon: <PersonIcon sx={{ color: 'text.primary' }} /> },
-	Laboral: { icon: <WorkIcon sx={{ color: 'text.primary' }} /> },
+	Personal: { icon: <PersonIcon sx={{ color: 'white' }} /> },
+	Laboral: { icon: <WorkIcon sx={{ color: 'white' }} /> },
+	Work: { icon: <WorkIcon sx={{ color: 'white' }} /> },
 };
 
 const TypeTag = ({ type }: { type: string }) => {
@@ -19,7 +20,7 @@ const TypeTag = ({ type }: { type: string }) => {
 				bottom: 10,
 				right: 10,
 				zIndex: 10,
-				bgcolor: '#3b82f6',
+				bgcolor: 'primary.main',
 				borderRadius: 10,
 				padding: '0.25rem 0.75rem',
 				color: 'black',
@@ -33,7 +34,7 @@ const TypeTag = ({ type }: { type: string }) => {
 			<Typography
 				variant='body2'
 				sx={{ pointerEvents: 'none' }}
-				color='text.primary'
+				color='white'
 				fontStyle={'bold'}
 			>
 				{type}

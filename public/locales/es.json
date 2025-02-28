@@ -41,6 +41,11 @@
 	},
 	"projects": {
 		"title": "Proyectos",
+		"secondaryTitle": "Otros Proyectos...",
+		"types": {
+			"work": "Laboral",
+			"personal": "Personal"
+		},
 		"items": {
 			"mic": {
 				"title": "MIC - Mapa Interactivo Cultural",
@@ -61,6 +66,14 @@
 			"cubegraph": {
 				"title": "CubeGraph - Prácticas de Rubik",
 				"description": "<strong>Side project</strong> personal desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
+			},
+			"mapyzer": {
+				"title": "Mapyzer",
+				"description": "Aplicación Web que permite visualizar datos geolocalizados con validez temporal. Permite la visualización en mapa/tabla, la creación de 'Proyectos' para la administración de datos y la importación/exportación de archivos de datos."
+			},
+			"fishing-app": {
+				"title": "Fishing App",
+				"description": "Aplicación de pesca desarrollada como proyecto para la materia 'Taller de nuevas tecnologías'. Permite la creación de perfiles de pescadores, carga y visualización de reportes de pesca, y Geofencing para el seguimiento de zonas de pesca."
 			}
 		}
 	},

@@ -42,7 +42,7 @@ type HeroSectionProps = {
 const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	const info: InfoType = {
 		title: t('hero.name'),
@@ -51,7 +51,7 @@ const HeroSection = ({ toggleDarkMode, darkMode }: HeroSectionProps) => {
 			{
 				label: t('hero.buttons.viewCv'),
 				icon: <Description />,
-				href: '/cv.pdf',
+				href: `/cv-${i18n.language}.pdf`,
 				color: 'secondary',
 			},
 			{
