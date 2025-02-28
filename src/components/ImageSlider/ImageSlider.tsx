@@ -31,7 +31,7 @@ const ImageSlider = ({ images, type }: any) => {
 						overflow: 'hidden',
 						transition: 'transform 0.3s ease-in-out',
 						'&:hover': {
-							transform: 'scale(1.05)', // Aplica a todas las imágenes
+							transform: 'scale(1.05)',
 						},
 					}}
 				>

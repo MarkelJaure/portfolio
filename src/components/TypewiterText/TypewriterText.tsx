@@ -5,10 +5,9 @@ const TypewriterText = ({ text }: { text: string }) => {
 	const [displayText, setDisplayText] = useState('');
 	const [currentIndex, setCurrentIndex] = useState(0);
 
-	// Reiniciar el efecto cuando el texto cambie
 	useEffect(() => {
-		setDisplayText(''); // Reiniciar el texto mostrado
-		setCurrentIndex(0); // Reiniciar el índice
+		setDisplayText('');
+		setCurrentIndex(0);
 	}, [text]);
 
 	useEffect(() => {
@@ -16,7 +15,7 @@ const TypewriterText = ({ text }: { text: string }) => {
 			const timeout = setTimeout(() => {
 				setDisplayText((prev) => prev + text[currentIndex]);
 				setCurrentIndex((prev) => prev + 1);
-			}, 50); // Velocidad de escritura
+			}, 50);
 
 			return () => clearTimeout(timeout);
 		}

@@ -57,7 +57,6 @@ const technologies = [
 	{ name: 'Firebase', icon: <SiFirebase size={20} color='#FFCA28' /> },
 ];
 
-// Hook personalizado para filtrar las tecnologías
 const useTechnologies = (techNames: string[]) => {
 	return useMemo(() => {
 		return technologies.filter((tech) => techNames.includes(tech.name));

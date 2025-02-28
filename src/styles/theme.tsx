@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-// Extender el tipo de Theme en MUI para incluir "highlight"
 declare module '@mui/material/styles' {
 	interface Palette {
 		highlight: Palette['text'];
@@ -34,8 +33,8 @@ const lightTheme = createTheme({
 			main: '#43a047',
 		},
 		highlight: {
-			primary: '#FF5722', // Naranja de resaltado
-			secondary: '#1565c0', // Naranja de resaltado
+			primary: '#FF5722',
+			secondary: '#1565c0',
 		},
 	},
 

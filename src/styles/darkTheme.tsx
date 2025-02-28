@@ -4,29 +4,29 @@ const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
 		primary: {
-			main: '#1f6feb', // Azul eléctrico
+			main: '#1f6feb',
 		},
 		secondary: {
-			main: '#3ddc97', // Verde menta
+			main: '#3ddc97',
 			light: '#434343',
 		},
 		background: {
-			default: '#0d1117', // Azul oscuro (GitHub Dark)
-			paper: '#161b22', // Gris grafito,
+			default: '#0d1117',
+			paper: '#161b22',
 		},
 		text: {
-			primary: '#eaeaea', // Gris claro
-			secondary: '#b0b0b0', // Gris medio
+			primary: '#eaeaea',
+			secondary: '#b0b0b0',
 		},
 		error: {
-			main: '#ff4c4c', // Rojo intenso
+			main: '#ff4c4c',
 		},
 		success: {
-			main: '#4caf50', // Verde lima
+			main: '#4caf50',
 		},
 		highlight: {
-			primary: '#FF9800', // Naranja de resaltado
-			secondary: '#FF9800', // Naranja de resaltado
+			primary: '#FF9800',
+			secondary: '#FF9800',
 		},
 	},
 	typography: {

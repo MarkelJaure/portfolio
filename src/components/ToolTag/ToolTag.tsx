@@ -20,7 +20,7 @@ const ToolTag = ({ name, icon }: Props) => {
 				transition: 'background-color 0.3s',
 
 				'&:hover': {
-					backgroundColor: icon.props.color + '30', // Light variation of the icon color
+					backgroundColor: icon.props.color + '30',
 				},
 			}}
 		>

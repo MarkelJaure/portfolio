@@ -16,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 const Navbar = () => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-	const [opacity, setOpacity] = useState(1); // Estado para la opacidad
+	const [opacity, setOpacity] = useState(1);
 	const { t } = useTranslation();
 
 	const sections = [
@@ -34,7 +34,6 @@ const Navbar = () => {
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollY = window.scrollY;
-			// Ajustamos la opacidad: 1 en la parte superior, 0.8 al hacer scroll
 			setOpacity(scrollY > 50 ? 0.7 : 1);
 		};
 
@@ -45,12 +44,12 @@ const Navbar = () => {
 	const handleScrollToSection = (id: string) => {
 		const section = document.getElementById(id);
 		if (section) {
-			const navbarHeight = document.querySelector('header')?.offsetHeight || 0; // Obtiene la altura del AppBar
+			const navbarHeight = document.querySelector('header')?.offsetHeight || 0;
 			const sectionTop =
 				section.getBoundingClientRect().top +
 				window.scrollY -
 				navbarHeight -
-				10; // Ajusta el margen superior
+				10;
 
 			window.scrollTo({
 				top: sectionTop,
@@ -63,7 +62,7 @@ const Navbar = () => {
 		<AppBar
 			position='sticky'
 			sx={{
-				backgroundColor: alpha(theme.palette.primary.main, opacity), // Usa opacidad en el color del theme
+				backgroundColor: alpha(theme.palette.primary.main, opacity),
 				transition: 'all 0.3s ease',
 				backdropFilter: 'blur(4px)',
 			}}

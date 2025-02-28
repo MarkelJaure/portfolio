@@ -38,7 +38,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 				alignItems: 'center',
 				gap: 1,
 			}}
-			// onMouseEnter={handleFlip}
 		>
 			<motion.div
 				animate={{ rotateY: flipped ? 180 : 0 }}
@@ -52,7 +51,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 				}}
 				onAnimationComplete={() => setIsAnimating(false)}
 			>
-				{/* Card frontal */}
 				<Box
 					sx={{
 						backfaceVisibility: 'hidden',
@@ -153,7 +151,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 					</Card>
 				</Box>
 
-				{/* Card posterior */}
 				<Box
 					sx={{
 						backfaceVisibility: 'hidden',
@@ -183,8 +180,8 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								textAlign: 'center',
 								marginBottom: 1,
 								fontSize: '1.1rem',
-								lineHeight: '1.5', // Ajusta el interlineado para que sea legible
-								height: '3em', // 2 líneas (1.5em por línea)
+								lineHeight: '1.5',
+								height: '3em',
 							}}
 						>
 							{project.titleExtended || project.title}

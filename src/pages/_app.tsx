@@ -15,7 +15,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 
-				{/* Open Graph Meta Tags */}
 				<meta property='og:title' content='Markel Jaureguibehere - Portfolio' />
 				<meta
 					property='og:description'
@@ -28,7 +27,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta property='og:type' content='website' />
 
-				{/* Twitter Card Meta Tags */}
 				<meta name='twitter:card' content='summary_large_image' />
 				<meta
 					name='twitter:title'
@@ -41,7 +39,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 				<meta name='twitter:image' content='/profile.jpeg' />
 				<meta name='twitter:site' content='@MarkelTee' />
 
-				{/* Configuración para SEO y compatibilidad */}
 				<meta name='robots' content='index, follow' />
 				<meta name='author' content='Markel Jaureguibehere' />
 			</Head>

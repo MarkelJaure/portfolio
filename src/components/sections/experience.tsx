@@ -54,9 +54,10 @@ const ExperienceSection = () => {
 						i18nKey='experience.items.camad.description.1'
 						components={{
 							link: (
-								<Link href='#mic' onClick={(e) => scrollToProject(e, 'mic')}>
-									{/* El contenido dentro de <link> se pasa automáticamente aquí */}
-								</Link>
+								<Link
+									href='#mic'
+									onClick={(e) => scrollToProject(e, 'mic')}
+								></Link>
 							),
 							strong: <strong />,
 						}}
@@ -90,9 +91,10 @@ const ExperienceSection = () => {
 						i18nKey='experience.items.anppv.description.1'
 						components={{
 							link: (
-								<Link href='#anp' onClick={(e) => scrollToProject(e, 'anp')}>
-									{/* El contenido dentro de <link> se pasa automáticamente aquí */}
-								</Link>
+								<Link
+									href='#anp'
+									onClick={(e) => scrollToProject(e, 'anp')}
+								></Link>
 							),
 							strong: <strong />,
 						}}

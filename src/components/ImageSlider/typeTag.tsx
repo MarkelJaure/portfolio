@@ -11,7 +11,7 @@ const type_enum: { [key: string]: { icon: React.ReactElement } } = {
 const TypeTag = ({ type }: { type: string }) => {
 	const typeData = type_enum[type];
 
-	if (!typeData) return null; // Si no existe, no renderiza nada
+	if (!typeData) return null;
 
 	return (
 		<Box

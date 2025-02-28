@@ -6,7 +6,6 @@ import useTechnologies from '@/hooks/useTecnologies';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-// Componente animado para el icono
 const AnimatedIcon = motion(Box);
 
 type Tech = {

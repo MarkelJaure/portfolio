@@ -1,4 +1,3 @@
-// Background.tsx
 import { motion } from 'framer-motion';
 import { Box } from '@mui/material';
 
