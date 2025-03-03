@@ -23,6 +23,7 @@ const darkTheme = createTheme({
 		},
 		success: {
 			main: '#4caf50',
+			light: '#3ddc97',
 		},
 		highlight: {
 			primary: '#FF9800',

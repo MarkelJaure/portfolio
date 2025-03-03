@@ -1,5 +1,6 @@
 import { Box, Typography, Grid } from '@mui/material';
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import TranslatedTypography from '../TranslatedTypography/TranslatedTypography';
 
 const MoreAboutMe = () => {
 	const { t } = useTranslation();
@@ -7,20 +8,12 @@ const MoreAboutMe = () => {
 	const moreAboutMe = {
 		title: t('moreAboutMe.title'),
 		description: [
-			<Typography key='1' variant='body1' align='center' mt={2}>
-				<Trans
-					i18nKey='moreAboutMe.description'
-					components={{
-						highlight: (
-							<Typography
-								component='span'
-								sx={{ color: 'highlight.primary' }}
-							/>
-						),
-						strong: <strong />,
-					}}
-				/>
-			</Typography>,
+			<TranslatedTypography
+				key='1'
+				i18nKey='moreAboutMe.description'
+				textAlign='center'
+				mt={2}
+			/>,
 		],
 		videos: ['/beach2.mp4', '/beach.mp4', '/beach3.mp4'],
 	};

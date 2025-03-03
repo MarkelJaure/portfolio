@@ -82,14 +82,29 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 						elevation={3}
 						sx={{
 							width: 250,
+							height: 169,
 							padding: 1,
 							display: 'flex',
 							flexDirection: 'column',
 							alignItems: 'center',
 						}}
 					>
-						<CardContent sx={{ flex: 1, textAlign: 'center', p: 1 }}>
-							<Typography variant='subtitle2' fontWeight='bold' noWrap>
+						<CardContent
+							sx={{ flex: 1, textAlign: 'center', p: 1, width: '100%' }}
+						>
+							<Typography
+								variant='h6'
+								fontWeight='bold'
+								sx={{
+									fontSize: '1.1rem',
+									lineHeight: 1.2,
+									display: '-webkit-box',
+									WebkitLineClamp: 2,
+									WebkitBoxOrient: 'vertical',
+									overflow: 'hidden',
+									textOverflow: 'ellipsis',
+								}}
+							>
 								{project.title}
 							</Typography>
 
@@ -106,7 +121,7 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 							</Stack>
 						</CardContent>
 
-						<CardActions sx={{ justifyContent: 'center', p: 1 }}>
+						<CardActions sx={{ justifyContent: 'center', p: 1, mt: 'auto' }}>
 							{project.previewUrl && (
 								<IconButton
 									href={project.previewUrl}
@@ -146,7 +161,7 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 							)}
 						</CardActions>
 						<Button size='small' onClick={handleFlip}>
-							{flipped ? 'Volver' : 'Ver más'}
+							{t('projects.buttons.viewMore')}
 						</Button>
 					</Card>
 				</Box>
@@ -168,8 +183,7 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 							height: 327,
 							display: 'flex',
 							flexDirection: 'column',
-							alignItems: 'center',
-							justifyContent: 'center',
+
 							padding: 2,
 						}}
 					>
@@ -178,35 +192,44 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 							fontWeight='bold'
 							sx={{
 								textAlign: 'center',
-								marginBottom: 1,
+								marginBottom: 2,
 								fontSize: '1.1rem',
-								lineHeight: '1.5',
-								height: '3em',
+								lineHeight: '1.2',
+								height: '2.4em',
+								display: '-webkit-box',
+								WebkitLineClamp: 2,
+								WebkitBoxOrient: 'vertical',
+								overflow: 'hidden',
+								textOverflow: 'ellipsis',
 							}}
 						>
 							{project.titleExtended || project.title}
 						</Typography>
-
 						<Typography
 							variant='body2'
 							color='text.secondary'
 							sx={{
 								fontSize: '0.8rem',
 								lineHeight: 1.5,
-								marginBottom: 2,
+								height: '200px', // Aproximadamente 6 líneas de texto
+								overflow: 'hidden',
+								textOverflow: 'ellipsis',
+								display: '-webkit-box',
+								WebkitBoxOrient: 'vertical',
 							}}
 						>
 							{project.description}
 						</Typography>
-
+						<Box sx={{ flexGrow: 1 }} /> {/* Espaciador flexible */}
 						<Button
 							size='small'
 							onClick={handleFlip}
 							sx={{
-								marginTop: 'auto',
+								alignSelf: 'center',
+								mt: 2,
 							}}
 						>
-							{flipped ? 'Volver' : 'Ver más'}
+							{t('projects.buttons.goBack')}
 						</Button>
 					</Card>
 				</Box>

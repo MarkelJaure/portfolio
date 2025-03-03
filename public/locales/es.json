@@ -2,7 +2,7 @@
 	"hero": {
 		"title": "Inicio",
 		"name": "Markel Jaureguibehere",
-		"description": "Fullstack Developer | Licenciado en Informática",
+		"description": "Desarrollador Fullstack | Licenciado en Informática",
 		"buttons": {
 			"viewCv": "Ver CV",
 			"github": "GitHub",
@@ -12,7 +12,7 @@
 	"aboutMe": {
 		"title": "Sobre mí",
 		"description1": "<highlight>Desarrollador de Software con más de 4 años de experiencia</highlight>, originario de <strong>Puerto Madryn, Argentina</strong> <flag/>. Apasionado por las nuevas tecnologías y el desarrollo tanto web como móvil.",
-		"description2": "<highlight>Graduado como <strong>Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <strong>disponible para trabajar</strong>, motivado de seguir aprendiendo y crecer profesionalmente."
+		"description2": "<highlight>Graduado como <strong>Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <green><strong>disponible para trabajar</strong></green>, motivado de seguir aprendiendo y crecer profesionalmente."
 	},
 	"experience": {
 		"title": "Experiencia",
@@ -67,7 +67,7 @@
 			"cubegraph": {
 				"title": "CubeGraph",
 				"titleExtended": "CubeGraph - Prácticas de Rubik",
-				"description": "<strong>Side project</strong> personal desarrollado como una oportunidad para aprender y mejorar el uso de tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
+				"description": "<strong>Side project</strong> personal para practicar tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
 			},
 			"mapyzer": {
 				"title": "Mapyzer",
@@ -79,6 +79,15 @@
 				"titleExtended": "Fishing App - Aplicacion de pesca",
 				"description": "<strong>Aplicación nativa para Android</strong> desarrollada como proyecto para la materia 'Taller de nuevas tecnologías'. Permite la creación de perfiles de pescadores, carga y visualización de reportes de pesca, y Geofencing para el seguimiento de zonas de pesca."
 			}
+		},
+		"buttons": {
+			"preview": "Vista previa",
+			"presentation": "Presentación",
+			"paper": "Paper",
+			"source": "Código fuente",
+			"playstore": "Google Play",
+			"viewMore": "Ver más",
+			"goBack": "Volver"
 		}
 	},
 	"technologies": {

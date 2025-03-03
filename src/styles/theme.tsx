@@ -31,6 +31,7 @@ const lightTheme = createTheme({
 		},
 		success: {
 			main: '#43a047',
+			light: '#2e7d32',
 		},
 		highlight: {
 			primary: '#FF5722',

@@ -7,9 +7,10 @@ import {
 	Divider,
 } from '@mui/material';
 import useTechnologies from '@/hooks/useTecnologies';
-import { Trans, useTranslation } from 'react-i18next';
-import SecondaryProjectsCarousel from '../ProyectCard/SecondaryProjectSection';
-import ProjectCard from '../ProyectCard/ProyectCard';
+import { useTranslation } from 'react-i18next';
+import SecondaryProjectsCarousel from '../ProjectCard/SecondaryProjectSection';
+import ProjectCard from '../ProjectCard/ProjectCard';
+import TranslatedTypography from '../TranslatedTypography/TranslatedTypography';
 
 type ProjectCardProps = {
 	id: string;
@@ -22,6 +23,7 @@ type ProjectCardProps = {
 	presentationUrl?: string;
 	paperUrl?: string;
 	sourceUrl?: string;
+	playstoreUrl?: string;
 	type: 'work' | 'personal';
 	relevance: 'principal' | 'secondary';
 };
@@ -36,16 +38,16 @@ const ProyectsSection = () => {
 			id: 'mic',
 			title: t('projects.items.mic.title'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.mic.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/mic.png'],
 			tools: useTechnologies(['Next.js', 'Nest.js', 'PostgreSQL']),
 			previewUrl: 'https://mapainteractivocultural.ar/',
+			playstoreUrl:
+				'https://play.google.com/store/apps/details?id=ar.mapainteractivocultural.twa&hl=es_AR',
 			type: 'work',
 			relevance: 'principal',
 		},
@@ -53,11 +55,9 @@ const ProyectsSection = () => {
 			id: 'tesina',
 			title: t('projects.items.tesina.title'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.tesina.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/tesina.png'],
@@ -71,11 +71,9 @@ const ProyectsSection = () => {
 			id: 'anp',
 			title: t('projects.items.anp.title'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.anp.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/anp.jpg', 'indicadores.jpeg'],
@@ -88,11 +86,9 @@ const ProyectsSection = () => {
 			title: t('projects.items.vaidika.title'),
 			titleExtended: t('projects.items.vaidika.titleExtended'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.vaidika.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/Vaidika.png'],
@@ -106,11 +102,9 @@ const ProyectsSection = () => {
 			title: t('projects.items.cubegraph.title'),
 			titleExtended: t('projects.items.cubegraph.titleExtended'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.cubegraph.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/cubegraph.png'],
@@ -125,11 +119,9 @@ const ProyectsSection = () => {
 			title: t('projects.items.mapyzer.title'),
 			titleExtended: t('projects.items.mapyzer.titleExtended'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.mapyzer.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/mapyzer.jpeg'],
@@ -143,11 +135,9 @@ const ProyectsSection = () => {
 			title: t('projects.items.fishing-app.title'),
 			titleExtended: t('projects.items.fishing-app.titleExtended'),
 			description: (
-				<Trans
+				<TranslatedTypography
 					i18nKey='projects.items.fishing-app.description'
-					components={{
-						strong: <strong />,
-					}}
+					variant='body2'
 				/>
 			),
 			images: ['/fishing-app-2.jpeg'],

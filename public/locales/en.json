@@ -12,7 +12,7 @@
 	"aboutMe": {
 		"title": "About Me",
 		"description1": "<highlight>Software Developer with over 4 years of experience</highlight>, originally from <strong>Puerto Madryn, Argentina</strong> <flag/>. Passionate about new technologies and both web and mobile development.",
-		"description2": "<highlight>Graduated as a <strong>Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently <strong>available for work</strong>, motivated to keep learning and grow professionally."
+		"description2": "<highlight>Graduated as a <strong>Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently  <green><strong>available for work</strong></green>, motivated to keep learning and grow professionally."
 	},
 	"experience": {
 		"title": "Experience",
@@ -60,21 +60,34 @@
 				"description": "Web platform designed to collect visitor experiences in Peninsula Valdés. The <strong>dynamic survey system</strong> adapts in real-time to users' responses. It includes internationalization and statistical indicator visualization."
 			},
 			"vaidika": {
-				"title": "Vaidika - Yoga in Madryn",
+				"title": "Vaidika",
+				"titleExtended": "Vaidika - Yoga in Madryn",
 				"description": "Vaidika is an <strong>E-Learning</strong> website for yoga practice in Madryn. It features a <strong>Backoffice</strong> for uploading courses, modules, and classes, and a <strong>User App</strong> with login to access courses. Deployed in production via <strong>Ferozo</strong>."
 			},
 			"cubegraph": {
-				"title": "CubeGraph - Rubik's Practices",
-				"description": "Personal <strong>side project</strong> developed as an opportunity to learn and improve the use of web technologies. CubeGraph is an interactive platform for <em>Rubik's Cube</em> enthusiasts, where they can train with resolution timers, 1vs1 local competitions, and analyze their progress with <strong>detailed statistics</strong>."
+				"title": "CubeGraph",
+				"titleExtended": "CubeGraph - Rubik's Practices",
+				"description": "Personal <strong>side project</strong> to practice web technologies. CubeGraph is an interactive platform for <em>Rubik's Cube</em> enthusiasts, where they can train with resolution timers, 1vs1 local competitions, and analyze their progress with <strong>detailed statistics</strong>."
 			},
 			"mapyzer": {
 				"title": "Mapyzer",
+				"titleExtended": "Mapyzer - Space-time Visualizer",
 				"description": "Web application that allows the visualization of geolocated data with temporal validity. It allows the visualization in map/table, the creation of 'Projects' for data management and the import/export of data files."
 			},
 			"fishing-app": {
 				"title": "Fishing App",
+				"titleExtended": "Fishing App - Aplicacion de pesca",
 				"description": "Fishing app developed as a project for the 'New Technologies' class. It allows the creation of fishing profiles, loading and visualization of fishing reports, and Geofencing for the tracking of fishing areas."
 			}
+		},
+		"buttons": {
+			"preview": "Preview",
+			"presentation": "Presentation",
+			"paper": "Paper",
+			"source": "Source",
+			"playstore": "Google Play",
+			"viewMore": "View more",
+			"goBack": "Go back"
 		}
 	},
 	"technologies": {

@@ -12,6 +12,7 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import GoogleIcon from '@mui/icons-material/Google';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import ToolTag from '../ToolTag/ToolTag';
 import ImageSlider from '../ImageSlider/ImageSlider';
@@ -28,6 +29,7 @@ type ProjectCardProps = {
 		presentationUrl?: string;
 		paperUrl?: string;
 		sourceUrl?: string;
+		playstoreUrl?: string;
 		type: 'work' | 'personal';
 		relevance: 'principal' | 'secondary';
 	};
@@ -82,7 +84,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 								href={project.previewUrl}
 								target='_blank'
 							>
-								Preview
+								{t('projects.buttons.preview')}
 							</Button>
 						)}
 						{project.presentationUrl && (
@@ -93,7 +95,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 								target='_blank'
 								color='error'
 							>
-								Presentation
+								{t('projects.buttons.presentation')}
 							</Button>
 						)}
 						{project.paperUrl && (
@@ -103,7 +105,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 								href={project.paperUrl}
 								target='_blank'
 							>
-								Paper
+								{t('projects.buttons.paper')}
 							</Button>
 						)}
 						{project.sourceUrl && (
@@ -113,7 +115,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 								href={project.sourceUrl}
 								target='_blank'
 							>
-								Source
+								{t('projects.buttons.source')}
+							</Button>
+						)}
+						{project.playstoreUrl && (
+							<Button
+								variant='outlined'
+								startIcon={<GoogleIcon />}
+								href={project.playstoreUrl}
+								target='_blank'
+							>
+								{t('projects.buttons.playstore')}
 							</Button>
 						)}
 					</CardActions>

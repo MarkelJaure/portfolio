@@ -19,7 +19,7 @@ i18n
         },
         react: {
             transSupportBasicHtmlNodes: true, // Permite etiquetas HTML básicas
-            transKeepBasicHtmlNodesFor: ['strong', 'em', 'br', 'highlight', 'flag', 'link'],
+            transKeepBasicHtmlNodesFor: ['strong', 'em', 'br', 'highlight', 'flag', 'link', 'green'],
 
         },
         backend: {
