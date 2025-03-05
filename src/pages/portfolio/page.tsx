@@ -12,12 +12,10 @@ import darkTheme from '@/styles/darkTheme';
 import theme from '@/styles/theme';
 import Navbar from '@/components/Navbar/navbar';
 import Footer from '@/components/sections/footer';
-import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 
 export default function PortfolioWireframe() {
 	const [darkMode, setDarkMode] = useState(false);
-	const router = useRouter();
 	const { i18n } = useTranslation();
 
 	useEffect(() => {
