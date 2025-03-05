@@ -12,8 +12,8 @@
 	},
 	"aboutMe": {
 		"title": "About Me",
-		"description1": "<highlight>Software Developer with over 4 years of experience</highlight>, originally from <strong>Puerto Madryn, Argentina</strong> <flag/>. Passionate about new technologies and both web and mobile development.",
-		"description2": "<highlight>Graduated as a <strong>Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently  <green><strong>available for work</strong></green>, motivated to keep learning and grow professionally."
+		"description1": "<highlight><strong>Software Developer with over 4 years of experience</strong></highlight>, originally from <strong>Puerto Madryn, Argentina</strong> <flag/>. Passionate about new technologies and both web and mobile development.",
+		"description2": "<highlight><strong>Graduated as a Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently  <green><strong>available for work</strong></green>, motivated to keep learning and grow professionally."
 	},
 	"experience": {
 		"title": "Experience",
@@ -102,7 +102,7 @@
 	},
 	"moreAboutMe": {
 		"title": "More About Me",
-		"description": "For a large part of my life, I have been involved in <strong>Handball</strong> and <strong>Beach Handball</strong> as a player. Therefore, I have <highlight>over 5 years of experience</highlight> as a coordinator and coach of all categories at the club <strong>J. L. Grilli</strong> in the field of <strong>Beach Handball</strong> during the summer seasons."
+		"description": "For a large part of my life, I have been involved in <strong>Handball</strong> and <strong>Beach Handball</strong> as a player. Therefore, I have <highlight><strong>over 5 years of experience</strong></highlight> as a coordinator and coach of all categories at the club <strong>J. L. Grilli</strong> in the field of <strong>Beach Handball</strong> during the summer seasons."
 	},
 	"contact": {
 		"title": "Contact",

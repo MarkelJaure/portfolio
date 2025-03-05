@@ -12,8 +12,8 @@
 	},
 	"aboutMe": {
 		"title": "Sobre mí",
-		"description1": "<highlight>Desarrollador de Software con más de 4 años de experiencia</highlight>, originario de <strong>Puerto Madryn, Argentina</strong> <flag/>. Apasionado por las nuevas tecnologías y el desarrollo tanto web como móvil.",
-		"description2": "<highlight>Graduado como <strong>Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <green><strong>disponible para trabajar</strong></green>, motivado de seguir aprendiendo y crecer profesionalmente."
+		"description1": "<highlight><strong>Desarrollador de Software con más de 4 años de experiencia</strong></highlight>, originario de <strong>Puerto Madryn, Argentina</strong> <flag/>. Apasionado por las nuevas tecnologías y el desarrollo tanto web como móvil.",
+		"description2": "<highlight><strong>Graduado como Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <green><strong>disponible para trabajar</strong></green>, motivado de seguir aprendiendo y crecer profesionalmente."
 	},
 	"experience": {
 		"title": "Experiencia",
@@ -102,7 +102,7 @@
 	},
 	"moreAboutMe": {
 		"title": "Más sobre mí",
-		"description": "Durante gran parte de mi vida he estado involucrado en el <strong>Handball</strong> y <strong>Beach Handball</strong> como jugador. Por ello, cuento con <highlight>más de 5 años de experiencia</highlight> como coordinador y entrenador de todas las categorías del club <strong>J. L. Grilli</strong> en el área de <strong>Beach Handball</strong> durante las temporadas de verano."
+		"description": "Durante gran parte de mi vida he estado involucrado en el <strong>Handball</strong> y <strong>Beach Handball</strong> como jugador. Por ello, cuento con <highlight><strong>más de 5 años de experiencia</strong></highlight> como coordinador y entrenador de todas las categorías del club <strong>J. L. Grilli</strong> en el área de <strong>Beach Handball</strong> durante las temporadas de verano."
 	},
 	"contact": {
 		"title": "Contacto",

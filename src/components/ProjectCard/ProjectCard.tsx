@@ -8,6 +8,8 @@ import {
 	Grid,
 	useTheme,
 	useMediaQuery,
+	IconButton,
+	Tooltip,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -17,6 +19,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import ToolTag from '../ToolTag/ToolTag';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import { useTranslation } from 'react-i18next';
+import TooltipIconButton from '../TooltipIconButton/TooltipIconButton';
 
 type ProjectCardProps = {
 	project: {
@@ -77,57 +80,38 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					</CardContent>
 
 					<CardActions sx={{ p: 2, pt: 0 }}>
-						{project.previewUrl && (
-							<Button
-								variant='contained'
-								startIcon={<LaunchIcon />}
-								href={project.previewUrl}
-								target='_blank'
-							>
-								{t('projects.buttons.preview')}
-							</Button>
-						)}
-						{project.presentationUrl && (
-							<Button
-								variant='contained'
-								startIcon={<YouTubeIcon />}
-								href={project.presentationUrl}
-								target='_blank'
-								color='error'
-							>
-								{t('projects.buttons.presentation')}
-							</Button>
-						)}
-						{project.paperUrl && (
-							<Button
-								variant='outlined'
-								startIcon={<PictureAsPdfIcon />}
-								href={project.paperUrl}
-								target='_blank'
-							>
-								{t('projects.buttons.paper')}
-							</Button>
-						)}
-						{project.sourceUrl && (
-							<Button
-								variant='outlined'
-								startIcon={<GitHubIcon />}
-								href={project.sourceUrl}
-								target='_blank'
-							>
-								{t('projects.buttons.source')}
-							</Button>
-						)}
-						{project.playstoreUrl && (
-							<Button
-								variant='outlined'
-								startIcon={<GoogleIcon />}
-								href={project.playstoreUrl}
-								target='_blank'
-							>
-								{t('projects.buttons.playstore')}
-							</Button>
-						)}
+						<TooltipIconButton
+							show={project.previewUrl !== undefined}
+							title={t('projects.buttons.preview')}
+							size='medium'
+							href={project.previewUrl || ''}
+							Icon={LaunchIcon}
+							color={'white'}
+						/>
+						<TooltipIconButton
+							show={project.presentationUrl !== undefined}
+							title={t('projects.buttons.presentation')}
+							size='medium'
+							href={project.presentationUrl || ''}
+							Icon={YouTubeIcon}
+							color={'error'}
+						/>
+						<TooltipIconButton
+							show={project.paperUrl !== undefined}
+							title={t('projects.buttons.paper')}
+							size='medium'
+							href={project.paperUrl || ''}
+							Icon={PictureAsPdfIcon}
+							color={'white'}
+						/>
+						<TooltipIconButton
+							show={project.sourceUrl !== undefined}
+							title={t('projects.buttons.source')}
+							size='medium'
+							href={project.sourceUrl || ''}
+							Icon={GitHubIcon}
+							color={'white'}
+						/>
 					</CardActions>
 				</Card>
 			</Grid>

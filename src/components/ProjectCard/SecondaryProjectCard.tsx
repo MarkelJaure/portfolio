@@ -18,6 +18,7 @@ import { Key, useState } from 'react';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import TooltipIconButton from '../TooltipIconButton/TooltipIconButton';
 
 const SecondaryProjectCard = ({ project }: { project: any }) => {
 	const [flipped, setFlipped] = useState(false);
@@ -122,43 +123,38 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 						</CardContent>
 
 						<CardActions sx={{ justifyContent: 'center', p: 1, mt: 'auto' }}>
-							{project.previewUrl && (
-								<IconButton
-									href={project.previewUrl}
-									target='_blank'
-									size='small'
-								>
-									<LaunchIcon fontSize='small' />
-								</IconButton>
-							)}
-							{project.presentationUrl && (
-								<IconButton
-									href={project.presentationUrl}
-									target='_blank'
-									size='small'
-									color='error'
-								>
-									<YouTubeIcon fontSize='small' />
-								</IconButton>
-							)}
-							{project.paperUrl && (
-								<IconButton
-									href={project.paperUrl}
-									target='_blank'
-									size='small'
-								>
-									<PictureAsPdfIcon fontSize='small' />
-								</IconButton>
-							)}
-							{project.sourceUrl && (
-								<IconButton
-									href={project.sourceUrl}
-									target='_blank'
-									size='small'
-								>
-									<GitHubIcon fontSize='small' />
-								</IconButton>
-							)}
+							<TooltipIconButton
+								show={project.previewUrl !== undefined}
+								title={t('projects.buttons.preview')}
+								size='small'
+								href={project.previewUrl || ''}
+								Icon={LaunchIcon}
+								color={'white'}
+							/>
+							<TooltipIconButton
+								show={project.presentationUrl !== undefined}
+								title={t('projects.buttons.presentation')}
+								size='small'
+								href={project.presentationUrl || ''}
+								Icon={YouTubeIcon}
+								color={'error'}
+							/>
+							<TooltipIconButton
+								show={project.paperUrl !== undefined}
+								title={t('projects.buttons.paper')}
+								size='small'
+								href={project.paperUrl || ''}
+								Icon={PictureAsPdfIcon}
+								color={'white'}
+							/>
+							<TooltipIconButton
+								show={project.sourceUrl !== undefined}
+								title={t('projects.buttons.source')}
+								size='small'
+								href={project.sourceUrl || ''}
+								Icon={GitHubIcon}
+								color={'white'}
+							/>
 						</CardActions>
 						<Button size='small' onClick={handleFlip}>
 							{t('projects.buttons.viewMore')}

@@ -15,12 +15,14 @@ import Footer from '@/components/sections/footer';
 import { useTranslation } from 'react-i18next';
 
 export default function PortfolioWireframe() {
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(true);
 	const { i18n } = useTranslation();
 
 	useEffect(() => {
-		const savedTheme = localStorage.getItem('darkMode') === 'true';
-		setDarkMode(savedTheme);
+		const savedTheme = localStorage.getItem('darkMode');
+		if (savedTheme !== null) {
+			setDarkMode(savedTheme === 'true');
+		}
 	}, []);
 
 	const toggleDarkMode = () => {
@@ -32,7 +34,6 @@ export default function PortfolioWireframe() {
 	};
 
 	const changeLanguage = (locale: string) => {
-		console.log(locale);
 		i18n.changeLanguage(locale);
 	};
 	return (
