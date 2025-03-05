@@ -4,12 +4,9 @@ import {
 	CardActions,
 	Typography,
 	Stack,
-	Button,
 	Grid,
 	useTheme,
 	useMediaQuery,
-	IconButton,
-	Tooltip,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -95,6 +92,15 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 							href={project.presentationUrl || ''}
 							Icon={YouTubeIcon}
 							color={'error'}
+						/>
+
+						<TooltipIconButton
+							show={project.playstoreUrl !== undefined}
+							title={t('projects.buttons.playstore')}
+							size='medium'
+							href={project.playstoreUrl || ''}
+							Icon={GoogleIcon}
+							color={'white'}
 						/>
 						<TooltipIconButton
 							show={project.paperUrl !== undefined}
