@@ -32,9 +32,10 @@ const lightTheme = createTheme({
 		success: {
 			main: '#43a047',
 			light: '#2e7d32',
+			dark: '#4caf4f',
 		},
 		highlight: {
-			primary: '#FF5722',
+			primary: '#bc4300',
 			secondary: '#1565c0',
 		},
 	},

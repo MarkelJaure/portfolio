@@ -42,6 +42,7 @@ const LanguageSwitcher = ({
 				<MenuItem onClick={() => handleClose('es')}>
 					<Flag
 						code='ES'
+						alt='ES'
 						style={{ width: '24px', height: '16px', marginRight: '8px' }}
 					/>{' '}
 					Español
@@ -49,6 +50,7 @@ const LanguageSwitcher = ({
 				<MenuItem onClick={() => handleClose('en')}>
 					<Flag
 						code='GB'
+						alt='EN'
 						style={{ width: '24px', height: '16px', marginRight: '8px' }}
 					/>{' '}
 					English

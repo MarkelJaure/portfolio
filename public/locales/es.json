@@ -7,7 +7,8 @@
 			"viewCv": "Ver CV",
 			"github": "GitHub",
 			"linkedin": "LinkedIn"
-		}
+		},
+		"availableForWork": "Disponible para trabajar"
 	},
 	"aboutMe": {
 		"title": "Sobre mí",

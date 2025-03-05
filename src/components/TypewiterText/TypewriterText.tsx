@@ -28,7 +28,7 @@ const TypewriterText = ({ text }: { text: string }) => {
 			sx={{
 				whiteSpace: 'pre-wrap',
 				width: '100%',
-				minHeight: '3em',
+				fontSize: '1rem',
 			}}
 		>
 			{displayText}

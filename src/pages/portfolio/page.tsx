@@ -36,7 +36,6 @@ export default function PortfolioWireframe() {
 	const changeLanguage = (locale: string) => {
 		console.log(locale);
 		i18n.changeLanguage(locale);
-		router.push(`/${locale}`);
 	};
 	return (
 		<ThemeProvider theme={darkMode ? darkTheme : theme}>

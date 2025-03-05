@@ -24,6 +24,7 @@ const darkTheme = createTheme({
 		success: {
 			main: '#4caf50',
 			light: '#3ddc97',
+			dark: '#4caf4f',
 		},
 		highlight: {
 			primary: '#FF9800',

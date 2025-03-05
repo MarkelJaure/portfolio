@@ -7,7 +7,8 @@
 			"viewCv": "View CV",
 			"github": "GitHub",
 			"linkedin": "LinkedIn"
-		}
+		},
+		"availableForWork": "Available for work"
 	},
 	"aboutMe": {
 		"title": "About Me",
