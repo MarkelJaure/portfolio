@@ -47,8 +47,8 @@ export default function PortfolioWireframe() {
 					changeLanguage={changeLanguage}
 				/>
 				<AboutMeSection />
-				<ExperienceSection />
 				<ProyectsSection />
+				<ExperienceSection />
 				<TechnologiesSection />
 				<MoreAboutMe />
 				<ContactSection />

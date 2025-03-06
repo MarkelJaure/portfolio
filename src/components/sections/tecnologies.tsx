@@ -126,7 +126,7 @@ export default function Technologies() {
 	];
 
 	return (
-		<Box id='technologies' my={8}>
+		<Box id='technologies' my={4}>
 			<Typography
 				variant='h4'
 				fontWeight='bold'
