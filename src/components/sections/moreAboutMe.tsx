@@ -15,7 +15,7 @@ const MoreAboutMe = () => {
 				mt={2}
 			/>,
 		],
-		videos: ['/beach2.mp4', '/beach.mp4', '/beach3.mp4'],
+		videos: ['/beach2.webm', '/beach.webm', '/beach3.webm'],
 	};
 	return (
 		<Box id='more-about' my={4} textAlign='center'>

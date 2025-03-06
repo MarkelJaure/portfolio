@@ -43,7 +43,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/mic.png'],
+			images: ['/mic.webp'],
 			tools: useTechnologies(['Next.js', 'Nest.js', 'PostgreSQL']),
 			previewUrl: 'https://mapainteractivocultural.ar/',
 			playstoreUrl:
@@ -60,7 +60,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/tesina.png'],
+			images: ['/tesina.webp'],
 			tools: useTechnologies(['Python', 'Plotly', 'IA']),
 			presentationUrl: 'https://www.youtube.com/watch?v=-lJj-gLqyWc&t=2532s',
 			paperUrl: 'tesina.pdf',
@@ -76,7 +76,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/anp.jpg', 'indicadores.jpeg'],
+			images: ['/anp.webp', 'indicadores.webp'],
 			tools: useTechnologies(['React', 'Node.js', 'MongoDB']),
 			type: 'work',
 			relevance: 'principal',
@@ -91,7 +91,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/Vaidika.png'],
+			images: ['/Vaidika.webp'],
 			tools: useTechnologies(['PHP', 'MySQL']),
 			previewUrl: 'https://www.vaidikayogamadryn.com/',
 			type: 'work',
@@ -107,7 +107,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/cubegraph.png'],
+			images: ['/cubegraph.webp'],
 			tools: useTechnologies(['React', 'JavaScript', 'Firebase']),
 			previewUrl: 'https://cubegraph.firebaseapp.com/practice',
 			sourceUrl: 'https://github.com/MarkelJaure/CubeGraph',
@@ -124,7 +124,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/mapyzer.jpeg'],
+			images: ['/mapyzer.webp'],
 			tools: useTechnologies(['Angular', 'Node.js', 'PostgreSQL']),
 			sourceUrl: 'https://github.com/MarkelJaure/mapyzer',
 			type: 'personal',
@@ -140,7 +140,7 @@ const ProyectsSection = () => {
 					variant='body2'
 				/>
 			),
-			images: ['/fishing-app-2.jpeg'],
+			images: ['/fishing-app-2.webp'],
 			tools: useTechnologies(['Kotlin', 'Android', 'Firebase']),
 			sourceUrl: 'https://github.com/MarkelJaure/Fishing-App',
 			type: 'personal',

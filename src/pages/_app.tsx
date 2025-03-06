@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 					property='og:description'
 					content='Desarrollador Fullstack y Licenciado en Informática.'
 				/>
-				<meta property='og:image' content='/profile.jpeg' />
+				<meta property='og:image' content='/profile.webp' />
 				<meta
 					property='og:url'
 					content='https://portfolio-markel-jaureguibeheres-projects.vercel.app/'
@@ -36,7 +36,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 					name='twitter:description'
 					content='Desarrollador Fullstack y Licenciado en Informática.'
 				/>
-				<meta name='twitter:image' content='/profile.jpeg' />
+				<meta name='twitter:image' content='/profile.webp' />
 				<meta name='twitter:site' content='@MarkelTee' />
 
 				<meta name='robots' content='index, follow' />

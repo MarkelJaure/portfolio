@@ -140,7 +140,7 @@ const HeroSection = ({
 							}}
 						>
 							<Image
-								src='/profile.jpeg'
+								src='/profile.webp'
 								alt='Markel Jaureguibehere'
 								width={200}
 								height={200}
