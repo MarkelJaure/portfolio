@@ -2,7 +2,7 @@ import { Tooltip, IconButton } from '@mui/material';
 import { FC } from 'react';
 
 type Props = {
-	show: boolean;
+	show?: boolean;
 	title: string;
 	size: 'small' | 'medium' | 'large';
 	href: string;
@@ -11,7 +11,7 @@ type Props = {
 };
 
 const TooltipIconButton: FC<Props> = ({
-	show,
+	show = true,
 	title,
 	size,
 	href,
@@ -22,7 +22,23 @@ const TooltipIconButton: FC<Props> = ({
 
 	return (
 		<Tooltip title={title}>
-			<IconButton href={href} target='_blank' size={size} color={color}>
+			<IconButton
+				href={href}
+				target='_blank'
+				rel='noopener noreferrer'
+				size={size}
+				color={color}
+				aria-label={title}
+				sx={{
+					bgcolor: 'rgba(255,255,255,0.1)',
+					backdropFilter: 'blur(8px)',
+					transition: 'all 0.2s ease-in-out',
+					'&:hover': {
+						bgcolor: 'rgba(255,255,255,0.2)',
+						transform: 'translateY(-2px)',
+					},
+				}}
+			>
 				{Icon && <Icon fontSize={size} />}
 			</IconButton>
 		</Tooltip>

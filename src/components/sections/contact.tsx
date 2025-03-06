@@ -11,14 +11,10 @@ const ContactSection = () => {
 
 	return (
 		<Box id='contact' my={4} textAlign='center'>
-			<Typography
-				variant='h4'
-				fontWeight='bold'
-				fontFamily={'Consolas, monospace'}
-			>
+			<Typography variant='h4' fontWeight='bold' fontFamily={'monospace'}>
 				{contact.title}
 			</Typography>
-			<Typography variant='body1' mt={2} fontFamily={'Consolas, monospace'}>
+			<Typography variant='body1' mt={2} fontFamily={'monospace'}>
 				{t('contact.greeting')}{' '}
 				<Link
 					href={`mailto:${contact.email}`}

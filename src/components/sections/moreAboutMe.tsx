@@ -19,11 +19,7 @@ const MoreAboutMe = () => {
 	};
 	return (
 		<Box id='more-about' my={4} textAlign='center'>
-			<Typography
-				variant='h4'
-				fontWeight='bold'
-				fontFamily={'Consolas, monospace'}
-			>
+			<Typography variant='h4' fontWeight='bold' fontFamily={'monospace'}>
 				{moreAboutMe.title}
 			</Typography>
 

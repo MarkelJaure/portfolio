@@ -13,7 +13,6 @@ i18n
     .init({
         supportedLngs: ['en', 'es'],
         fallbackLng: 'es', // Idioma por defecto
-        debug: true, // Activar solo en desarrollo
         interpolation: {
             escapeValue: false, // No escapar valores de traducción
         },

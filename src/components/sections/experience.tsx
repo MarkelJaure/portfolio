@@ -107,7 +107,7 @@ const ExperienceSection = () => {
 				fontWeight='bold'
 				textAlign='center'
 				mb={4}
-				fontFamily={'Consolas, monospace'}
+				fontFamily={'monospace'}
 			>
 				{t('experience.title')}
 			</Typography>

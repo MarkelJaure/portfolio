@@ -9,15 +9,18 @@ Este repositorio contiene el código fuente de mi **portfolio profesional**, una
 ## 🚀 Tecnologías y Herramientas
 
 ### **Frontend**
+
 - **Next.js**: Framework de React optimizado para SSR y SSG.
 - **React**: Biblioteca para la construcción de interfaces dinámicas.
 - **TypeScript**: Tipado estático para mejorar la robustez del código.
 - **Material UI**: Componentes estilizados y personalizables.
 - **Framer Motion**: Animaciones fluidas y optimizadas.
+- **i18next**: Gestor de traducciones.
 
 ---
 
 ## 📂 Estructura del Proyecto
+
 ```
 📂 portfolio
  ├── 📁 components  # Componentes
@@ -35,6 +38,7 @@ Este repositorio contiene el código fuente de mi **portfolio profesional**, una
 ## 🛠️ Instalación y Ejecución
 
 Para ejecutar el proyecto localmente:
+
 ```sh
 # Clonar el repositorio
 git clone https://github.com/markeljaure/portfolio.git
@@ -52,6 +56,7 @@ El proyecto estará disponible en: **http://localhost:3000**
 ---
 
 ## 🌎 Despliegue
+
 El portfolio está desplegado con **Vercel** y puede visualizarse en:
 👉 [Mi Portfolio](https://portfolio-markel-jaureguibeheres-projects.vercel.app/)
 
@@ -60,4 +65,3 @@ El portfolio está desplegado con **Vercel** y puede visualizarse en:
 ## 📩 Contacto
 
 Si tienes alguna sugerencia o pregunta, puedes contactarme en **markeljaure2000@gmail.com** o en [LinkedIn](https://www.linkedin.com/in/markel-jaureguibehere/).
-

@@ -24,11 +24,11 @@ const TypewriterText = ({ text }: { text: string }) => {
 	return (
 		<Typography
 			variant='h6'
-			fontFamily={'Consolas, monospace'}
+			fontFamily={'monospace'}
 			sx={{
 				whiteSpace: 'pre-wrap',
 				width: '100%',
-				fontSize: '1rem',
+				fontSize: '1.02rem',
 			}}
 		>
 			{displayText}

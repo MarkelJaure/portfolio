@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /api/
+Allow: /
+Sitemap: https://portfolio-markel-jaureguibeheres-projects.vercel.app/sitemap.xml

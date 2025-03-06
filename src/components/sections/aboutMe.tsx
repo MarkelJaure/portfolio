@@ -31,7 +31,7 @@ const AboutMeSection = () => {
 				variant='h4'
 				textAlign='center'
 				fontWeight='bold'
-				fontFamily={'Consolas, monospace'}
+				fontFamily={'monospace'}
 			>
 				{aboutMe.title}
 			</Typography>

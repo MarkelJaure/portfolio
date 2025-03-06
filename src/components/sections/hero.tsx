@@ -7,7 +7,6 @@ import {
 	useMediaQuery,
 	useTheme,
 	Chip,
-	Tooltip,
 } from '@mui/material';
 import {
 	GitHub,
@@ -21,13 +20,14 @@ import { motion } from 'framer-motion';
 import TypewriterText from '../TypewiterText/TypewriterText';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../languageSwitcher/LanguageSwitcher';
+import TooltipIconButton from '../TooltipIconButton/TooltipIconButton';
 
 type InfoType = {
 	title: string;
 	description: string;
 	buttons: {
 		label: string;
-		icon: React.ReactElement;
+		icon: React.ComponentType;
 		href: string;
 		color: 'primary' | 'secondary';
 	}[];
@@ -54,19 +54,19 @@ const HeroSection = ({
 		buttons: [
 			{
 				label: t('hero.buttons.viewCv'),
-				icon: <Description />,
+				icon: Description, // Pass the component itself
 				href: `/cv-${i18n.language}.pdf`,
 				color: 'secondary',
 			},
 			{
 				label: 'GitHub',
-				icon: <GitHub />,
+				icon: GitHub, // Pass the component itself
 				href: 'https://github.com/MarkelJaure',
 				color: 'primary',
 			},
 			{
 				label: 'LinkedIn',
-				icon: <LinkedIn />,
+				icon: LinkedIn, // Pass the component itself
 				href: 'https://www.linkedin.com/in/markel-jaureguibehere/',
 				color: 'primary',
 			},
@@ -193,50 +193,23 @@ const HeroSection = ({
 								alignItems='center'
 								mb={2.5}
 							>
-								{/* CV button with text */}
-								<Tooltip title={info.buttons[0].label}>
-									<IconButton
-										href={info.buttons[0].href}
-										target='_blank'
-										rel='noopener noreferrer'
-										aria-label={info.buttons[0].label}
-										sx={{
-											color: 'white',
-											bgcolor: 'rgba(255,255,255,0.1)',
-											backdropFilter: 'blur(8px)',
-											transition: 'all 0.2s ease-in-out',
-											'&:hover': {
-												bgcolor: 'rgba(255,255,255,0.2)',
-												transform: 'translateY(-2px)',
-											},
-										}}
-									>
-										{info.buttons[0].icon}
-									</IconButton>
-								</Tooltip>
+								<TooltipIconButton
+									color={'white'}
+									title={info.buttons[0].label}
+									size={'medium'}
+									href={info.buttons[0].href}
+									Icon={info.buttons[0].icon}
+								/>
 
-								{/* Social media buttons - icons only */}
 								{info.buttons.slice(1).map((button, index) => (
-									<Tooltip key={index + 1} title={button.label}>
-										<IconButton
-											href={button.href}
-											target='_blank'
-											rel='noopener noreferrer'
-											aria-label={button.label}
-											sx={{
-												color: 'white',
-												bgcolor: 'rgba(255,255,255,0.1)',
-												backdropFilter: 'blur(8px)',
-												transition: 'all 0.2s ease-in-out',
-												'&:hover': {
-													bgcolor: 'rgba(255,255,255,0.2)',
-													transform: 'translateY(-2px)',
-												},
-											}}
-										>
-											{button.icon}
-										</IconButton>
-									</Tooltip>
+									<TooltipIconButton
+										color={'white'}
+										key={index + 1}
+										title={button.label}
+										size={'medium'}
+										href={button.href}
+										Icon={button.icon}
+									/>
 								))}
 
 								<Box

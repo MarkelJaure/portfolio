@@ -72,11 +72,7 @@ const TechnologyCard = ({ tech, index }: TechnologyProps) => {
 					>
 						{tech.icon}
 					</AnimatedIcon>
-					<Typography
-						variant='h6'
-						fontFamily='Consolas, monospace'
-						fontWeight='bold'
-					>
+					<Typography variant='h6' fontFamily='monospace' fontWeight='bold'>
 						{tech.category}
 					</Typography>
 				</Stack>
@@ -131,7 +127,7 @@ export default function Technologies() {
 				variant='h4'
 				fontWeight='bold'
 				textAlign='center'
-				fontFamily='Consolas, monospace'
+				fontFamily='monospace'
 				mb={6}
 			>
 				{t('technologies.title')}

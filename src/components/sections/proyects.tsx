@@ -161,7 +161,7 @@ const ProyectsSection = () => {
 				variant='h4'
 				fontWeight='bold'
 				textAlign='center'
-				fontFamily={'Consolas, monospace'}
+				fontFamily={'monospace'}
 				mb={4}
 			>
 				{t('projects.title')}
