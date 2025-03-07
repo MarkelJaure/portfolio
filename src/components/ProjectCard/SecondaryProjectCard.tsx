@@ -178,8 +178,7 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 							height: 327,
 							display: 'flex',
 							flexDirection: 'column',
-
-							padding: 2,
+							padding: 1,
 						}}
 					>
 						<Typography
@@ -190,13 +189,14 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								marginBottom: 2,
 								fontSize: '1.1rem',
 								lineHeight: '1.2',
-								height: '2.4em',
+								height: '2.5em',
 								display: '-webkit-box',
 								WebkitLineClamp: 2,
 								WebkitBoxOrient: 'vertical',
-								overflow: 'hidden',
 								textOverflow: 'ellipsis',
+								alignContent: 'center',
 							}}
+							padding={1}
 						>
 							{project.titleExtended || project.title}
 						</Typography>
@@ -212,6 +212,7 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								display: '-webkit-box',
 								WebkitBoxOrient: 'vertical',
 							}}
+							padding={1}
 						>
 							{project.description}
 						</Typography>
@@ -221,7 +222,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 							onClick={handleFlip}
 							sx={{
 								alignSelf: 'center',
-								mt: 2,
 							}}
 						>
 							{t('projects.buttons.goBack')}

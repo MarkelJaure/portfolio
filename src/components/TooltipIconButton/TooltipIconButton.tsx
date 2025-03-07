@@ -6,8 +6,11 @@ type Props = {
 	title: string;
 	size: 'small' | 'medium' | 'large';
 	href: string;
-	Icon?: React.ComponentType<{ fontSize?: 'small' | 'medium' | 'large' }>;
-	color: any;
+	Icon?: React.ComponentType<{
+		fontSize?: 'small' | 'medium' | 'large';
+		sx?: any;
+	}>;
+	color?: any;
 };
 
 const TooltipIconButton: FC<Props> = ({
@@ -39,7 +42,7 @@ const TooltipIconButton: FC<Props> = ({
 					},
 				}}
 			>
-				{Icon && <Icon fontSize={size} />}
+				{Icon && <Icon fontSize={size} sx={{ color: color }} />}
 			</IconButton>
 		</Tooltip>
 	);

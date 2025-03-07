@@ -83,7 +83,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 							size='medium'
 							href={project.previewUrl || ''}
 							Icon={LaunchIcon}
-							color={'white'}
 						/>
 						<TooltipIconButton
 							show={project.presentationUrl !== undefined}
@@ -100,7 +99,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 							size='medium'
 							href={project.playstoreUrl || ''}
 							Icon={GoogleIcon}
-							color={'white'}
 						/>
 						<TooltipIconButton
 							show={project.paperUrl !== undefined}
@@ -108,7 +106,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 							size='medium'
 							href={project.paperUrl || ''}
 							Icon={PictureAsPdfIcon}
-							color={'white'}
 						/>
 						<TooltipIconButton
 							show={project.sourceUrl !== undefined}
@@ -116,7 +113,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 							size='medium'
 							href={project.sourceUrl || ''}
 							Icon={GitHubIcon}
-							color={'white'}
 						/>
 					</CardActions>
 				</Card>

@@ -30,6 +30,7 @@ const TypewriterText = ({ text }: { text: string }) => {
 				width: '100%',
 				fontSize: '1.02rem',
 			}}
+			height={'1.1rem'}
 		>
 			{displayText}
 		</Typography>
