@@ -1,9 +1,11 @@
-import { Typography } from '@mui/material';
+import { Typography, useMediaQuery, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 const TypewriterText = ({ text }: { text: string }) => {
 	const [displayText, setDisplayText] = useState('');
 	const [currentIndex, setCurrentIndex] = useState(0);
+	const theme = useTheme();
+	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
 	useEffect(() => {
 		setDisplayText('');
@@ -30,7 +32,7 @@ const TypewriterText = ({ text }: { text: string }) => {
 				width: '100%',
 				fontSize: '1.02rem',
 			}}
-			height={'1.1rem'}
+			minHeight={isMobile ? '3.3rem' : '1.6rem'}
 		>
 			{displayText}
 		</Typography>
