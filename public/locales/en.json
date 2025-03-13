@@ -19,17 +19,22 @@
 		"title": "Experience",
 		"items": {
 			"camad": {
-				"title": "Chamber of Industry, Commerce, Production and Tourism of Puerto Madryn",
+				"title": "CAMAD",
+				"titleExtended": "CAMAD - Puerto Madryn",
 				"period": "June 2023 - PRESENT",
 				"role": "Semi-Senior Developer - Independent Professional",
 				"description": {
-					"1": "Development and maintenance of <link>MIC - Interactive Cultural Map</link> from scratch to its deployment in production.",
-					"2": "Teamwork <strong>remotely</strong>, ensuring the implementation of new features and system optimization.",
-					"3": "<strong>Full Stack</strong> work, following agile methodologies (<strong>Scrum</strong>)."
+					"1": "Analysis of metrics with <strong>Google Analytics</strong>.",
+					"2": "<strong>Deployments to production</strong> based on SSH.",
+					"3": "Publishing and management of the PWA on <strong>Google Play</strong>.",
+					"4": "Version control using <strong>Git</strong> lifecycle.",
+					"5": "Integration with <strong>Google Maps APIs.</strong>",
+					"6": "Teamwork based on <strong>Agile Methodologies</strong> (Icesrcum)."
 				}
 			},
 			"anppv": {
-				"title": "ANPPV - Peninsula Valdés Protected Natural Area",
+				"title": "AANPPV",
+				"titleExtended": "AANPPV - Administration of the Protected Natural Area of the Valdés Peninsula",
 				"period": "March 2022 - December 2022",
 				"role": "Full Stack Developer - Independent Professional",
 				"description": {

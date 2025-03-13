@@ -127,6 +127,7 @@ const ProyectsSection = () => {
 			images: ['/mapyzer.webp'],
 			tools: useTechnologies(['Angular', 'Node.js', 'PostgreSQL']),
 			sourceUrl: 'https://github.com/MarkelJaure/mapyzer',
+			paperUrl: 'Mapyzer.pdf',
 			type: 'personal',
 			relevance: 'secondary',
 		},

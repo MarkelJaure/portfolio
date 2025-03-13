@@ -45,7 +45,9 @@ const ExperienceSection = () => {
 
 	const experiences = [
 		{
-			title: t('experience.items.camad.title'),
+			title: !isMobile
+				? t('experience.items.camad.titleExtended')
+				: t('experience.items.camad.title'),
 			period: t('experience.items.camad.period'),
 			role: t('experience.items.camad.role'),
 			description: [
@@ -69,10 +71,30 @@ const ExperienceSection = () => {
 					component={'li'}
 					variant='body2'
 				/>,
+				<TranslatedTypography
+					key='4'
+					i18nKey='experience.items.camad.description.4'
+					component={'li'}
+					variant='body2'
+				/>,
+				<TranslatedTypography
+					key='5'
+					i18nKey='experience.items.camad.description.5'
+					component={'li'}
+					variant='body2'
+				/>,
+				<TranslatedTypography
+					key='6'
+					i18nKey='experience.items.camad.description.6'
+					component={'li'}
+					variant='body2'
+				/>,
 			],
 		},
 		{
-			title: t('experience.items.anppv.title'),
+			title: !isMobile
+				? t('experience.items.anppv.titleExtended')
+				: t('experience.items.anppv.title'),
 			period: t('experience.items.anppv.period'),
 			role: t('experience.items.anppv.role'),
 			description: [

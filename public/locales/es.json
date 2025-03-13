@@ -19,17 +19,22 @@
 		"title": "Experiencia",
 		"items": {
 			"camad": {
-				"title": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
+				"title": "CAMAD",
+				"titleExtended": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
 				"period": "Junio 2023 - ACTUALIDAD",
 				"role": "Desarrollador Semi-Senior - Profesional Independiente",
 				"description": {
-					"1": "Desarrollo y mantenimiento de <link>MIC - Mapa Interactivo Cultural</link> desde cero hasta su despliegue en producción.",
-					"2": "Trabajo en equipo de forma <strong>remota</strong>, asegurando la implementación de nuevas funcionalidades y la optimización del sistema.",
-					"3": "Trabajo <strong>Full Stack</strong>, siguiendo metodologías ágiles (<strong>Scrum</strong>)."
+					"1": "Análisis de métricas con <strong>Google Analytics</strong>.",
+					"2": "<strong>Despliegues a producción</strong> basados en SSH.",
+					"3": "Publicación y gestión de la PWA en <strong>Google Play</strong>.",
+					"4": "Control de versiones mediante el ciclo de vida de <strong>Git</strong>.",
+					"5": "<strong>Integración</strong> con Google Maps APIs.",
+					"6": "Trabajo en equipo basado en <strong>Metodologías ágiles</strong> (Icescrum)."
 				}
 			},
 			"anppv": {
-				"title": "ANPPV - Área Natural Protegida Península Valdés",
+				"title": "AANPPV",
+				"titleExtended": "AANPPV - Administración área Natural Protegida Península Valdés",
 				"period": "Marzo 2022 - Diciembre 2022",
 				"role": "Desarrollador Full Stack - Profesional Independiente",
 				"description": {
