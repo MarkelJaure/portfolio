@@ -6,7 +6,10 @@
 		"buttons": {
 			"viewCv": "Ver CV",
 			"github": "GitHub",
-			"linkedin": "LinkedIn"
+			"linkedin": "LinkedIn",
+			"changeLanguage": "Cambiar Idioma",
+			"lightMode": "Modo Claro",
+			"darkMode": "Modo Oscuro"
 		},
 		"availableForWork": "Disponible para trabajar"
 	},

@@ -7,6 +7,7 @@ import {
 	useMediaQuery,
 	useTheme,
 	Chip,
+	Tooltip,
 } from '@mui/material';
 import {
 	GitHub,
@@ -220,19 +221,27 @@ const HeroSection = ({
 										ml: isMobile ? 0 : 'auto',
 									}}
 								>
-									<IconButton
-										onClick={toggleDarkMode}
-										color='inherit'
-										sx={{
-											bgcolor: 'rgba(255,255,255,0.1)',
-											backdropFilter: 'blur(8px)',
-											'&:hover': {
-												bgcolor: 'rgba(255,255,255,0.2)',
-											},
-										}}
+									<Tooltip
+										title={
+											darkMode
+												? t('hero.buttons.lightMode')
+												: t('hero.buttons.darkMode')
+										}
 									>
-										{darkMode ? <LightMode /> : <DarkMode />}
-									</IconButton>
+										<IconButton
+											onClick={toggleDarkMode}
+											color='inherit'
+											sx={{
+												bgcolor: 'rgba(255,255,255,0.1)',
+												backdropFilter: 'blur(8px)',
+												'&:hover': {
+													bgcolor: 'rgba(255,255,255,0.2)',
+												},
+											}}
+										>
+											{darkMode ? <LightMode /> : <DarkMode />}
+										</IconButton>
+									</Tooltip>
 
 									<LanguageSwitcher changeLanguage={changeLanguage} />
 								</Box>

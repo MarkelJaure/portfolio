@@ -9,7 +9,7 @@ const LanguageSwitcher = ({
 }: {
 	changeLanguage: (locale: string) => void;
 }) => {
-	const { i18n } = useTranslation();
+	const { i18n, t } = useTranslation();
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
 	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -26,7 +26,7 @@ const LanguageSwitcher = ({
 
 	return (
 		<div>
-			<Tooltip title='Change Language'>
+			<Tooltip title={t('hero.buttons.changeLanguage')}>
 				<IconButton
 					onClick={handleClick}
 					sx={{
