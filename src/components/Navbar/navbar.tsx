@@ -21,8 +21,8 @@ const Navbar = () => {
 
 	const sections = [
 		{ id: 'hero', title: t('hero.title'), icon: <Home /> },
-		{ id: 'experience', title: t('experience.title'), icon: <Work /> },
 		{ id: 'projects', title: t('projects.title'), icon: <Code /> },
+		{ id: 'experience', title: t('experience.title'), icon: <Work /> },
 		{
 			id: 'technologies',
 			title: t('technologies.title'),
