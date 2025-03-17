@@ -23,9 +23,9 @@
 		"items": {
 			"camad": {
 				"title": "CAMAD",
-				"titleExtended": "CAMAD - Puerto Madryn",
+				"titleExtended": "Chamber of Industry, Commerce, Production and Tourism of Puerto Madryn",
 				"period": "June 2023 - PRESENT",
-				"role": "Semi-Senior Developer - Independent Professional",
+				"role": "Fullstack Developer Ssr.",
 				"description": {
 					"1": "Analysis of metrics with <strong>Google Analytics</strong>.",
 					"2": "<strong>Deployments to production</strong> based on SSH.",
@@ -37,12 +37,12 @@
 			},
 			"anppv": {
 				"title": "AANPPV",
-				"titleExtended": "AANPPV - Administration of the Protected Natural Area of the Valdés Peninsula",
-				"period": "March 2022 - December 2022",
-				"role": "Full Stack Developer - Independent Professional",
+				"titleExtended": "Administration of the Protected Natural Area of the Valdés Peninsula",
+				"period": "March 2023 - December 2023",
+				"role": "Fullstack Developer Jr.",
 				"description": {
-					"1": "Development of the <link>Dynamic Survey System for Península Valdés</link> and <strong>management and information</strong> subsystems for the administration of the protected area.",
-					"2": "Implementation of key features to improve the management of <strong>environmental and operational data</strong>.",
+					"1": "Subsystem development using <strong>microfrontend architecture</strong>.",
+					"2": "Management of <strong>SQL</strong> and <strong>NoSQL</strong> databases.",
 					"3": "Teamwork in a <strong>hybrid</strong> environment."
 				}
 			}

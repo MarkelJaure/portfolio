@@ -25,7 +25,7 @@
 				"title": "CAMAD",
 				"titleExtended": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
 				"period": "Junio 2023 - ACTUALIDAD",
-				"role": "Desarrollador Semi-Senior - Profesional Independiente",
+				"role": "Desarrollador Full Stack Ssr.",
 				"description": {
 					"1": "Análisis de métricas con <strong>Google Analytics</strong>.",
 					"2": "<strong>Despliegues a producción</strong> basados en SSH.",
@@ -37,12 +37,12 @@
 			},
 			"anppv": {
 				"title": "AANPPV",
-				"titleExtended": "AANPPV - Administración área Natural Protegida Península Valdés",
-				"period": "Marzo 2022 - Diciembre 2022",
-				"role": "Desarrollador Full Stack - Profesional Independiente",
+				"titleExtended": "Administración área Natural Protegida Península Valdés",
+				"period": "Marzo 2023 - Diciembre 2023",
+				"role": "Desarrollador Full Stack Jr.",
 				"description": {
-					"1": "Desarrollo del <link>Sistema de encuestas dinámicas para la Península Valdés</link> y subsistemas de <strong>gestión e información</strong> para la administración del área protegida.",
-					"2": "Implementación de funcionalidades clave para mejorar el manejo de <strong>datos ambientales y operativos</strong>.",
+					"1": "Desarrollo de subsistemas mediante <strong>arquitectura microfrontend</strong>.",
+					"2": "Gestión de bases de datos <strong>SQL</strong> y <strong>NoSQL</strong>.",
 					"3": "Trabajo en equipo de forma <strong>híbrida</strong>."
 				}
 			}

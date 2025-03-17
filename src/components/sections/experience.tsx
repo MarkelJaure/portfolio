@@ -6,6 +6,7 @@ import {
 	Collapse,
 	useMediaQuery,
 	useTheme,
+	Link,
 } from '@mui/material';
 import {
 	Timeline,
@@ -19,6 +20,7 @@ import {
 import { WorkflowIcon as Work, ChevronDown, ChevronUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import TranslatedTypography from '../TranslatedTypography/TranslatedTypography';
+import { Link as LinkIcon } from '@mui/icons-material';
 
 const scrollToProject = (e: React.MouseEvent, projectId: string) => {
 	e.preventDefault();
@@ -50,6 +52,7 @@ const ExperienceSection = () => {
 				: t('experience.items.camad.title'),
 			period: t('experience.items.camad.period'),
 			role: t('experience.items.camad.role'),
+			url: 'https://camad.org.ar/',
 			description: [
 				<TranslatedTypography
 					key='1'
@@ -97,6 +100,7 @@ const ExperienceSection = () => {
 				: t('experience.items.anppv.title'),
 			period: t('experience.items.anppv.period'),
 			role: t('experience.items.anppv.role'),
+			url: 'https://peninsulavaldes.org.ar/',
 			description: [
 				<TranslatedTypography
 					key='1'
@@ -136,14 +140,33 @@ const ExperienceSection = () => {
 			<Timeline position='right' style={{ padding: '0px' }}>
 				{experiences.map((exp, index) => (
 					<TimelineItem key={index}>
-						<TimelineOppositeContent sx={{ flex: 0 }}></TimelineOppositeContent>
+						<TimelineOppositeContent
+							sx={{ flex: 0, padding: 0 }}
+						></TimelineOppositeContent>
 						<TimelineSeparator sx={{ paddingLeft: 0 }}>
-							<TimelineDot color='primary'>
-								<Work size={20} />
+							<TimelineDot sx={{ backgroundColor: 'grey.500' }}>
+								<Work size={12} color='#fff' />{' '}
+								{/* Ícono más pequeño y en gris */}
 							</TimelineDot>
-							{index !== experiences.length - 1 && <TimelineConnector />}
+							{index !== experiences.length - 1 && (
+								<TimelineConnector sx={{ backgroundColor: 'grey.500' }} />
+							)}
 						</TimelineSeparator>
-						<TimelineContent>
+						<TimelineContent sx={{ paddingRight: 0 }}>
+							{/* Período por encima de la card */}
+							<Typography
+								variant='body2'
+								color='text.secondary'
+								my={1}
+								paddingLeft={1}
+								sx={{
+									fontSize: '0.875rem', // Tamaño de fuente más pequeño
+									color: 'grey.600', // Color más sutil
+									fontStyle: 'italic', // Estilo cursiva para un toque sutil
+								}}
+							>
+								{exp.period}
+							</Typography>
 							<Box
 								sx={{
 									p: 2,
@@ -164,8 +187,18 @@ const ExperienceSection = () => {
 									variant='h6'
 									component='h3'
 									color='highlight.secondary'
+									display='flex'
+									alignItems='center'
 								>
 									{exp.title}
+									<Link
+										href={exp.url}
+										target='_blank'
+										rel='noopener noreferrer'
+										sx={{ display: 'flex', alignItems: 'center', ml: 1 }}
+									>
+										<LinkIcon sx={{ color: 'text.secondary' }} />
+									</Link>
 								</Typography>
 								<Typography
 									variant='subtitle1'
@@ -174,30 +207,10 @@ const ExperienceSection = () => {
 								>
 									{exp.role}
 								</Typography>
-								<Typography variant='body2' color='text.secondary' mb={1}>
-									{exp.period}
-								</Typography>
-								{isMobile ? (
-									<>
-										<Box display='flex' justifyContent='center'>
-											<IconButton
-												onClick={() => toggleExpand(index)}
-												size='small'
-											>
-												{expandedItems[index] ? <ChevronUp /> : <ChevronDown />}
-											</IconButton>
-										</Box>
-										<Collapse in={expandedItems[index]}>
-											<Box component='ul' sx={{ pl: 2, mt: 1 }}>
-												{exp.description}
-											</Box>
-										</Collapse>
-									</>
-								) : (
-									<Box component='ul' sx={{ pl: 2, mt: 1 }}>
-										{exp.description}
-									</Box>
-								)}
+
+								<Box component='ul' sx={{ pl: 2, mt: 1 }}>
+									{exp.description}
+								</Box>
 							</Box>
 						</TimelineContent>
 					</TimelineItem>
