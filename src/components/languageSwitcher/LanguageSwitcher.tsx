@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, MenuItem, Button } from '@mui/material';
+import { Menu, MenuItem, IconButton, Tooltip } from '@mui/material';
 import { motion } from 'framer-motion';
 import Flag from 'react-world-flags';
 import { useTranslation } from 'react-i18next';
@@ -26,14 +26,27 @@ const LanguageSwitcher = ({
 
 	return (
 		<div>
-			<motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-				<Button onClick={handleClick} style={{ padding: 0 }}>
+			<Tooltip title='Change Language'>
+				<IconButton
+					onClick={handleClick}
+					sx={{
+						height: '40px',
+						width: '40px',
+						bgcolor: 'rgba(255,255,255,0.1)',
+						backdropFilter: 'blur(8px)',
+						transition: 'all 0.2s ease-in-out',
+						'&:hover': {
+							bgcolor: 'rgba(255,255,255,0.2)',
+							transform: 'translateY(-2px)',
+						},
+					}}
+				>
 					<Flag
 						code={i18n.language === 'es' ? 'ES' : 'GB'}
-						style={{ width: '24px', height: '16px', marginRight: '8px' }}
+						style={{ width: '24px', height: '16px' }}
 					/>
-				</Button>
-			</motion.div>
+				</IconButton>
+			</Tooltip>
 			<Menu
 				anchorEl={anchorEl}
 				open={Boolean(anchorEl)}
