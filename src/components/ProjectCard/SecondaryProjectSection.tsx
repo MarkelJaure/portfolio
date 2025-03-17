@@ -3,7 +3,7 @@ import SecondaryProjectCard from './SecondaryProjectCard';
 
 const SecondaryProjectsSection = ({ projects }: { projects: any[] }) => {
 	return (
-		<Box my={4}>
+		<Box my={4} sx={{ display: 'flex', justifyContent: 'center' }}>
 			<Box
 				sx={{
 					display: 'flex',
