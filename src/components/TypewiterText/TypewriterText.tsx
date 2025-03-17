@@ -17,7 +17,7 @@ const TypewriterText = ({ text }: { text: string }) => {
 			const timeout = setTimeout(() => {
 				setDisplayText((prev) => prev + text[currentIndex]);
 				setCurrentIndex((prev) => prev + 1);
-			}, 50);
+			}, 40);
 
 			return () => clearTimeout(timeout);
 		}

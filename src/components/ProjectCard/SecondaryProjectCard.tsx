@@ -128,7 +128,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								size='small'
 								href={project.previewUrl || ''}
 								Icon={LaunchIcon}
-								color={'white'}
 							/>
 							<TooltipIconButton
 								show={project.presentationUrl !== undefined}
@@ -144,7 +143,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								size='small'
 								href={project.paperUrl || ''}
 								Icon={PictureAsPdfIcon}
-								color={'white'}
 							/>
 							<TooltipIconButton
 								show={project.sourceUrl !== undefined}
@@ -152,7 +150,6 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								size='small'
 								href={project.sourceUrl || ''}
 								Icon={GitHubIcon}
-								color={'white'}
 							/>
 						</CardActions>
 						<Button size='small' onClick={handleFlip}>
