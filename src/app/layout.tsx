@@ -32,7 +32,7 @@ export default function RootLayout({
 					<ThemeProvider theme={theme}>
 						<CssBaseline />
 						<Analytics />
-						<div style={{ position: 'relative', zIndex: 10 }}>{children}</div>
+						{children}
 					</ThemeProvider>
 				</I18nProvider>
 			</body>

@@ -23,11 +23,11 @@ const TypeTag = ({ type }: { type: string }) => {
 				bgcolor: 'primary.main',
 				borderRadius: 10,
 				padding: '0.25rem 0.75rem',
-				color: 'black',
 				display: 'flex',
 				flexDirection: 'row',
 				alignItems: 'center',
-				gap: 0.2,
+				opacity: 0.9,
+				boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.7)', // Sombra suave
 			}}
 		>
 			{type_enum[type].icon}

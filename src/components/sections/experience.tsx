@@ -133,7 +133,7 @@ const ExperienceSection = () => {
 			>
 				{t('experience.title')}
 			</Typography>
-			<Timeline position='right'>
+			<Timeline position='right' style={{ padding: '0px' }}>
 				{experiences.map((exp, index) => (
 					<TimelineItem key={index}>
 						<TimelineOppositeContent sx={{ flex: 0 }}></TimelineOppositeContent>

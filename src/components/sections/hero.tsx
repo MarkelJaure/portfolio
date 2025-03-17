@@ -135,6 +135,7 @@ const HeroSection = ({
 								border: '4px solid rgba(255,255,255,0.8)',
 								boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
 								transition: 'transform 0.3s ease-in-out',
+								backgroundColor: darkMode ? '#0D1117' : '#f5f5f5', // Color adaptativo según el tema
 								'&:hover': {
 									transform: 'scale(1.03)',
 								},
