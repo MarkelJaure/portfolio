@@ -28,7 +28,7 @@ type ProjectCardProps = {
 	relevance: 'principal' | 'secondary';
 };
 
-const ProyectsSection = () => {
+const ProjectsSection = () => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const { t } = useTranslation();
@@ -190,4 +190,4 @@ const ProyectsSection = () => {
 	);
 };
 
-export default ProyectsSection;
+export default ProjectsSection;
