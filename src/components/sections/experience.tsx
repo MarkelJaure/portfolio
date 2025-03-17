@@ -1,13 +1,5 @@
-import React, { useState } from 'react';
-import {
-	Typography,
-	Box,
-	IconButton,
-	Collapse,
-	useMediaQuery,
-	useTheme,
-	Link,
-} from '@mui/material';
+import React from 'react';
+import { Typography, Box, useMediaQuery, useTheme, Link } from '@mui/material';
 import {
 	Timeline,
 	TimelineItem,
@@ -17,33 +9,15 @@ import {
 	TimelineDot,
 	TimelineOppositeContent,
 } from '@mui/lab';
-import { WorkflowIcon as Work, ChevronDown, ChevronUp } from 'lucide-react';
+import { WorkflowIcon as Work } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import TranslatedTypography from '../TranslatedTypography/TranslatedTypography';
 import { Link as LinkIcon } from '@mui/icons-material';
 
-const scrollToProject = (e: React.MouseEvent, projectId: string) => {
-	e.preventDefault();
-	const element = document.getElementById(projectId);
-	if (element) {
-		element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-	}
-};
-
 const ExperienceSection = () => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-	const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>(
-		{}
-	);
 	const { t } = useTranslation();
-
-	const toggleExpand = (index: number) => {
-		setExpandedItems((prev) => ({
-			...prev,
-			[index]: !prev[index],
-		}));
-	};
 
 	const experiences = [
 		{
@@ -59,8 +33,6 @@ const ExperienceSection = () => {
 					i18nKey='experience.items.camad.description.1'
 					component={'li'}
 					variant='body2'
-					href='#mic'
-					onClick={(e) => scrollToProject(e, 'mic')}
 				/>,
 				<TranslatedTypography
 					key='2'
@@ -107,8 +79,6 @@ const ExperienceSection = () => {
 					i18nKey='experience.items.anppv.description.1'
 					component={'li'}
 					variant='body2'
-					href='#anp'
-					onClick={(e) => scrollToProject(e, 'anp')}
 				/>,
 				<TranslatedTypography
 					key='2'
