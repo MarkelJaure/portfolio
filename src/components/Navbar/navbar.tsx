@@ -71,7 +71,7 @@ const Navbar = () => {
 		});
 
 		return () => observer.disconnect();
-	}, [sections]);
+	});
 
 	return (
 		<AppBar
