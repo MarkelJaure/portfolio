@@ -1,4 +1,9 @@
+# *
 User-agent: *
-Disallow: /api/
 Allow: /
+
+# Host
+Host: https://portfolio-markel-jaureguibeheres-projects.vercel.app/
+
+# Sitemaps
 Sitemap: https://portfolio-markel-jaureguibeheres-projects.vercel.app/sitemap.xml
