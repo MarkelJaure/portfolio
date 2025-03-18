@@ -94,6 +94,34 @@ const ExperienceSection = () => {
 				/>,
 			],
 		},
+		{
+			title: !isMobile
+				? t('experience.items.alimentar.titleExtended')
+				: t('experience.items.alimentar.title'),
+			period: t('experience.items.alimentar.period'),
+			role: t('experience.items.alimentar.role'),
+			url: 'https://www.unp.edu.ar/',
+			description: [
+				<TranslatedTypography
+					key='1'
+					i18nKey='experience.items.alimentar.description.1'
+					component={'li'}
+					variant='body2'
+				/>,
+				<TranslatedTypography
+					key='2'
+					i18nKey='experience.items.alimentar.description.2'
+					component={'li'}
+					variant='body2'
+				/>,
+				<TranslatedTypography
+					key='3'
+					i18nKey='experience.items.alimentar.description.3'
+					component={'li'}
+					variant='body2'
+				/>,
+			],
+		},
 	];
 
 	return (
@@ -146,11 +174,6 @@ const ExperienceSection = () => {
 									backgroundColor: 'background.paper',
 									boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
 									borderRadius: 2,
-									transition: 'all 0.3s ease',
-									'&:hover': {
-										transform: 'translateY(-5px)',
-										boxShadow: '0 6px 8px rgba(0, 0, 0, 0.15)',
-									},
 								}}
 							>
 								<Typography
@@ -178,8 +201,30 @@ const ExperienceSection = () => {
 									{exp.role}
 								</Typography>
 
-								<Box component='ul' sx={{ pl: 2, mt: 1 }}>
-									{exp.description}
+								<Box
+									component='ul'
+									sx={{
+										pl: 2,
+										mt: 1,
+									}}
+								>
+									{exp.description.map((desc, index) => (
+										<Box
+											key={index}
+											sx={{
+												transition: 'all 0.3s ease',
+												'&:hover': {
+													backgroundColor: 'highlight.main', // Resalta el ítem con el color de highlight
+													paddingLeft: 1, // Opcional, para darle más espacio al elemento cuando se haga hover
+												},
+												'&:hover strong': {
+													color: 'highlight.primary', // Color para los textos en strong cuando se hace hover
+												},
+											}}
+										>
+											{desc}
+										</Box>
+									))}
 								</Box>
 							</Box>
 						</TimelineContent>

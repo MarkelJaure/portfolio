@@ -45,6 +45,17 @@
 					"2": "Gestión de bases de datos <strong>SQL</strong> y <strong>NoSQL</strong>.",
 					"3": "Trabajo en equipo de forma <strong>híbrida</strong>."
 				}
+			},
+			"alimentar": {
+				"title": "AlimentAR",
+				"titleExtended": "AlimentAR - Universidad Nacional de la Patagonia San Juan Bosco",
+				"period": "Julio 2021 - Diciembre 2021",
+				"role": "Becario de Desarrollo Web",
+				"description": {
+					"1": "Desarrollo web mediante <strong>React</strong> y <strong>Node.js</strong>.",
+					"2": "Gestión de bases de datos <strong>NoSQL</strong> (MongoDB).",
+					"3": "Reducción del acoplamiento entre backend y frontend mediante <strong>submódulos Git</strong>."
+				}
 			}
 		}
 	},

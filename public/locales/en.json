@@ -45,6 +45,17 @@
 					"2": "Management of <strong>SQL</strong> and <strong>NoSQL</strong> databases.",
 					"3": "Teamwork in a <strong>hybrid</strong> environment."
 				}
+			},
+			"alimentar": {
+				"title": "AlimentAR",
+				"titleExtended": "AlimentAR - National University of Patagonia San Juan Bosco",
+				"period": "July 2021 - December 2021",
+				"role": "Web Development Intern",
+				"description": {
+					"1": "Web development using <strong>React</strong> and <strong>Node.js</strong>.",
+					"2": "Management of <strong>NoSQL</strong> databases (MongoDB).",
+					"3": "Reduction of coupling between backend and frontend through <strong>Git submodules</strong>."
+				}
 			}
 		}
 	},
