@@ -121,7 +121,6 @@ const ExperienceSection = () => {
 				variant='h4'
 				fontWeight='bold'
 				textAlign='center'
-				mb={4}
 				fontFamily={'monospace'}
 			>
 				{t('experience.title')}
