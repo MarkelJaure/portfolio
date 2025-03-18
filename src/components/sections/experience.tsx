@@ -1,18 +1,9 @@
 import React from 'react';
-import { Typography, Box, useMediaQuery, useTheme, Link } from '@mui/material';
-import {
-	Timeline,
-	TimelineItem,
-	TimelineSeparator,
-	TimelineConnector,
-	TimelineContent,
-	TimelineDot,
-	TimelineOppositeContent,
-} from '@mui/lab';
-import { WorkflowIcon as Work } from 'lucide-react';
+import { Typography, Box, useMediaQuery, useTheme } from '@mui/material';
+import { Timeline } from '@mui/lab';
 import { useTranslation } from 'react-i18next';
 import TranslatedTypography from '../TranslatedTypography/TranslatedTypography';
-import { Link as LinkIcon } from '@mui/icons-material';
+import TimelineComponent from '../TimelineComponent/TimelineComponent';
 
 const ExperienceSection = () => {
 	const theme = useTheme();
@@ -137,98 +128,12 @@ const ExperienceSection = () => {
 			</Typography>
 			<Timeline position='right' style={{ padding: '0px' }}>
 				{experiences.map((exp, index) => (
-					<TimelineItem key={index}>
-						<TimelineOppositeContent
-							sx={{ flex: 0, padding: 0 }}
-						></TimelineOppositeContent>
-						<TimelineSeparator sx={{ paddingLeft: 0 }}>
-							<TimelineDot sx={{ backgroundColor: 'grey.500' }}>
-								<Work size={12} color='#fff' />{' '}
-								{/* Ícono más pequeño y en gris */}
-							</TimelineDot>
-							{index !== experiences.length - 1 && (
-								<TimelineConnector sx={{ backgroundColor: 'grey.500' }} />
-							)}
-						</TimelineSeparator>
-						<TimelineContent sx={{ paddingRight: 0 }}>
-							{/* Período por encima de la card */}
-							<Typography
-								variant='body2'
-								color='text.secondary'
-								my={1}
-								paddingLeft={1}
-								sx={{
-									fontSize: '0.875rem', // Tamaño de fuente más pequeño
-									color: 'grey.600', // Color más sutil
-									fontStyle: 'italic', // Estilo cursiva para un toque sutil
-								}}
-							>
-								{exp.period}
-							</Typography>
-							<Box
-								sx={{
-									p: 2,
-									mb: 2,
-									borderLeft: '2px solid',
-									borderColor: 'highlight.secondary',
-									backgroundColor: 'background.paper',
-									boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-									borderRadius: 2,
-								}}
-							>
-								<Typography
-									variant='h6'
-									component='h3'
-									color='highlight.secondary'
-									display='flex'
-									alignItems='center'
-								>
-									{exp.title}
-									<Link
-										href={exp.url}
-										target='_blank'
-										rel='noopener noreferrer'
-										sx={{ display: 'flex', alignItems: 'center', ml: 1 }}
-									>
-										<LinkIcon sx={{ color: 'text.secondary' }} />
-									</Link>
-								</Typography>
-								<Typography
-									variant='subtitle1'
-									color='text.secondary'
-									fontWeight='bold'
-								>
-									{exp.role}
-								</Typography>
-
-								<Box
-									component='ul'
-									sx={{
-										pl: 2,
-										mt: 1,
-									}}
-								>
-									{exp.description.map((desc, index) => (
-										<Box
-											key={index}
-											sx={{
-												transition: 'all 0.3s ease',
-												'&:hover': {
-													backgroundColor: 'highlight.main', // Resalta el ítem con el color de highlight
-													paddingLeft: 1, // Opcional, para darle más espacio al elemento cuando se haga hover
-												},
-												'&:hover strong': {
-													color: 'highlight.primary', // Color para los textos en strong cuando se hace hover
-												},
-											}}
-										>
-											{desc}
-										</Box>
-									))}
-								</Box>
-							</Box>
-						</TimelineContent>
-					</TimelineItem>
+					<TimelineComponent
+						aExperience={exp}
+						index={index}
+						isLast={index === experiences.length - 1}
+						key={index}
+					/>
 				))}
 			</Timeline>
 		</Box>
