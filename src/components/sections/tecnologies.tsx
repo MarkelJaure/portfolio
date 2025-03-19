@@ -23,7 +23,6 @@ const TechnologyCard = ({ tech, index }: TechnologyProps) => {
 	const controls = useAnimation();
 	const ref = React.useRef(null);
 	const isInView = useInView(ref, { once: true });
-	const theme = useTheme();
 
 	useEffect(() => {
 		if (isInView) {
@@ -41,10 +40,6 @@ const TechnologyCard = ({ tech, index }: TechnologyProps) => {
 					display: 'flex',
 					flexDirection: 'column',
 					transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
-					'&:hover': {
-						transform: 'translateY(-5px)',
-						boxShadow: theme.shadows[6],
-					},
 				}}
 			>
 				<Stack direction='row' spacing={2} alignItems='center' mb={2}>
@@ -79,7 +74,12 @@ const TechnologyCard = ({ tech, index }: TechnologyProps) => {
 				<Box sx={{ flexGrow: 1 }}>
 					<Stack direction='row' gap={1} flexWrap='wrap'>
 						{tech.tools.map((tool, idx) => (
-							<ToolTag key={idx} name={tool.name} icon={tool.icon} />
+							<ToolTag
+								key={idx}
+								name={tool.name}
+								icon={tool.icon}
+								showName={true}
+							/>
 						))}
 					</Stack>
 				</Box>

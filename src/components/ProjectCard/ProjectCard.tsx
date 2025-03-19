@@ -67,7 +67,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
 						<Stack direction='row' flexWrap='wrap' sx={{ mb: 2, gap: 1 }}>
 							{project.tools.map((tool, i) => (
-								<ToolTag key={i} name={tool.name} icon={tool.icon} />
+								<ToolTag
+									key={i}
+									name={tool.name}
+									icon={tool.icon}
+									showName={true}
+								/>
 							))}
 						</Stack>
 

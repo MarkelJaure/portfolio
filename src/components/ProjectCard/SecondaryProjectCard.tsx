@@ -113,11 +113,14 @@ const SecondaryProjectCard = ({ project }: { project: any }) => {
 								justifyContent='center'
 								sx={{ mt: 1, gap: 0.5 }}
 							>
-								{project.tools.map(
-									(tool: { icon: unknown }, i: Key | null | undefined) => (
-										<ToolTag key={i} icon={tool.icon} />
-									)
-								)}
+								{project.tools.map((tool: any, i: Key | null | undefined) => (
+									<ToolTag
+										key={i}
+										icon={tool.icon}
+										name={tool.name}
+										showName={false}
+									/>
+								))}
 							</Stack>
 						</CardContent>
 
