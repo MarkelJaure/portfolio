@@ -41,13 +41,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<Grid container spacing={2}>
+		<Grid
+			container
+			spacing={isMobile ? 0 : 2}
+			display={'flex'}
+			flexDirection={isMobile ? 'column-reverse' : 'row'}
+		>
 			<Grid item xs={12} md={7}>
 				<Card
 					elevation={3}
 					sx={{
 						display: 'flex',
 						flexDirection: 'column',
+						borderRadius: isMobile ? '0px 0px 4px 4px' : 1,
 						height: '100%',
 						transition: 'transform 0.2s ease-in-out',
 						'&:hover': {
