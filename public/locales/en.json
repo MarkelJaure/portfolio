@@ -120,7 +120,7 @@
 		}
 	},
 	"moreAboutMe": {
-		"title": "More About Me",
+		"title": "More about me",
 		"description": "For a large part of my life, I have been involved in <strong>Handball</strong> and <strong>Beach Handball</strong> as a player. Therefore, I have <highlight><strong>over 5 years of experience</strong></highlight> as a coordinator and coach of all categories at the club <strong>J. L. Grilli</strong> in the field of <strong>Beach Handball</strong> during the summer seasons."
 	},
 	"contact": {
@@ -128,6 +128,7 @@
 		"greeting": "Let's talk! Write to me at"
 	},
 	"footer": {
-		"source": "Source code"
+		"source": "Source code",
+		"madeWithCodeAndMate": "Made with code and a lot of mate 🧉"
 	}
 }

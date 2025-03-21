@@ -85,9 +85,7 @@ const Footer = () => {
 					}}
 					color={konamiMode ? 'highlight.primary' : 'text.secondary'}
 				>
-					{konamiMode
-						? 'Hola Singletoneta!'
-						: 'Hecho con código y mucho mate 🧉'}
+					{konamiMode ? 'Hola Singletoneta!' : t('footer.madeWithCodeAndMate')}
 				</Typography>
 				{konamiMode ? (
 					<Typography variant='body1' color='text.secondary'>

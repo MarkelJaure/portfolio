@@ -24,6 +24,7 @@ import Footer from '@/components/sections/footer';
 import { useTranslation } from 'react-i18next';
 import { CSSProperties } from 'react';
 import { motion } from 'framer-motion';
+// import RecommendationsSection from '@/components/sections/recomendations';
 
 export default function PortfolioWireframe() {
 	const [darkMode, setDarkMode] = useState(true);
@@ -88,6 +89,7 @@ export default function PortfolioWireframe() {
 		left: 0,
 		right: 0,
 		bottom: 0,
+
 		background: darkMode
 			? `linear-gradient(90deg, rgba(13,17,23,0.5) 0%, rgba(13,17,23,1) 15%, rgba(13,17,23,1) 85%, rgba(13,17,23,0.5) 100%)`
 			: `linear-gradient(90deg, rgba(245,245,245,0.5) 0%, rgba(245,245,245,1) 15%, rgba(245,245,245,1) 85%, rgba(245,245,245,0.5) 100%)`,
@@ -117,6 +119,7 @@ export default function PortfolioWireframe() {
 						<ProyectsSection />
 						<ExperienceSection />
 						<TechnologiesSection />
+						{/* <RecommendationsSection /> */}
 						<MoreAboutMe />
 						<ContactSection />
 						<Footer />

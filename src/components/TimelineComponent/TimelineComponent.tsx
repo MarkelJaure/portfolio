@@ -98,11 +98,10 @@ const TimelineComponent = ({ aExperience, index, isLast }: TimelineProps) => {
 								sx={{
 									transition: 'all 0.3s ease',
 									'&:hover': {
-										backgroundColor: 'highlight.main', // Resalta el ítem con el color de highlight
 										paddingLeft: 1, // Opcional, para darle más espacio al elemento cuando se haga hover
 									},
 									'&:hover strong': {
-										color: 'highlight.primary', // Color para los textos en strong cuando se hace hover
+										color: 'highlight.secondary', // Color para los textos en strong cuando se hace hover
 									},
 								}}
 							>

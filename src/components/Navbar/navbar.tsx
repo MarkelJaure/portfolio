@@ -55,14 +55,30 @@ const Navbar = () => {
 		}
 	};
 
-	// Detecta la sección actual
+	// Detecta la sección actual con mayor porcentaje de visibilidad
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			(entries) => {
-				const visibleSection = entries.find((entry) => entry.isIntersecting);
-				if (visibleSection) setActiveSection(visibleSection.target.id);
+				// Encontrar la sección con mayor porcentaje visible
+				let maxVisibility = 0;
+				let activeSectionId: string | null = null;
+
+				entries.forEach((entry) => {
+					const visiblePercentage = (entry.intersectionRatio || 0) * 100;
+
+					// Si es más visible que la sección activa actual, actualizamos
+					if (visiblePercentage > maxVisibility) {
+						maxVisibility = visiblePercentage;
+						activeSectionId = entry.target.id;
+					}
+				});
+
+				// Si no hay sección visible, mantenemos la última activa
+				if (activeSectionId || activeSection) {
+					setActiveSection(activeSectionId || activeSection);
+				}
 			},
-			{ threshold: 0.35 }
+			{ threshold: Array.from({ length: 101 }, (_, i) => i / 100) } // Umbrales de visibilidad de 0 a 1
 		);
 
 		sections.forEach(({ id }) => {
@@ -71,7 +87,7 @@ const Navbar = () => {
 		});
 
 		return () => observer.disconnect();
-	});
+	}, [activeSection]);
 
 	return (
 		<AppBar
