@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import RecomendarionCard from '../RecomendationCard.tsx/RecomendationCard';
 
@@ -8,7 +8,7 @@ import RecomendarionCard from '../RecomendationCard.tsx/RecomendationCard';
 const recommendationsData = [
 	{
 		id: 1,
-		avatar: 'profile.webp', // Replace with actual path
+		avatar: 'profile.webp',
 		name: 'Ana Martínez',
 		role: 'Project Manager at TechCorp',
 		text: 'Excelente profesional con gran capacidad técnica y habilidades de comunicación. Su trabajo siempre supera las expectativas y demuestra un compromiso excepcional con cada proyecto.',
@@ -19,17 +19,23 @@ export default function RecommendationsSection() {
 	const { t } = useTranslation();
 	const scrollerRef = useRef<HTMLDivElement>(null);
 	const scrollerInnerRef = useRef<HTMLDivElement>(null);
+	const theme = useTheme();
 
-	// Add animation and duplicate content for infinite scroll
+	// Effect to duplicate content for infinite scroll
 	useEffect(() => {
 		if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 			if (scrollerRef.current && scrollerInnerRef.current) {
 				scrollerRef.current.setAttribute('data-animated', 'true');
 
-				const scrollerContent = Array.from(scrollerInnerRef.current.children);
+				// Eliminar duplicados anteriores antes de volver a crear
+				const existingDuplicates = Array.from(
+					scrollerInnerRef.current.querySelectorAll('[aria-hidden="true"]')
+				);
+				existingDuplicates.forEach((duplicate) => duplicate.remove());
 
-				// Duplicar contenido hasta llenar el ancho visible más un margen de seguridad
+				const scrollerContent = Array.from(scrollerInnerRef.current.children);
 				let duplicatedWidth = 0;
+
 				while (duplicatedWidth < window.innerWidth * 2) {
 					scrollerContent.forEach((item) => {
 						const duplicatedItem = item.cloneNode(true) as HTMLElement;
@@ -40,7 +46,8 @@ export default function RecommendationsSection() {
 				}
 			}
 		}
-	}, []);
+		// Dependencia en el tema para refrescar los componentes duplicados
+	}, [theme]);
 
 	return (
 		<Box component='section' sx={{ mt: 8, mb: 8 }}>
@@ -48,12 +55,11 @@ export default function RecommendationsSection() {
 				variant='h4'
 				fontWeight='bold'
 				textAlign='center'
-				fontFamily={'monospace'}
+				fontFamily='monospace'
 			>
 				{t('recommendations.title', 'Recomendaciones')}
 			</Typography>
 
-			{/* CSS for the scroller - using sx prop for styled-components approach */}
 			<Box
 				ref={scrollerRef}
 				className='scroller'
@@ -63,41 +69,16 @@ export default function RecommendationsSection() {
 					maxWidth: '100%',
 					overflow: 'hidden',
 					position: 'relative',
-
-					// Mask for fade effect
 					'&[data-animated="true"]': {
-						overflow: 'hidden',
 						WebkitMask:
 							'linear-gradient(90deg, transparent, white 10%, white 90%, transparent)',
 						mask: 'linear-gradient(90deg, transparent, white 10%, white 90%, transparent)',
 					},
-
-					// Animation styles
 					'&[data-animated="true"] .scroller__inner': {
 						display: 'flex',
 						width: 'max-content',
-						flexWrap: 'nowrap',
-						animation:
-							'scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite',
+						animation: 'scroll var(--_animation-duration, 40s) linear infinite',
 					},
-
-					// Direction control
-					'&[data-direction="right"]': {
-						'--_animation-direction': 'reverse',
-					},
-					'&[data-direction="left"]': {
-						'--_animation-direction': 'forwards',
-					},
-
-					// Speed control
-					'&[data-speed="fast"]': {
-						'--_animation-duration': '20s',
-					},
-					'&[data-speed="slow"]': {
-						'--_animation-duration': '60s',
-					},
-
-					// Keyframes for the animation
 					'@keyframes scroll': {
 						to: {
 							transform: 'translate(calc(-50% - 1rem))',
@@ -114,10 +95,9 @@ export default function RecommendationsSection() {
 						padding: '1rem 0',
 					}}
 				>
-					{/* Recommendation cards */}
 					{recommendationsData.map((recommendation, index) => (
 						<RecomendarionCard
-							key={`${recommendation.id}-${index}`}
+							key={`${recommendation.id}-${index}-${theme.palette.mode}`} // El key incluye el modo de tema
 							recommendation={recommendation}
 						/>
 					))}

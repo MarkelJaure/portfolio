@@ -112,17 +112,19 @@ const Navbar = () => {
 									position: 'relative',
 									fontWeight: 'bold',
 									fontFamily: '"Roboto", sans-serif', // Volver a la fuente anterior
-									'&:hover::after': {
-										content: '""',
-										position: 'absolute',
-										width: '100%',
-										height: '2px',
-										backgroundColor: 'white',
-										bottom: -4,
-										left: 0,
-										transform: 'scaleX(1)',
-										transition: 'transform 0.3s ease',
-									},
+									'&:hover::after': isMobile
+										? undefined
+										: {
+												content: '""',
+												position: 'absolute',
+												width: '100%',
+												height: '2px',
+												backgroundColor: 'white',
+												bottom: -4,
+												left: 0,
+												transform: 'scaleX(1)',
+												transition: 'transform 0.3s ease',
+										  },
 									'&::after': {
 										content: '""',
 										position: 'absolute',
@@ -142,7 +144,18 @@ const Navbar = () => {
 								className={isActive ? 'active' : ''}
 							>
 								{isMobile ? (
-									<IconButton color='inherit' aria-label={title}>
+									<IconButton
+										color='inherit'
+										aria-label={title}
+										sx={{
+											'&.active .MuiSvgIcon-root': {
+												filter: isActive
+													? 'drop-shadow(0 0 10px #f5f5f5)'
+													: 'none', // Drop shadow para SVG
+											},
+										}}
+										className={isActive ? 'active' : ''}
+									>
 										{icon}
 									</IconButton>
 								) : (
