@@ -1,14 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import {
-	Box,
-	Typography,
-	Avatar,
-	Card,
-	CardContent,
-	useTheme,
-	useMediaQuery,
-} from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import RecomendarionCard from '../RecomendationCard.tsx/RecomendationCard';
 
@@ -25,10 +17,6 @@ const recommendationsData = [
 
 export default function RecommendationsSection() {
 	const { t } = useTranslation();
-	const theme = useTheme();
-	console.log(theme.palette);
-	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-	const isTablet = useMediaQuery(theme.breakpoints.down('md'));
 	const scrollerRef = useRef<HTMLDivElement>(null);
 	const scrollerInnerRef = useRef<HTMLDivElement>(null);
 
@@ -39,7 +27,6 @@ export default function RecommendationsSection() {
 				scrollerRef.current.setAttribute('data-animated', 'true');
 
 				const scrollerContent = Array.from(scrollerInnerRef.current.children);
-				const contentWidth = scrollerInnerRef.current.scrollWidth;
 
 				// Duplicar contenido hasta llenar el ancho visible más un margen de seguridad
 				let duplicatedWidth = 0;
