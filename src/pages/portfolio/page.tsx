@@ -24,7 +24,7 @@ import Footer from '@/components/sections/footer';
 import { useTranslation } from 'react-i18next';
 import { CSSProperties } from 'react';
 import { motion } from 'framer-motion';
-// import RecommendationsSection from '@/components/sections/recomendations';
+import RecommendationsSection from '@/components/sections/recomendations';
 
 export default function PortfolioWireframe() {
 	const [darkMode, setDarkMode] = useState(true);
@@ -119,7 +119,7 @@ export default function PortfolioWireframe() {
 						<ProyectsSection />
 						<ExperienceSection />
 						<TechnologiesSection />
-						{/* <RecommendationsSection /> */}
+						<RecommendationsSection />
 						<MoreAboutMe />
 						<ContactSection />
 						<Footer />

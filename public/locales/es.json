@@ -119,6 +119,25 @@
 			"tools": "Herramientas"
 		}
 	},
+	"recommendations": {
+		"title": "Recomendaciones",
+		"laurato": {
+			"role": "Desarrollador en MIC y ANP",
+			"text": "Conocí a Markel en la UNPSJB y trabajamos juntos en varios proyectos. Tiene gran dominio de nuevas tecnologías, capacidad de aprendizaje y disposición para ayudar. Lo recomiendo sin dudarlo."
+		},
+		"demian": {
+			"role": "Product Owner de MIC",
+			"text": "Markel es un profesional muy versátil, responsable y con gran capacidad de aprendizaje. Es proactivo y se destaca en el trabajo en equipo."
+		},
+		"diego": {
+			"role": "Director de Vaidika Yoga Madryn",
+			"text": "Markel me ayuda con todo lo referido a lo informático en mi centro de yoga. Ha demostrado ser responsable, atento y cumplidor con los plazos, ofreciendo soluciones efectivas y mejoras continuas para mi plataforma educativa."
+		},
+		"martin": {
+			"role": "Colega universitario",
+			"text": "Markel es una persona aplicada, curiosa y con gran capacidad para aplicar lo aprendido. Trabajar con él es un placer, ya que muestra una actitud positiva al dar y recibir feedback."
+		}
+	},
 	"moreAboutMe": {
 		"title": "Más sobre mí",
 		"description": "Durante gran parte de mi vida he estado involucrado en el <strong>Handball</strong> y <strong>Beach Handball</strong> como jugador. Por ello, cuento con <highlight><strong>más de 5 años de experiencia</strong></highlight> como coordinador y entrenador de todas las categorías del club <strong>J. L. Grilli</strong> en el área de <strong>Beach Handball</strong> durante las temporadas de verano."

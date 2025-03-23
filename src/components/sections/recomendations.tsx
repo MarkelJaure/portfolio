@@ -5,21 +5,43 @@ import { useTranslation } from 'react-i18next';
 import RecomendarionCard from '../RecomendationCard.tsx/RecomendationCard';
 
 // Sample data - replace with your actual data
-const recommendationsData = [
-	{
-		id: 1,
-		avatar: 'profile.webp',
-		name: 'Ana Martínez',
-		role: 'Project Manager at TechCorp',
-		text: 'Excelente profesional con gran capacidad técnica y habilidades de comunicación. Su trabajo siempre supera las expectativas y demuestra un compromiso excepcional con cada proyecto.',
-	},
-];
 
 export default function RecommendationsSection() {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 	const scrollerRef = useRef<HTMLDivElement>(null);
 	const scrollerInnerRef = useRef<HTMLDivElement>(null);
 	const theme = useTheme();
+
+	const recommendationsData = [
+		{
+			id: 1,
+			avatar: '/recomendadores/demian.webp',
+			name: 'Demian Barry',
+			role: t('recommendations.demian.role'),
+			text: t('recommendations.demian.text'),
+		},
+		{
+			id: 2,
+			avatar: '/recomendadores/diego.webp',
+			name: 'Diego Perez',
+			role: t('recommendations.diego.role'),
+			text: t('recommendations.diego.text'),
+		},
+		{
+			id: 3,
+			avatar: 'recomendadores/lautaro.webp',
+			name: 'Lautaro Verdi',
+			role: t('recommendations.laurato.role'),
+			text: t('recommendations.laurato.text'),
+		},
+		{
+			id: 4,
+			avatar: 'recomendadores/martin.webp',
+			name: 'Martin Ruede',
+			role: t('recommendations.martin.role'),
+			text: t('recommendations.martin.text'),
+		},
+	];
 
 	// Effect to duplicate content for infinite scroll
 	useEffect(() => {
@@ -47,7 +69,7 @@ export default function RecommendationsSection() {
 			}
 		}
 		// Dependencia en el tema para refrescar los componentes duplicados
-	}, [theme]);
+	}, [theme, i18n.language]);
 
 	return (
 		<Box component='section' sx={{ mt: 8, mb: 8 }}>
@@ -63,8 +85,6 @@ export default function RecommendationsSection() {
 			<Box
 				ref={scrollerRef}
 				className='scroller'
-				data-speed='slow'
-				data-direction='left'
 				sx={{
 					maxWidth: '100%',
 					overflow: 'hidden',
