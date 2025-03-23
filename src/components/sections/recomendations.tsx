@@ -37,7 +37,7 @@ export default function RecommendationsSection() {
 		{
 			id: 4,
 			avatar: 'recomendadores/martin.webp',
-			name: 'Martin Ruede',
+			name: 'Martín Rouede',
 			role: t('recommendations.martin.role'),
 			text: t('recommendations.martin.text'),
 		},
