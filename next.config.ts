@@ -6,6 +6,19 @@ const nextConfig: NextConfig = {
     locales: ['es', 'en'],
     localeDetection: false,
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'index, follow', // Forzamos la indexación
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
