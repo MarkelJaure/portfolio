@@ -21,11 +21,23 @@
   "experience": {
     "title": "Experiencia",
     "items": {
+      "compulab": {
+        "title": "Compulab",
+        "titleExtended": "Compulab SAS - Servicios de Informatica",
+        "period": "Abril 2025 - ACTUALIDAD",
+        "role": "Desarrollador de Software",
+        "description": {
+          "1": "Desarrollo de una solucion centralizada para el <strong>control de consumo de internet StarLink</strong>",
+          "2": "Creación de un <strong>sistema de visualización en tiempo real e histórico de sensores de temperatura</strong> en cámaras de refrigeración",
+          "3": "<strong>Automatización de procesos internos</strong> de la empresa.",
+          "4": "Modernización de aplicaciones para la <strong>portabilidad a distintos dispositivos y sistemas operativos</strong>."
+        }
+      },
       "camad": {
         "title": "CAMAD",
         "titleExtended": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
         "period": "Junio 2023 - ACTUALIDAD",
-        "role": "Desarrollador Full Stack Ssr.",
+        "role": "Desarrollador Full Stack Ssr. - Freelance",
         "description": {
           "1": "Análisis de métricas con <strong>Google Analytics</strong>.",
           "2": "<strong>Despliegues a producción</strong> basados en SSH.",
@@ -138,7 +150,7 @@
       "text": "Markel es una persona aplicada, curiosa y con gran capacidad para aplicar lo aprendido. Trabajar con él es un placer, ya que muestra una actitud positiva al dar y recibir feedback."
     },
     "leonardo": {
-      "role": "Tutor de tesis y product owner en ANP",
+      "role": "Tutor de tesis y Product Owner en ANP",
       "text": "Trabajamos en varios proyectos con Markel. Más allá de su destreza técnica, tiene una tenaz vocación por aprender y es un flexible jugador de equipo."
     }
   },

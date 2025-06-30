@@ -21,11 +21,23 @@
   "experience": {
     "title": "Experience",
     "items": {
+      "compulab": {
+        "title": "Compulab",
+        "titleExtended": "Compulab SAS - IT Services",
+        "period": "April 2025 - PRESENT",
+        "role": "Software Developer",
+        "description": {
+          "1": "Development of a centralized solution for <strong>StarLink internet consumption control</strong>.",
+          "2": "Creation of a <strong>real-time and historical visualization system for temperature sensors</strong> in refrigeration chambers.",
+          "3": "<strong>Automation of internal processes</strong> within the company.",
+          "4": "Modernization of applications for <strong>portability across different devices and operating systems</strong>."
+        }
+      },
       "camad": {
         "title": "CAMAD",
         "titleExtended": "Chamber of Industry, Commerce, Production and Tourism of Puerto Madryn",
         "period": "June 2023 - PRESENT",
-        "role": "Fullstack Developer Ssr.",
+        "role": "Fullstack Developer Ssr. - Freelance",
         "description": {
           "1": "Analysis of metrics with <strong>Google Analytics</strong>.",
           "2": "<strong>Deployments to production</strong> based on SSH.",
@@ -138,7 +150,7 @@
       "text": "Markel is a dedicated, curious person with a great ability to apply what he has learned. Working with him is a pleasure, as he shows a positive attitude when giving and receiving feedback."
     },
     "leonardo": {
-      "role": "thesis tutor and product owner at ANP",
+      "role": "Thesis tutor and Product Owner at ANP",
       "text": "We worked on several projects with Markel. Beyond his technical prowess, he has a tenacious drive to learn and is a flexible team player."
     }
   },
