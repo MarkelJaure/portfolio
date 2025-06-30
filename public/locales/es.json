@@ -1,153 +1,157 @@
 {
-	"hero": {
-		"title": "Inicio",
-		"name": "Markel Jaureguibehere",
-		"description": "Desarrollador Fullstack | Licenciado en Informática",
-		"buttons": {
-			"viewCv": "Ver CV",
-			"github": "GitHub",
-			"linkedin": "LinkedIn",
-			"changeLanguage": "Cambiar Idioma",
-			"lightMode": "Modo Claro",
-			"darkMode": "Modo Oscuro"
-		},
-		"availableForWork": "Disponible para trabajar"
-	},
-	"aboutMe": {
-		"title": "Sobre mí",
-		"description1": "<highlight><strong>Desarrollador de Software con más de 4 años de experiencia</strong></highlight>, originario de <strong>Puerto Madryn, Argentina</strong> <flag/>. Apasionado por las nuevas tecnologías y el desarrollo tanto web como móvil.",
-		"description2": "<highlight><strong>Graduado como Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <green><strong>disponible para trabajar</strong></green>, motivado de seguir aprendiendo y crecer profesionalmente."
-	},
-	"experience": {
-		"title": "Experiencia",
-		"items": {
-			"camad": {
-				"title": "CAMAD",
-				"titleExtended": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
-				"period": "Junio 2023 - ACTUALIDAD",
-				"role": "Desarrollador Full Stack Ssr.",
-				"description": {
-					"1": "Análisis de métricas con <strong>Google Analytics</strong>.",
-					"2": "<strong>Despliegues a producción</strong> basados en SSH.",
-					"3": "Publicación y gestión de la PWA en <strong>Google Play</strong>.",
-					"4": "Control de versiones mediante el ciclo de vida de <strong>Git</strong>.",
-					"5": "<strong>Integración</strong> con Google Maps APIs.",
-					"6": "Trabajo en equipo basado en <strong>Metodologías ágiles</strong> (Icescrum)."
-				}
-			},
-			"anppv": {
-				"title": "AANPPV",
-				"titleExtended": "Administración área Natural Protegida Península Valdés",
-				"period": "Marzo 2023 - Diciembre 2023",
-				"role": "Desarrollador Full Stack Jr.",
-				"description": {
-					"1": "Desarrollo de subsistemas mediante <strong>arquitectura microfrontend</strong>.",
-					"2": "Gestión de bases de datos <strong>SQL</strong> y <strong>NoSQL</strong>.",
-					"3": "Trabajo en equipo de forma <strong>híbrida</strong>."
-				}
-			},
-			"alimentar": {
-				"title": "AlimentAR",
-				"titleExtended": "AlimentAR - Universidad Nacional de la Patagonia San Juan Bosco",
-				"period": "Julio 2021 - Diciembre 2021",
-				"role": "Becario de Desarrollo Fullstack",
-				"description": {
-					"1": "Desarrollo web mediante <strong>React</strong> y <strong>Node.js</strong>.",
-					"2": "Gestión de bases de datos <strong>NoSQL</strong> (MongoDB).",
-					"3": "Reducción del acoplamiento entre backend y frontend mediante <strong>submódulos Git</strong>."
-				}
-			}
-		}
-	},
-	"projects": {
-		"title": "Proyectos",
-		"secondaryTitle": "Otros Proyectos...",
-		"types": {
-			"work": "Laboral",
-			"personal": "Personal"
-		},
-		"items": {
-			"mic": {
-				"title": "MIC - Mapa Interactivo Cultural",
-				"description": "Aplicación <strong>PWA</strong> diseñada para centralizar la <strong>cultura</strong>, el <strong>deporte</strong> y el <strong>turismo</strong> en un solo lugar. Facilita el acceso a eventos y actividades <strong>culturales</strong> de tu ciudad, promoviendo la participación y el consumo <strong>cultural</strong> local. Disponible en la web y en <strong>Google Play</strong>."
-			},
-			"tesina": {
-				"title": "Dynamic Topic Modeling en noticias de Chubut",
-				"description": "Proyecto de tesina de grado en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Machine Learning (ML)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>."
-			},
-			"anp": {
-				"title": "Sistema de encuestas dinámicas para la Península Valdés",
-				"description": "Plataforma web diseñada para recopilar la experiencia de los visitantes en Península Valdés. El <strong>sistema de encuestas dinámico</strong> se adapta en tiempo real a las respuestas de los usuarios. Cuenta con internacionalización y visualización de indicadores estadísticos."
-			},
-			"vaidika": {
-				"title": "Vaidika",
-				"titleExtended": "Vaidika - Yoga en Madryn",
-				"description": "Vaidika es una página de <strong>E-Learning</strong> para la práctica de yoga en Madryn. Cuenta con un <strong>Backoffice</strong> para la carga de cursos, módulos y clases, y una <strong>User App</strong> con login para el consumo de cursos. Desplegada en producción a través de <strong>Ferozo</strong>."
-			},
-			"cubegraph": {
-				"title": "CubeGraph",
-				"titleExtended": "CubeGraph - Prácticas de Rubik",
-				"description": "<strong>Side project</strong> personal para practicar tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
-			},
-			"mapyzer": {
-				"title": "Mapyzer",
-				"titleExtended": "Mapyzer - Visualizador espacio-temporal",
-				"description": "Aplicación Web que permite <strong>visualizar datos geolocalizados con validez temporal</strong>. Permite la visualización en mapa/tabla, la creación de 'Proyectos' para la administración de datos y la importación/exportación de archivos de datos."
-			},
-			"fishing-app": {
-				"title": "Fishing App",
-				"titleExtended": "Fishing App - Aplicacion de pesca",
-				"description": "<strong>Aplicación nativa para Android</strong> desarrollada como proyecto para la materia 'Taller de nuevas tecnologías'. Permite la creación de perfiles de pescadores, carga y visualización de reportes de pesca, y Geofencing para el seguimiento de zonas de pesca."
-			}
-		},
-		"buttons": {
-			"preview": "Vista previa",
-			"presentation": "Presentación",
-			"paper": "Paper",
-			"source": "Código fuente",
-			"playstore": "Google Play",
-			"viewMore": "Ver más",
-			"goBack": "Volver"
-		}
-	},
-	"technologies": {
-		"title": "Tecnologías",
-		"items": {
-			"frontend": "Frontend",
-			"backend": "Backend",
-			"database": "Bases de Datos",
-			"tools": "Herramientas"
-		}
-	},
-	"recommendations": {
-		"title": "Recomendaciones",
-		"laurato": {
-			"role": "Desarrollador en MIC y ANP",
-			"text": "Conocí a Markel en la UNPSJB y trabajamos juntos en varios proyectos. Tiene gran dominio de nuevas tecnologías, capacidad de aprendizaje y disposición para ayudar. Lo recomiendo sin dudarlo."
-		},
-		"demian": {
-			"role": "Product Owner de MIC",
-			"text": "Markel es un profesional muy versátil, responsable y con gran capacidad de aprendizaje. Es proactivo y se destaca en el trabajo en equipo."
-		},
-		"diego": {
-			"role": "Director de Vaidika Yoga Madryn",
-			"text": "Markel me ayuda con todo lo referido a lo informático en mi centro de yoga. Ha demostrado ser responsable, atento y cumplidor con los plazos, ofreciendo soluciones efectivas y mejoras continuas para mi plataforma educativa."
-		},
-		"martin": {
-			"role": "Colega universitario",
-			"text": "Markel es una persona aplicada, curiosa y con gran capacidad para aplicar lo aprendido. Trabajar con él es un placer, ya que muestra una actitud positiva al dar y recibir feedback."
-		}
-	},
-	"moreAboutMe": {
-		"title": "Más sobre mí",
-		"description": "Durante gran parte de mi vida he estado involucrado en el <strong>Handball</strong> y <strong>Beach Handball</strong> como jugador. Por ello, cuento con <highlight><strong>más de 5 años de experiencia</strong></highlight> como coordinador y entrenador de todas las categorías del club <strong>J. L. Grilli</strong> en el área de <strong>Beach Handball</strong> durante las temporadas de verano."
-	},
-	"contact": {
-		"title": "Contacto",
-		"greeting": "¡Hablemos! Escríbeme a"
-	},
-	"footer": {
-		"source": "Código fuente",
-		"madeWithCodeAndMate": "Hecho con código y mucho mate 🧉"
-	}
+  "hero": {
+    "title": "Inicio",
+    "name": "Markel Jaureguibehere",
+    "description": "Desarrollador Fullstack | Licenciado en Informática",
+    "buttons": {
+      "viewCv": "Ver CV",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "changeLanguage": "Cambiar Idioma",
+      "lightMode": "Modo Claro",
+      "darkMode": "Modo Oscuro"
+    },
+    "availableForWork": "Disponible para trabajar"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "description1": "<highlight><strong>Desarrollador de Software con más de 4 años de experiencia</strong></highlight>, originario de <strong>Puerto Madryn, Argentina</strong> <flag/>. Apasionado por las nuevas tecnologías y el desarrollo tanto web como móvil.",
+    "description2": "<highlight><strong>Graduado como Licenciado en Informática</strong></highlight> en la <strong>Universidad Nacional de la Patagonia San Juan Bosco</strong> y con amplia experiencia trabajando principalmente con Node.js, React y PostgreSQL. Actualmente <green><strong>disponible para trabajar</strong></green>, motivado de seguir aprendiendo y crecer profesionalmente."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": {
+      "camad": {
+        "title": "CAMAD",
+        "titleExtended": "Cámara de Industria, Comercio, Producción y Turismo de Puerto Madryn",
+        "period": "Junio 2023 - ACTUALIDAD",
+        "role": "Desarrollador Full Stack Ssr.",
+        "description": {
+          "1": "Análisis de métricas con <strong>Google Analytics</strong>.",
+          "2": "<strong>Despliegues a producción</strong> basados en SSH.",
+          "3": "Publicación y gestión de la PWA en <strong>Google Play</strong>.",
+          "4": "Control de versiones mediante el ciclo de vida de <strong>Git</strong>.",
+          "5": "<strong>Integración</strong> con Google Maps APIs.",
+          "6": "Trabajo en equipo basado en <strong>Metodologías ágiles</strong> (Icescrum)."
+        }
+      },
+      "anppv": {
+        "title": "AANPPV",
+        "titleExtended": "Administración área Natural Protegida Península Valdés",
+        "period": "Marzo 2023 - Diciembre 2023",
+        "role": "Desarrollador Full Stack Jr.",
+        "description": {
+          "1": "Desarrollo de subsistemas mediante <strong>arquitectura microfrontend</strong>.",
+          "2": "Gestión de bases de datos <strong>SQL</strong> y <strong>NoSQL</strong>.",
+          "3": "Trabajo en equipo de forma <strong>híbrida</strong>."
+        }
+      },
+      "alimentar": {
+        "title": "AlimentAR",
+        "titleExtended": "AlimentAR - Universidad Nacional de la Patagonia San Juan Bosco",
+        "period": "Julio 2021 - Diciembre 2021",
+        "role": "Becario de Desarrollo Fullstack",
+        "description": {
+          "1": "Desarrollo web mediante <strong>React</strong> y <strong>Node.js</strong>.",
+          "2": "Gestión de bases de datos <strong>NoSQL</strong> (MongoDB).",
+          "3": "Reducción del acoplamiento entre backend y frontend mediante <strong>submódulos Git</strong>."
+        }
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "secondaryTitle": "Otros Proyectos...",
+    "types": {
+      "work": "Laboral",
+      "personal": "Personal"
+    },
+    "items": {
+      "mic": {
+        "title": "MIC - Mapa Interactivo Cultural",
+        "description": "Aplicación <strong>PWA</strong> diseñada para centralizar la <strong>cultura</strong>, el <strong>deporte</strong> y el <strong>turismo</strong> en un solo lugar. Facilita el acceso a eventos y actividades <strong>culturales</strong> de tu ciudad, promoviendo la participación y el consumo <strong>cultural</strong> local. Disponible en la web y en <strong>Google Play</strong>."
+      },
+      "tesina": {
+        "title": "Dynamic Topic Modeling en noticias de Chubut",
+        "description": "Proyecto de tesina de grado en <strong>Licenciatura en Informática</strong>. Sistema de análisis de noticias que identifica los temas predominantes en los medios de <strong>Chubut</strong> y su evolución a lo largo del tiempo. Utiliza <strong>Machine Learning (ML)</strong> y técnicas avanzadas de <em>procesamiento de lenguaje natural</em> para el <strong>modelado de tópicos</strong>."
+      },
+      "anp": {
+        "title": "Sistema de encuestas dinámicas para la Península Valdés",
+        "description": "Plataforma web diseñada para recopilar la experiencia de los visitantes en Península Valdés. El <strong>sistema de encuestas dinámico</strong> se adapta en tiempo real a las respuestas de los usuarios. Cuenta con internacionalización y visualización de indicadores estadísticos."
+      },
+      "vaidika": {
+        "title": "Vaidika",
+        "titleExtended": "Vaidika - Yoga en Madryn",
+        "description": "Vaidika es una página de <strong>E-Learning</strong> para la práctica de yoga en Madryn. Cuenta con un <strong>Backoffice</strong> para la carga de cursos, módulos y clases, y una <strong>User App</strong> con login para el consumo de cursos. Desplegada en producción a través de <strong>Ferozo</strong>."
+      },
+      "cubegraph": {
+        "title": "CubeGraph",
+        "titleExtended": "CubeGraph - Prácticas de Rubik",
+        "description": "<strong>Side project</strong> personal para practicar tecnologías web. CubeGraph es una plataforma interactiva para entusiastas del cubo de <em>Rubik</em>, donde se puede entrenar con cronómetros de resolución, competiciones 1vs1 en local y analizar el progreso con <strong>estadísticas detalladas</strong>."
+      },
+      "mapyzer": {
+        "title": "Mapyzer",
+        "titleExtended": "Mapyzer - Visualizador espacio-temporal",
+        "description": "Aplicación Web que permite <strong>visualizar datos geolocalizados con validez temporal</strong>. Permite la visualización en mapa/tabla, la creación de 'Proyectos' para la administración de datos y la importación/exportación de archivos de datos."
+      },
+      "fishing-app": {
+        "title": "Fishing App",
+        "titleExtended": "Fishing App - Aplicacion de pesca",
+        "description": "<strong>Aplicación nativa para Android</strong> desarrollada como proyecto para la materia 'Taller de nuevas tecnologías'. Permite la creación de perfiles de pescadores, carga y visualización de reportes de pesca, y Geofencing para el seguimiento de zonas de pesca."
+      }
+    },
+    "buttons": {
+      "preview": "Vista previa",
+      "presentation": "Presentación",
+      "paper": "Paper",
+      "source": "Código fuente",
+      "playstore": "Google Play",
+      "viewMore": "Ver más",
+      "goBack": "Volver"
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "items": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Bases de Datos",
+      "tools": "Herramientas"
+    }
+  },
+  "recommendations": {
+    "title": "Recomendaciones",
+    "laurato": {
+      "role": "Desarrollador en MIC y ANP",
+      "text": "Conocí a Markel en la UNPSJB y trabajamos juntos en varios proyectos. Tiene gran dominio de nuevas tecnologías, capacidad de aprendizaje y disposición para ayudar. Lo recomiendo sin dudarlo."
+    },
+    "demian": {
+      "role": "Product Owner de MIC",
+      "text": "Markel es un profesional muy versátil, responsable y con gran capacidad de aprendizaje. Es proactivo y se destaca en el trabajo en equipo."
+    },
+    "diego": {
+      "role": "Director de Vaidika Yoga Madryn",
+      "text": "Markel me ayuda con todo lo referido a lo informático en mi centro de yoga. Ha demostrado ser responsable, atento y cumplidor con los plazos, ofreciendo soluciones efectivas y mejoras continuas para mi plataforma educativa."
+    },
+    "martin": {
+      "role": "Colega universitario",
+      "text": "Markel es una persona aplicada, curiosa y con gran capacidad para aplicar lo aprendido. Trabajar con él es un placer, ya que muestra una actitud positiva al dar y recibir feedback."
+    },
+    "leonardo": {
+      "role": "Tutor de tesis y product owner en ANP",
+      "text": "Trabajamos en varios proyectos con Markel. Más allá de su destreza técnica, tiene una tenaz vocación por aprender y es un flexible jugador de equipo."
+    }
+  },
+  "moreAboutMe": {
+    "title": "Más sobre mí",
+    "description": "Durante gran parte de mi vida he estado involucrado en el <strong>Handball</strong> y <strong>Beach Handball</strong> como jugador. Por ello, cuento con <highlight><strong>más de 5 años de experiencia</strong></highlight> como coordinador y entrenador de todas las categorías del club <strong>J. L. Grilli</strong> en el área de <strong>Beach Handball</strong> durante las temporadas de verano."
+  },
+  "contact": {
+    "title": "Contacto",
+    "greeting": "¡Hablemos! Escríbeme a"
+  },
+  "footer": {
+    "source": "Código fuente",
+    "madeWithCodeAndMate": "Hecho con código y mucho mate 🧉"
+  }
 }

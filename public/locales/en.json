@@ -1,153 +1,157 @@
 {
-	"hero": {
-		"title": "Home",
-		"name": "Markel Jaureguibehere",
-		"description": "Fullstack Developer | Bachelor in Computer Science",
-		"buttons": {
-			"viewCv": "View CV",
-			"github": "GitHub",
-			"linkedin": "LinkedIn",
-			"changeLanguage": "Change Language",
-			"lightMode": "Light Mode",
-			"darkMode": "Dark Mode"
-		},
-		"availableForWork": "Available for work"
-	},
-	"aboutMe": {
-		"title": "About Me",
-		"description1": "<highlight><strong>Software Developer with over 4 years of experience</strong></highlight>, originally from <strong>Puerto Madryn, Argentina</strong> <flag/>. Passionate about new technologies and both web and mobile development.",
-		"description2": "<highlight><strong>Graduated as a Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently  <green><strong>available for work</strong></green>, motivated to keep learning and grow professionally."
-	},
-	"experience": {
-		"title": "Experience",
-		"items": {
-			"camad": {
-				"title": "CAMAD",
-				"titleExtended": "Chamber of Industry, Commerce, Production and Tourism of Puerto Madryn",
-				"period": "June 2023 - PRESENT",
-				"role": "Fullstack Developer Ssr.",
-				"description": {
-					"1": "Analysis of metrics with <strong>Google Analytics</strong>.",
-					"2": "<strong>Deployments to production</strong> based on SSH.",
-					"3": "Publishing and management of the PWA on <strong>Google Play</strong>.",
-					"4": "Version control using <strong>Git</strong> lifecycle.",
-					"5": "Integration with <strong>Google Maps APIs.</strong>",
-					"6": "Teamwork based on <strong>Agile Methodologies</strong> (Icesrcum)."
-				}
-			},
-			"anppv": {
-				"title": "AANPPV",
-				"titleExtended": "Administration of the Protected Natural Area of the Valdés Peninsula",
-				"period": "March 2023 - December 2023",
-				"role": "Fullstack Developer Jr.",
-				"description": {
-					"1": "Subsystem development using <strong>microfrontend architecture</strong>.",
-					"2": "Management of <strong>SQL</strong> and <strong>NoSQL</strong> databases.",
-					"3": "Teamwork in a <strong>hybrid</strong> environment."
-				}
-			},
-			"alimentar": {
-				"title": "AlimentAR",
-				"titleExtended": "AlimentAR - National University of Patagonia San Juan Bosco",
-				"period": "July 2021 - December 2021",
-				"role": "Fullstack Development Intern",
-				"description": {
-					"1": "Web development using <strong>React</strong> and <strong>Node.js</strong>.",
-					"2": "Management of <strong>NoSQL</strong> databases (MongoDB).",
-					"3": "Reduction of coupling between backend and frontend through <strong>Git submodules</strong>."
-				}
-			}
-		}
-	},
-	"projects": {
-		"title": "Projects",
-		"secondaryTitle": "Other Projects...",
-		"types": {
-			"work": "Work",
-			"personal": "Personal"
-		},
-		"items": {
-			"mic": {
-				"title": "MIC - Interactive Cultural Map",
-				"description": "<strong>PWA</strong> application designed to centralize <strong>culture</strong>, <strong>sports</strong>, and <strong>tourism</strong> in one place. It facilitates access to <strong>cultural</strong> events and activities in your city, promoting local <strong>cultural</strong> participation and consumption. Available on the web and on <strong>Google Play</strong>."
-			},
-			"tesina": {
-				"title": "Dynamic Topic Modeling in Chubut News",
-				"description": "Undergraduate thesis project in <strong>Bachelor in Computer Science</strong>. News analysis system that identifies predominant topics in <strong>Chubut</strong> media and their evolution over time. It uses <strong>Machine Learning (ML)</strong> and advanced <em>Natural Language Processing</em> techniques for <strong>topic modeling</strong>."
-			},
-			"anp": {
-				"title": "Dynamic Survey System for Peninsula Valdés",
-				"description": "Web platform designed to collect visitor experiences in Peninsula Valdés. The <strong>dynamic survey system</strong> adapts in real-time to users' responses. It includes internationalization and statistical indicator visualization."
-			},
-			"vaidika": {
-				"title": "Vaidika",
-				"titleExtended": "Vaidika - Yoga in Madryn",
-				"description": "Vaidika is an <strong>E-Learning</strong> website for yoga practice in Madryn. It features a <strong>Backoffice</strong> for uploading courses, modules, and classes, and a <strong>User App</strong> with login to access courses. Deployed in production via <strong>Ferozo</strong>."
-			},
-			"cubegraph": {
-				"title": "CubeGraph",
-				"titleExtended": "CubeGraph - Rubik's Practices",
-				"description": "Personal <strong>side project</strong> to practice web technologies. CubeGraph is an interactive platform for <em>Rubik's Cube</em> enthusiasts, where they can train with resolution timers, 1vs1 local competitions, and analyze their progress with <strong>detailed statistics</strong>."
-			},
-			"mapyzer": {
-				"title": "Mapyzer",
-				"titleExtended": "Mapyzer - Space-time Visualizer",
-				"description": "Web application that allows the visualization of geolocated data with temporal validity. It allows the visualization in map/table, the creation of 'Projects' for data management and the import/export of data files."
-			},
-			"fishing-app": {
-				"title": "Fishing App",
-				"titleExtended": "Fishing App - Aplicacion de pesca",
-				"description": "Fishing app developed as a project for the 'New Technologies' class. It allows the creation of fishing profiles, loading and visualization of fishing reports, and Geofencing for the tracking of fishing areas."
-			}
-		},
-		"buttons": {
-			"preview": "Preview",
-			"presentation": "Presentation",
-			"paper": "Paper",
-			"source": "Source",
-			"playstore": "Google Play",
-			"viewMore": "View more",
-			"goBack": "Go back"
-		}
-	},
-	"technologies": {
-		"title": "Technologies",
-		"items": {
-			"frontend": "Frontend",
-			"backend": "Backend",
-			"database": "Databases",
-			"tools": "Tools"
-		}
-	},
-	"recommendations": {
-		"title": "Recommendations",
-		"laurato": {
-			"role": "Developer at MIC and ANP",
-			"text": "I met Markel at UNPSJB, and we worked together on several projects. He has a strong command of new technologies, a great ability to learn, and a willingness to help. I recommend him without hesitation."
-		},
-		"demian": {
-			"role": "Product Owner at MIC",
-			"text": "Markel is a very versatile, responsible professional with a great capacity for learning. He is proactive and stands out in teamwork."
-		},
-		"diego": {
-			"role": "Director of Vaidika Yoga Madryn",
-			"text": "Markel helps me with everything related to IT at my yoga center. He has proven to be responsible, attentive, and punctual, offering effective solutions and continuous improvements for my educational platform."
-		},
-		"martin": {
-			"role": "University colleague",
-			"text": "Markel is a dedicated, curious person with a great ability to apply what he has learned. Working with him is a pleasure, as he shows a positive attitude when giving and receiving feedback."
-		}
-	},
-	"moreAboutMe": {
-		"title": "More about me",
-		"description": "For a large part of my life, I have been involved in <strong>Handball</strong> and <strong>Beach Handball</strong> as a player. Therefore, I have <highlight><strong>over 5 years of experience</strong></highlight> as a coordinator and coach of all categories at the club <strong>J. L. Grilli</strong> in the field of <strong>Beach Handball</strong> during the summer seasons."
-	},
-	"contact": {
-		"title": "Contact",
-		"greeting": "Let's talk! Write to me at"
-	},
-	"footer": {
-		"source": "Source code",
-		"madeWithCodeAndMate": "Made with code and a lot of mate 🧉"
-	}
+  "hero": {
+    "title": "Home",
+    "name": "Markel Jaureguibehere",
+    "description": "Fullstack Developer | Bachelor in Computer Science",
+    "buttons": {
+      "viewCv": "View CV",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "changeLanguage": "Change Language",
+      "lightMode": "Light Mode",
+      "darkMode": "Dark Mode"
+    },
+    "availableForWork": "Available for work"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "description1": "<highlight><strong>Software Developer with over 4 years of experience</strong></highlight>, originally from <strong>Puerto Madryn, Argentina</strong> <flag/>. Passionate about new technologies and both web and mobile development.",
+    "description2": "<highlight><strong>Graduated as a Computer Science Licentiate</strong></highlight> from the <strong>National University of Patagonia San Juan Bosco</strong> and with extensive experience working mainly with Node.js, React, and PostgreSQL. Currently  <green><strong>available for work</strong></green>, motivated to keep learning and grow professionally."
+  },
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "camad": {
+        "title": "CAMAD",
+        "titleExtended": "Chamber of Industry, Commerce, Production and Tourism of Puerto Madryn",
+        "period": "June 2023 - PRESENT",
+        "role": "Fullstack Developer Ssr.",
+        "description": {
+          "1": "Analysis of metrics with <strong>Google Analytics</strong>.",
+          "2": "<strong>Deployments to production</strong> based on SSH.",
+          "3": "Publishing and management of the PWA on <strong>Google Play</strong>.",
+          "4": "Version control using <strong>Git</strong> lifecycle.",
+          "5": "Integration with <strong>Google Maps APIs.</strong>",
+          "6": "Teamwork based on <strong>Agile Methodologies</strong> (Icesrcum)."
+        }
+      },
+      "anppv": {
+        "title": "AANPPV",
+        "titleExtended": "Administration of the Protected Natural Area of the Valdés Peninsula",
+        "period": "March 2023 - December 2023",
+        "role": "Fullstack Developer Jr.",
+        "description": {
+          "1": "Subsystem development using <strong>microfrontend architecture</strong>.",
+          "2": "Management of <strong>SQL</strong> and <strong>NoSQL</strong> databases.",
+          "3": "Teamwork in a <strong>hybrid</strong> environment."
+        }
+      },
+      "alimentar": {
+        "title": "AlimentAR",
+        "titleExtended": "AlimentAR - National University of Patagonia San Juan Bosco",
+        "period": "July 2021 - December 2021",
+        "role": "Fullstack Development Intern",
+        "description": {
+          "1": "Web development using <strong>React</strong> and <strong>Node.js</strong>.",
+          "2": "Management of <strong>NoSQL</strong> databases (MongoDB).",
+          "3": "Reduction of coupling between backend and frontend through <strong>Git submodules</strong>."
+        }
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "secondaryTitle": "Other Projects...",
+    "types": {
+      "work": "Work",
+      "personal": "Personal"
+    },
+    "items": {
+      "mic": {
+        "title": "MIC - Interactive Cultural Map",
+        "description": "<strong>PWA</strong> application designed to centralize <strong>culture</strong>, <strong>sports</strong>, and <strong>tourism</strong> in one place. It facilitates access to <strong>cultural</strong> events and activities in your city, promoting local <strong>cultural</strong> participation and consumption. Available on the web and on <strong>Google Play</strong>."
+      },
+      "tesina": {
+        "title": "Dynamic Topic Modeling in Chubut News",
+        "description": "Undergraduate thesis project in <strong>Bachelor in Computer Science</strong>. News analysis system that identifies predominant topics in <strong>Chubut</strong> media and their evolution over time. It uses <strong>Machine Learning (ML)</strong> and advanced <em>Natural Language Processing</em> techniques for <strong>topic modeling</strong>."
+      },
+      "anp": {
+        "title": "Dynamic Survey System for Peninsula Valdés",
+        "description": "Web platform designed to collect visitor experiences in Peninsula Valdés. The <strong>dynamic survey system</strong> adapts in real-time to users' responses. It includes internationalization and statistical indicator visualization."
+      },
+      "vaidika": {
+        "title": "Vaidika",
+        "titleExtended": "Vaidika - Yoga in Madryn",
+        "description": "Vaidika is an <strong>E-Learning</strong> website for yoga practice in Madryn. It features a <strong>Backoffice</strong> for uploading courses, modules, and classes, and a <strong>User App</strong> with login to access courses. Deployed in production via <strong>Ferozo</strong>."
+      },
+      "cubegraph": {
+        "title": "CubeGraph",
+        "titleExtended": "CubeGraph - Rubik's Practices",
+        "description": "Personal <strong>side project</strong> to practice web technologies. CubeGraph is an interactive platform for <em>Rubik's Cube</em> enthusiasts, where they can train with resolution timers, 1vs1 local competitions, and analyze their progress with <strong>detailed statistics</strong>."
+      },
+      "mapyzer": {
+        "title": "Mapyzer",
+        "titleExtended": "Mapyzer - Space-time Visualizer",
+        "description": "Web application that allows the visualization of geolocated data with temporal validity. It allows the visualization in map/table, the creation of 'Projects' for data management and the import/export of data files."
+      },
+      "fishing-app": {
+        "title": "Fishing App",
+        "titleExtended": "Fishing App - Aplicacion de pesca",
+        "description": "Fishing app developed as a project for the 'New Technologies' class. It allows the creation of fishing profiles, loading and visualization of fishing reports, and Geofencing for the tracking of fishing areas."
+      }
+    },
+    "buttons": {
+      "preview": "Preview",
+      "presentation": "Presentation",
+      "paper": "Paper",
+      "source": "Source",
+      "playstore": "Google Play",
+      "viewMore": "View more",
+      "goBack": "Go back"
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "items": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "tools": "Tools"
+    }
+  },
+  "recommendations": {
+    "title": "Recommendations",
+    "laurato": {
+      "role": "Developer at MIC and ANP",
+      "text": "I met Markel at UNPSJB, and we worked together on several projects. He has a strong command of new technologies, a great ability to learn, and a willingness to help. I recommend him without hesitation."
+    },
+    "demian": {
+      "role": "Product Owner at MIC",
+      "text": "Markel is a very versatile, responsible professional with a great capacity for learning. He is proactive and stands out in teamwork."
+    },
+    "diego": {
+      "role": "Director of Vaidika Yoga Madryn",
+      "text": "Markel helps me with everything related to IT at my yoga center. He has proven to be responsible, attentive, and punctual, offering effective solutions and continuous improvements for my educational platform."
+    },
+    "martin": {
+      "role": "University colleague",
+      "text": "Markel is a dedicated, curious person with a great ability to apply what he has learned. Working with him is a pleasure, as he shows a positive attitude when giving and receiving feedback."
+    },
+    "leonardo": {
+      "role": "thesis tutor and product owner at ANP",
+      "text": "We worked on several projects with Markel. Beyond his technical prowess, he has a tenacious drive to learn and is a flexible team player."
+    }
+  },
+  "moreAboutMe": {
+    "title": "More about me",
+    "description": "For a large part of my life, I have been involved in <strong>Handball</strong> and <strong>Beach Handball</strong> as a player. Therefore, I have <highlight><strong>over 5 years of experience</strong></highlight> as a coordinator and coach of all categories at the club <strong>J. L. Grilli</strong> in the field of <strong>Beach Handball</strong> during the summer seasons."
+  },
+  "contact": {
+    "title": "Contact",
+    "greeting": "Let's talk! Write to me at"
+  },
+  "footer": {
+    "source": "Source code",
+    "madeWithCodeAndMate": "Made with code and a lot of mate 🧉"
+  }
 }
